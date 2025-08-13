@@ -9,7 +9,7 @@ const AboutUs = () => {
 
   return (
     <section className=' flex flex-col items-center mb-24 mt-32 justify-center'>
-        <h2 className=' text-5xl font-medium'>{heading}</h2>
+        <h2 className=' text-4xl font-medium'>{heading}</h2>
         <div className=' w-full flex flex-wrap justify-center gap-8 px-8'>
            {
             data?.map(({title, subtitle, text, points}) => (
@@ -18,8 +18,8 @@ const AboutUs = () => {
            }
         </div>
         <div className=' mt-24 w-full flex flex-wrap justify-center gap-8 px-8'>
-           <button style={{ backgroundColor: colors.primaryColor }} className=' font-semibold text-gray-50 min-w-64 px-8 py-2 text-3xl rounded-xl cursor-pointer '>Our Board</button>
-           <button style={{ backgroundColor: colors.primaryColor }} className=' font-semibold text-gray-50 min-w-64 px-8 py-2 text-3xl rounded-xl cursor-pointer '>Our Management</button>
+           <button style={{ backgroundColor: colors.primaryColor }} className=' font-semibold text-gray-50 min-w-64 px-8 py-2 text-2xl rounded-xl cursor-pointer '>Our Board</button>
+           <button style={{ backgroundColor: colors.primaryColor }} className=' font-semibold text-gray-50 min-w-64 px-8 py-2 text-2xl rounded-xl cursor-pointer '>Our Management</button>
         </div>
     </section>
   )
