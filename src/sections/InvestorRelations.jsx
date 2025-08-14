@@ -6,7 +6,7 @@ const InvestorRelations = () => {
     const data = getInvestorRelations
 
   return (
-    <section className=' mt-32 px-4 md:px-24 flex flex-col items-center'>
+    <section className=' mt-32 px-8 md:px-24 flex flex-col items-center'>
         <h2 className=' text-2xl md:text-5xl font-medium'>Investor Relations</h2>
         <div className=' mt-12 flex flex-col gap-24 px-4 md:px-12'>
             {
