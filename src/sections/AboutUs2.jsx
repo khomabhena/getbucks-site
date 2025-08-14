@@ -10,7 +10,7 @@ const AboutUs2 = () => {
 
     <section className=' flex flex-col w-full items-center pb-24 mt-32 justify-center'>
         <h2 className=' text-4xl font-medium'>{heading}</h2>
-        <div className=' w-full flex flex-wrap mt-12 gap-4 md:gap-0 flex-col xl:flex-row justify-center'>
+        <div className=' w-full flex flex-wrapl mt-12 gap-4 md:gap-0 flex-col xl:flex-row justify-center'>
           {
             data?.map(({ title, subtitle, text, points }) => (
                 <AboutUsCard2 title={title} subtitle={subtitle} text={text} points={points} />
