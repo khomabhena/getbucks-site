@@ -6,12 +6,12 @@ const ContactUs = () => {
     const data = getContactData
 
   return (
-    <section className=' mt-24 pb-32 flex flex-col justify-center items-center'>
-        <h2 className=' text-4xl font-semibold'>Contact Us</h2>
-        <div className=' mt-12 flex w-full'>
-            <p className=' text-lg text-gray-700 px-12 flex justify-center basis-1/4'>"{data.text}"</p>
+    <section className=' mt-24 pb-32 flex-col justify-center items-center'>
+        <h2 className=' text-4xl text-center font-semibold'>Contact Us</h2>
+        <div className=' mt-12 flex flex-col lg:flex-row w-full'>
+            <p className=' text-sm md:text-lg text-gray-700 px-4 md:px-12 flex justify-center basis-1/4'>"{data.text}"</p>
 
-            <form className=' flex flex-col px-8 gap-6 justify-center basis-1/4' action="">
+            <form className=' flex flex-col mt-12 lg:mt-0 md:px-8 gap-6 justify-center basis-1/4' action="">
                 <input className=' bg-gray-200 mx-4 py-4 px-8 text-lg rounded-xl' type="text" name="" placeholder='Full Name' id="" />
                 <input className=' bg-gray-200 mx-4 py-4 px-8 text-lg rounded-xl' type="text" name="" placeholder='Email' id="" />
                 <input className=' bg-gray-200 mx-4 py-4 px-8 text-lg rounded-xl' type="text" name="" placeholder='Mobile Number' id="" />
@@ -19,7 +19,7 @@ const ContactUs = () => {
                 <button className=' mx-4 rounded-xl py-4 text-xl font-semibold' style={{ backgroundColor: colors.primaryColor }} type="button">Send Message</button>
             </form>
 
-            <div className=' flex justify-center basis-1/4'>
+            <div className=' flex px-4 md:px-8 mt-12 lg:mt-0 lg:justify-center basis-1/4'>
                 
                     <img src={data.address.image} alt="" />
                     <div className=' flex flex-col gap-2 text-lg text-gray-700'>
@@ -31,7 +31,7 @@ const ContactUs = () => {
                 
             </div>
 
-            <div className=' flex flex-col gap-8 text-lg basis-1/4 text-gray-700'>
+            <div className=' flex px-4 md:px-8 lg:px-0 flex-col mt-12 lg:mt-0 gap-2 md:gap-8 text-lg basis-1/4 text-gray-700'>
             {
                 data?.contacts.map(({ image, link, text }) => (
                     <a href={link}>

@@ -6,6 +6,7 @@ import InvestorRelations from '../sections/InvestorRelations'
 import AboutUs from '../sections/AboutUs'
 import GetToKnow from '../sections/GetToKnow'
 import ContactUs from '../sections/ContactUs'
+import AboutUs2 from '../sections/AboutUs2'
 
 const MainContent = () => {
   return (
@@ -14,9 +15,10 @@ const MainContent = () => {
             <Header />
             <Services />
             <InvestorRelations />
-            <AboutUs />
+            <AboutUs2 />
             <GetToKnow />
             <ContactUs />
+            {/*<AboutUs />*/}
         </div>
     </Container>
   )
