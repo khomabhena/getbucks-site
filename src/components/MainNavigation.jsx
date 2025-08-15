@@ -7,7 +7,7 @@ const MainNavigation = ({ prefix = '' }) => {
    const primaryColor = colors.primaryColor
 
   return ( 
-    <nav style={{ backgroundColor: colors.backgroundColor }} className=' fixed top-0 left-0 right-0 m-auto w-full max-w-[1920px] z-20 flex justify-between items-center px-4 lg:px-24 h-16 md:h-32'>
+    <nav style={{ backgroundColor: colors.backgroundColor }} className=' fixed top-0 left-0 right-0 m-auto w-full max-w-[1920px] z-20 flex justify-between items-center px-8 md:px-12 lg:px-24 2xl:px-32 h-16 md:h-32'>
       <a href="/">
         <img className=' cursor-pointer h-12 md:h-18 w-auto' src="/logo.png" height={'auto'}  alt="White Appletree logo" />
       </a>

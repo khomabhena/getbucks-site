@@ -9,12 +9,12 @@ const AboutUs = () => {
 
   return (
     <section className=' flex flex-col items-center mb-24 mt-24 justify-center'>
-        <h2 className=' text-4xl font-medium'>{heading}</h2>
-        <div className=' w-full min-h-48 md:px-12 mt-24 flex flex-wrap justify-center'>
+        <h2 className=' text-4xl self-start lg:self-center font-medium'>{heading}</h2>
+        <div className=' w-full min-h-48 lmt-24 flex flex-wrap justify-center'>
 
           {
             data?.map(({title, subtitle, text, points}) => (
-            <div className=' mt-24 w-full h-auto flex justify-center items-center basis-1/1 md:basis-1/2 lg:basis-1/3'>
+            <div className=' mt-24 w-full h-auto flex justify-center items-center basis-1/1 lg:basis-1/2 xl:basis-1/2 2xl:basis-1/3'>
               <AboutUsCard title={title} image={image} subtitle={subtitle} text={text} points={points} />
             </div> 
             ))

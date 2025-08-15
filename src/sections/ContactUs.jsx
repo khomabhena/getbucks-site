@@ -7,19 +7,19 @@ const ContactUs = () => {
 
   return (
     <section className=' mt-24 pb-32 flex-col justify-center items-center'>
-        <h2 className=' text-4xl text-center font-semibold'>Contact Us</h2>
-        <div className=' mt-12 flex flex-col lg:flex-row w-full'>
-            <p className=' text-sm md:text-lg text-gray-700 px-4 md:px-12 flex justify-center basis-1/4'>"{data.text}"</p>
+        <h2 className=' text-4xl lg:text-center font-semibold'>Contact Us</h2>
+        <div className=' mt-12 flex flex-col xl:flex-row w-full'>
+            <p className=' text-sm md:text-lg text-gray-700  text-center md:text-start flex justify-center basis-1/4'>"{data.text}"</p>
 
-            <form className=' flex flex-col mt-12 lg:mt-0 md:px-8 gap-6 justify-center basis-1/4' action="">
-                <input className=' bg-gray-200 mx-4 py-4 px-8 text-lg rounded-xl' type="text" name="" placeholder='Full Name' id="" />
-                <input className=' bg-gray-200 mx-4 py-4 px-8 text-lg rounded-xl' type="text" name="" placeholder='Email' id="" />
-                <input className=' bg-gray-200 mx-4 py-4 px-8 text-lg rounded-xl' type="text" name="" placeholder='Mobile Number' id="" />
-                <textarea className=' bg-gray-200 mx-4 py-4 px-8 text-lg rounded-xl' name="" placeholder='Your Message' id=""></textarea>
-                <button className=' mx-4 rounded-xl py-4 text-xl font-semibold' style={{ backgroundColor: colors.primaryColor }} type="button">Send Message</button>
+            <form className=' flex flex-col max-w-[450px] mt-12 xl:mt-0 lg:mt-8 gap-6 justify-center basis-1/4' action="">
+                <input className=' bg-gray-200 py-4 px-8 text-lg rounded-xl' type="text" name="" placeholder='Full Name' id="" />
+                <input className=' bg-gray-200 py-4 px-8 text-lg rounded-xl' type="text" name="" placeholder='Email' id="" />
+                <input className=' bg-gray-200 py-4 px-8 text-lg rounded-xl' type="text" name="" placeholder='Mobile Number' id="" />
+                <textarea className=' bg-gray-200 py-4 px-8 text-lg rounded-xl' name="" placeholder='Your Message' id=""></textarea>
+                <button className=' rounded-xl py-4 text-xl font-semibold' style={{ backgroundColor: colors.primaryColor }} type="button">Send Message</button>
             </form>
 
-            <div className=' flex px-4 md:px-8 mt-12 lg:mt-0 lg:justify-center basis-1/4'>
+            <div className=' flex mt-12 lg:mt-8 xl:mt-0 xl:justify-center basis-1/4'>
                 
                     <img src={data.address.image} alt="" />
                     <div className=' flex flex-col gap-2 text-lg text-gray-700'>
@@ -31,7 +31,7 @@ const ContactUs = () => {
                 
             </div>
 
-            <div className=' flex px-4 md:px-8 lg:px-0 flex-col mt-12 lg:mt-0 gap-2 md:gap-8 text-lg basis-1/4 text-gray-700'>
+            <div className=' flex lg:px-0 flex-col mt-12 lg:mt-8 xl:mt-0 gap-2 md:gap-8 text-lg basis-1/4 text-gray-700'>
             {
                 data?.contacts.map(({ image, link, text }) => (
                     <a href={link}>
