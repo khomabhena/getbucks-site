@@ -9,9 +9,9 @@ const AboutUsCard2 = ({ title, subtitle, text, points }) => {
         <img className=' hidden lg:block w-32 absolute -mt-8 -ml-8 top-0 left-0' src="/about/icon-01.png" alt="" />
         <img className=' hidden lg:blockk w-32 absolute -mb-8 -mr-8 bottom-0 right-0' src="/about/icon-02.png" alt="" />
         <div className=' absolute top-0 left-0 flex flex-col px-8 py-4'>
-            <h3 className=' text-2xl md:text-3xl font-semibold' style={{ color: colors.primaryColor }}>{title}</h3>
-            <h4 className=' mt-3 text-lg md:text-xl'>"{subtitle}"</h4>
-            <p className=' text-sm md:text-lg mt-4'>{text}</p>
+            <h3 className=' text-2xl font-semibold' style={{ color: colors.primaryColor }}>{title}</h3>
+            <h4 className=' mt-3 text-lg'>"{subtitle}"</h4>
+            <p className=' text-sm mt-4'>{text}</p>
             <div className=' grid grid-cols-2'>
                 {
                     points?.map(name => (
