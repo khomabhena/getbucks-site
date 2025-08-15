@@ -10,7 +10,7 @@ const AboutUs = () => {
   return (
     <section className=' flex flex-col items-center mb-24 mt-24 justify-center'>
         <h2 className=' text-4xl font-medium'>{heading}</h2>
-        <div className=' w-full min-h-48 px-12 mt-24 flex flex-wrap justify-center'>
+        <div className=' w-full min-h-48 md:px-12 mt-24 flex flex-wrap justify-center'>
 
           {
             data?.map(({title, subtitle, text, points}) => (
