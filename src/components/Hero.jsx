@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section className=' pt-8 lg:32 xl:pt-48 2xl:pt-56 flex flex-col gap-12 justify-center px-8 min-h-[400px] md:min-h-[524px]'>
       
-        <h1 className=' ease-in-out md:pt-32 lg:pt-32 text-xl md:text-3xl 2xl:text-6xl text-center'>
+        <h1 className=' ease-in-out md:pt-32 lg:pt-32 text-xl md:text-2xl 2xl:text-2xl text-slate-700 font-semibold text-center'>
           <span className=' text-2xl md:text-5xl lg:text-7xl xl:text-7xl 2xl:text-8xl font-bold' 
           style={{ color: primaryColor }}>Smart with Money</span><br /><br />
           <span className=''>Next-Gen Banking - Little bank, Big Love</span></h1>
