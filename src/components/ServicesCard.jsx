@@ -3,7 +3,7 @@ import { colors } from '../data/colors'
 
 const ServicesCard = ({ image, title, text }) => {
   return (
-    <div className=' min-h-48 mt-12 basis-1/1 md:basis-1/3 px-4'>
+    <div className=' min-h-48 mt-12 basis-1/1 md:basis-1/2 lg:basis-1/3 px-4'>
       <div style={{ backgroundColor: colors.backgroundColor }} className=' w-full h-full flex rounded-xl shadow-lg'>
 
         <img className=' mx-4 w-12 md:w-16 lg:w-20 self-center' src={image} alt={title} />

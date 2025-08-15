@@ -14,7 +14,7 @@ const AboutUs = () => {
 
           {
             data?.map(({title, subtitle, text, points}) => (
-            <div className=' mt-24 w-full h-auto flex justify-center items-center basis-1/1 md:basis-1/3'>
+            <div className=' mt-24 w-full h-auto flex justify-center items-center basis-1/1 md:basis-1/2 lg:basis-1/3'>
               <AboutUsCard title={title} image={image} subtitle={subtitle} text={text} points={points} />
             </div> 
             ))
