@@ -8,13 +8,13 @@ const AboutUs = () => {
     const data = getAboutData.data
 
   return (
-    <section className=' flex flex-col items-center mb-24 mt-32 justify-center'>
+    <section className=' flex flex-col items-center mb-24 mt-24 justify-center'>
         <h2 className=' text-4xl font-medium'>{heading}</h2>
-        <div className=' w-full min-h-72 mt-32 flex bg-red-600l flex-wrap justify-center'>
+        <div className=' w-full min-h-48 px-12 mt-24 flex flex-wrap justify-center'>
 
           {
             data?.map(({title, subtitle, text, points}) => (
-            <div className=' px-4 h-64 w-64 flex justify-center items-center basis-1/3 bg-green-600f'>
+            <div className=' mt-24 w-full h-auto flex justify-center items-center basis-1/1 md:basis-1/3'>
               <AboutUsCard title={title} image={image} subtitle={subtitle} text={text} points={points} />
             </div> 
             ))

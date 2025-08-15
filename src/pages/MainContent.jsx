@@ -15,7 +15,7 @@ const MainContent = () => {
             <Header />
             <Services />
             <InvestorRelations />
-            <AboutUs2 />
+            <AboutUs />
             <GetToKnow />
             <ContactUs />
             {/*<AboutUs />*/}

@@ -4,12 +4,12 @@ import { colors } from '../data/colors'
 const AboutUsCard = ({ title, subtitle, text, points }) => {
 
   return (
-    <div className=' relative w-full h-full mx-12'>
-      <div className=' absolute -z-3l -mt-6 -ml-6 top-0 left-0 w-32 h-32'>
+    <div className=' relative w-full min-h-64 mx-12'>
+      <div className=' absolute -mt-6 -ml-6 top-0 left-0 w-32 h-32'>
         <img className=' w-64' src="/about/icon-01.png" alt="" />
       </div>
 
-      <div className=' absolute bottom-0 right-0 -mb-6 -mr-4 w-32 h-32'>
+      <div className=' absolute right-0 bottom-0 -mb-8 -mr-6 w-32 h-32'>
         <img src="/about/icon-02.png" alt="" />
       </div>
 
@@ -25,6 +25,8 @@ const AboutUsCard = ({ title, subtitle, text, points }) => {
             }
         </div>
       </div>
+
+      
 
     </div>
     /*<div className=' relative flex flex-col basis-1/4 h-[300px] mt-24'>
