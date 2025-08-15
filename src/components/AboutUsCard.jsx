@@ -5,11 +5,11 @@ const AboutUsCard = ({ title, subtitle, text, points }) => {
 
   return (
     <div className=' relative w-full min-h-64 mx-6'>
-      <div className=' absolute -mt-6 -ml-6 top-0 left-0 w-32 h-32'>
+      <div className=' absolute -mt-5 -ml-5 md:-mt-6 md:-ml-6 top-0 left-0 w-32 h-32'>
         <img className=' w-64' src="/about/icon-01.png" alt="" />
       </div>
 
-      <div className=' absolute right-0 bottom-0 -mb-8 -mr-6 w-32 h-32'>
+      <div className=' absolute right-0 bottom-0 -mb-6 -mr-4 md:-mb-8 md:-mr-6 w-32 h-32'>
         <img src="/about/icon-02.png" alt="" />
       </div>
 
