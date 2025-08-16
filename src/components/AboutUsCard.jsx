@@ -4,7 +4,7 @@ import { colors } from '../data/colors'
 const AboutUsCard = ({ title, subtitle, text, points }) => {
 
   return (
-    <div className=' relative w-full min-h-64 mx-6'>
+    <div className=' relative w-full min-h-52 mx-10 hover:scale-104 ease-in-out transition-all'>
       <div className=' absolute -mt-5 -ml-5 md:-mt-6 md:-ml-6 top-0 left-0 w-32 h-32'>
         <img className=' w-64' src="/about/icon-01.png" alt="" />
       </div>
@@ -13,7 +13,7 @@ const AboutUsCard = ({ title, subtitle, text, points }) => {
         <img src="/about/icon-02.png" alt="" />
       </div>
 
-      <div className=' pl-6 pr-6 pt-6 absolute flex flex-col rounded-4xl top-0 left-0 w-full h-64 shadow-lg shadow-[#faa819] bg-gradient-to-r from-gray-100 to-gray-200'>
+      <div className=' pl-6 pr-6 pt-6 absolute flex flex-col rounded-4xl top-0 left-0 w-full min-h-52 shadow-lg hover:shadow-2xl shadow-[#faa819] bg-gradient-to-r from-gray-100 to-gray-200'>
         <h3 className=' text-xl font-semibold' style={{ color: colors.primaryColor }}>{title}</h3>
         <h4 className=' mt-3 text-lg'>"{subtitle}"</h4>
         <p className=' text-sm mt-4'>{text}</p>

@@ -14,9 +14,9 @@ const MainNavigation = ({ prefix = '' }) => {
       </a>
 
       <ul className=' hidden lg:flex gap-8 text-base pr-4' style={{ color: primaryColor }}>
-        <li className=' px-4 py-1 rounded-xl text-lg hover:scale-105 transition-all ease-in-out'><a href={`${prefix}#personal`}>Personal</a></li>
-        <li style={{ backgroundColor: primaryColor }} className=' text-white px-4 py-1 rounded-lg text-lg hover:scale-105 transition-all ease-in-out'><a href={`${prefix}#business`}>Business</a></li>
-        <li style={{ borderColor: primaryColor }} className=' border-3  px-4 rounded-lg text-lg hover:scale-105 transition-all ease-in-out'><a href={`${prefix}#internet-banking`}>Internet Banking</a></li>
+        <li className=' px-8 py-2 rounded-lg text-lg hover:scale-105 hover:shadow-gray-300 hover:border-green-900 hover:bg-[#faa819] hover:text-gray-50 hover:shadow-xl ease-in-out transition-all'><a href={`${prefix}#personal`}>Personal</a></li>
+        <li className=' px-8 py-2 rounded-lg text-lg hover:scale-105 hover:shadow-gray-300 hover:border-green-900 hover:bg-[#faa819] hover:text-gray-50 hover:shadow-xl ease-in-out transition-all'><a href={`${prefix}#business`}>Business</a></li>
+        <li style={{ borderColor: primaryColor }} className=' border-3  px-4 py-2 rounded-lg text-lg hover:scale-105 hover:shadow-gray-300 hover:border-green-900 hover:bg-[#faa819] hover:text-gray-50 hover:shadow-xl ease-in-out transition-all'><a href={`${prefix}#internet-banking`}>Internet Banking</a></li>
       </ul>
 
       {!mobileNavigation && <img onClick={() => {setMobileNavigation(!mobileNavigation)}} className=' lg:hidden cursor-pointer h-8 w-8' src='/menu.svg' width={'auto'} height={'24px'} alt='menu close icon'  />}
