@@ -12,7 +12,8 @@ const Hero = () => {
           style={{ color: primaryColor }}>Smart with Money</span><br /><br />
           <span className=''>Next-Gen Banking - Little bank, Big Love</span></h1>
 
-        <button style={{ color: primaryColor }} className=' lmt-8 lg:mt-24 2xl:mt-24 md:pb-3 cursor-pointer rounded-2xl border-1 md:border-2 border-gray-200 shadow-sm shadow-gray-300 w-fit self-center px-8 py-2 lg:py-4 text-base md:text-2xl lg:text-4xl font-medium bg-gradient-to-r from-gray-100 to-gray-200'>Open an account</button>
+        <button style={{ color: primaryColor }} 
+          className=' lmt-8 lg:mt-24 2xl:mt-24 md:pb-3 cursor-pointer rounded-2xl border-1 md:border-2 border-gray-200 shadow-sm shadow-[#faa819]l w-fit self-center px-8 py-2 lg:py-4 text-base md:text-2xl lg:text-4xl font-medium bg-gradient-to-r from-gray-100 to-gray-200 hover:scale-105 hover:shadow-[#faa819] hover:shadow-lg ease-in-out transition-all'>Open an account</button>
 
     </section>
   )

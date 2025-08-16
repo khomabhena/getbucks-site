@@ -11,7 +11,7 @@ const MobileNavigation = () => {
     }
 
   return (
-   <nav style={{ backgroundColor: colors.backgroundColor }} className=' lg:hidden fixed px-4 top-0 z-20 left-0 right-0 md:w-[384px] bottom-0'>
+   <nav style={{ backgroundColor: colors.backgroundColor }} className=' lg:hidden fixed shadow-lg px-4 top-0 z-20 left-0 right-0 md:w-[384px] bottom-0'>
 
       <div className=' flex justify-between h-18 items-center'>
         <img className=' cursor-pointer h-14 md:h-18 mt-4 md:mt-8 w-auto' src="" alt="Getbucks logo" />
