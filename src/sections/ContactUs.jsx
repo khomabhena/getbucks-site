@@ -16,7 +16,7 @@ const ContactUs = () => {
                 <input className=' bg-gray-200 py-4 px-8 text-lg rounded-xl' type="text" name="" placeholder='Email' id="" />
                 <input className=' bg-gray-200 py-4 px-8 text-lg rounded-xl' type="text" name="" placeholder='Mobile Number' id="" />
                 <textarea className=' bg-gray-200 py-4 px-8 text-lg rounded-xl' name="" placeholder='Your Message' id=""></textarea>
-                <button className=' rounded-xl py-4 text-xl font-semibold' style={{ backgroundColor: colors.primaryColor }} type="button">Send Message</button>
+                <button className=' hover:shadow-xl hover:scale-105 transition-all ease-in-out cursor-pointer rounded-xl py-4 text-xl font-semibold' style={{ backgroundColor: colors.primaryColor }} type="button">Send Message</button>
             </form>
 
             <div className=' flex mt-12 lg:mt-8 xl:mt-0 xl:justify-center basis-1/4'>
