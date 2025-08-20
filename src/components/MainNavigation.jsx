@@ -3,10 +3,12 @@ import { colors } from '../data/colors'
 import NavigationContext from '../context/NavigationContext'
 import { getNavigationData } from '../data/navigation'
 
-const MainNavigation = ({ prefix = '' }) => {
+const MainNavigation = ({data, prefix = '' }) => {
     const {mobileNavigation, setMobileNavigation} = useContext(NavigationContext)
    const primaryColor = colors.primaryColor
-   const data = getNavigationData
+    if (!data) {
+      data = getNavigationData()
+    }
 
   return ( 
     <nav style={{ boxShadow: colors.primaryColor, backgroundColor: colors.backgroundColor }} className=' fixed shadow-[#faa819]/30l shadow-lg sha top-0 left-0 right-0 m-auto w-full max-w-[1920px] z-20 flex justify-between items-center px-8 md:px-12 lg:px-24 2xl:px-32 h-16 md:h-32'>
@@ -17,10 +19,12 @@ const MainNavigation = ({ prefix = '' }) => {
 
       <ul className=' hidden lg:flex gap-8 text-base pr-4' style={{ color: primaryColor }}>
         {
-          data.map(({ link, name}) => (
-            <li key={name} className=' px-8 py-2 rounded-lg text-lg hover:scale-105 hover:shadow-gray-300 hover:bg-[#faa819] hover:text-gray-50 hover:shadow-xl ease-in-out transition-all'>
-              <a href={`${prefix}${link}`}>{name}</a>
-            </li>
+          data.map(({ active, link, name }) => (
+            <a href={`${prefix}${link}`}>
+              <li key={name} className={` px-8 py-2 rounded-lg text-lg hover:scale-105 hover:shadow-gray-300 ${active ? 'bg-[#faa819] text-gray-50 hover:shadow-xl' : 'hover:bg-[#faa819] hover:text-gray-50 hover:shadow-xl'} ease-in-out transition-all`}>
+                {name}
+              </li>
+            </a>
           ))
         }
         <li style={{ borderColor: primaryColor }} className=' border-3  px-4 py-2 rounded-lg text-lg hover:scale-105 hover:shadow-gray-300 hover:border-green-900 hover:bg-[#faa819] hover:text-gray-50 hover:shadow-xl ease-in-out transition-all'><a href={`${prefix}#internet-banking`}>Internet Banking</a></li>
