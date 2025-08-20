@@ -7,18 +7,20 @@ import AboutUs from '../sections/AboutUs'
 import GetToKnow from '../sections/GetToKnow'
 import ContactUs from '../sections/ContactUs'
 import AboutUs2 from '../sections/AboutUs2'
+import LandingPageContent from '../sections/LandingPageContent'
 
 const MainContent = () => {
   return (
     <Container>
         <div className=' min-h-screen w-ful'>
             <Header />
+            <LandingPageContent />
             <Services />
             <InvestorRelations />
-            <AboutUs />
+            {/*<AboutUs />
             <GetToKnow />
             <ContactUs />
-            {/*<AboutUs />*/}
+            <AboutUs />*/}
         </div>
     </Container>
   )
