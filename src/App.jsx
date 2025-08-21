@@ -9,6 +9,7 @@ import Business from './pages/Business'
 import AboutUs from './pages/AboutUs'
 import OpenAccount from './pages/OpenAccount'
 import Personal from './pages/Personal'
+import Diaspora from './pages/Diaspora'
 
 function App() {
 
@@ -23,7 +24,7 @@ function App() {
           <Route path='/about-us' element={<AboutUs />} />
           <Route path='/personal' element={<Personal />} />
           <Route path='/open-account' element={<OpenAccount />} />
-          <Route path='/diaspora' element={<Business />} />
+          <Route path='/diaspora' element={<Diaspora />} />
         </Routes>
       </NavigationContext.Provider>
     </>

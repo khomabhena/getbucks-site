@@ -2,12 +2,17 @@ import React from 'react'
 import Container from './Container'
 import MainNavigation from '../components/MainNavigation'
 import { getNavigationData } from '../data/navigation'
+import AccountHeroLayout from '../components/AccountHeroLayout'
+import { getAccountHeroData } from '../data/account-hero'
 
 const Diaspora = () => {
   return (
     <Container>
         <div className='min-h-screen w-full'>
-            <MainNavigation data={getNavigationData.personal} />
+            <MainNavigation data={getNavigationData.landingPage} />
+            <div className=' w-full pt-16 xl:pt-32 flex flex-row items-center justify-start min-h-screen'>
+              <AccountHeroLayout data={getAccountHeroData.diaspora} />
+            </div>
         </div>
     </Container>
   )

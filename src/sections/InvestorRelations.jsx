@@ -7,7 +7,7 @@ const InvestorRelations = () => {
 
   return (
     <section className=' mt-32 flex flex-col items-center'>
-        <h2 className=' text-2xl self-start lg:self-center md:text-5xl font-medium'>Investor Relations</h2>
+        <h2 className=' text-2xl mt-12 self-start lg:self-center md:text-5xl font-medium'>Investor Relations</h2>
         <div className=' mt-12 flex flex-col gap-24 '>
             {
                 data.data?.map(({ image, reverse, title, heading, text }) => (

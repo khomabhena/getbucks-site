@@ -3,7 +3,7 @@ import Container from './Container'
 import Header from '../components/Header'
 import Services from '../sections/Services'
 import InvestorRelations from '../sections/InvestorRelations'
-import AboutUs from '../sections/AboutUs'
+import AboutUsSection from '../sections/AboutUsSection'
 import GetToKnow from '../sections/GetToKnow'
 import ContactUs from '../sections/ContactUs'
 import AboutUs2 from '../sections/AboutUs2'
@@ -16,11 +16,11 @@ const MainContent = () => {
             <Header />
             <LandingPageContent />
             <Services />
-            <InvestorRelations />
-            {/*<AboutUs />
+            {/*<InvestorRelations />
+            <AboutUs />
             <GetToKnow />
             <ContactUs />
-            <AboutUs />*/}
+            <AboutUsSection />*/}
         </div>
     </Container>
   )
