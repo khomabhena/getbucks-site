@@ -8,7 +8,7 @@ const AboutUsSection = () => {
     const data = getAboutData.data
 
   return (
-    <section className=' flex flex-col items-center pb-24 mt-24 justify-center'>
+    <section className=' flex flex-col items-center pb-24 pt-48 justify-center'>
         <h2 className=' text-4xl self-start lg:self-center font-medium'>{heading}</h2>
         <div className=' w-full min-h-48 lmt-24 flex flex-wrap justify-center'>
 

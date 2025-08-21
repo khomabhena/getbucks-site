@@ -12,10 +12,10 @@ const AboutUs = () => {
     <Container>
         <div className='min-h-screen w-full'>
             <MainNavigation data={getNavigationData.aboutUs} />
+            <AboutUsSection />
             <InvestorRelations />
             <GetToKnow />
             <ContactUs />
-            <AboutUsSection />
         </div>
     </Container>
   )
