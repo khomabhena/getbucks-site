@@ -3,7 +3,7 @@ import { colors } from '../data/colors'
 import NavigationContext from '../context/NavigationContext'
 import { getNavigationData } from '../data/navigation'
 
-const MainNavigation = ({data, prefix = '' }) => {
+const MainNavigation = ({ scrollPosition, data, prefix = '' }) => {
     const {mobileNavigation, setMobileNavigation} = useContext(NavigationContext)
    const primaryColor = colors.primaryColor
     if (!data) {
@@ -11,7 +11,7 @@ const MainNavigation = ({data, prefix = '' }) => {
     }
 
   return ( 
-    <nav style={{ boxShadow: colors.primaryColor, backgroundColor: colors.backgroundColor }} className=' fixed shadow-[#faa819]/30l shadow-lg sha top-0 left-0 right-0 m-auto w-full max-w-[1920px] z-20 flex justify-between items-center px-8 md:px-12 lg:px-24 2xl:px-32 h-16 md:h-32'>
+    <nav style={{ boxShadow: colors.primaryColor, backgroundColor: colors.backgroundColor }} className={` fixed ${scrollPosition > 82 ? ' shadow-xl shadow-[#faa819]/10' : ' shadow-lg' } shadow-[#faa819]/30l shadow-lgk sha top-0 left-0 right-0 m-auto w-full max-w-[1920px] z-20 flex justify-between items-center px-8 md:px-12 lg:px-24 2xl:px-32 h-16 md:h-32 ease-in-out transition-all`}>
 
       <a href="/">
         <img className=' cursor-pointer h-12 md:h-18 w-auto hover:scale-105 ease-in-out transition-all' src="/logo.png" height={'auto'}  alt="White Appletree logo" />

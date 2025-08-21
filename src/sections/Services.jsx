@@ -6,7 +6,7 @@ const Services = () => {
     const data = getServicesData
 
   return (
-    <section className=' mt-8 md:mt-24 flex flex-col items-center'>
+    <section className=' mt-8 md:mt-24 pb-24 flex flex-col items-center'>
       <div className=' w-full justify-center flex-wrap flex'>
           {
             data.services?.map(({ image, title, text }) => (
