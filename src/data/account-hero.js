@@ -6,7 +6,7 @@ export const getAccountHeroData = {
         image: "./accounts/personal.png",
         mainButton: {
             text: "Open a Personal Account",
-            link: "/personal",
+            link: "/login",
         },
         buttons: [
             { text: "Organized Saving", link: "#" },

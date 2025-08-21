@@ -10,6 +10,8 @@ import AboutUs from './pages/AboutUs'
 import OpenAccount from './pages/OpenAccount'
 import Personal from './pages/Personal'
 import Diaspora from './pages/Diaspora'
+import Login from './pages/Login'
+import SignUp from './pages/SignUp'
 
 function App() {
 
@@ -25,6 +27,8 @@ function App() {
           <Route path='/personal' element={<Personal />} />
           <Route path='/open-account' element={<OpenAccount />} />
           <Route path='/diaspora' element={<Diaspora />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/sign-up' element={<SignUp />} />
         </Routes>
       </NavigationContext.Provider>
     </>
