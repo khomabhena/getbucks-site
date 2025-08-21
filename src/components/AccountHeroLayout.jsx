@@ -14,7 +14,7 @@ const AccountHeroLayout = ({ data }) => {
             {
                 data?.buttons?.map((button, index) => (
                     <a key={index} href={button.link}>
-                        <button className=' text-xs xl:text-lg cursor-pointer border-3 py-2 px-2 xl:px-4 rounded-2xl border-[#faa818] shadow-xl hover:scale-105 hover:shadow-[#faa818] hover:shadow-sm ease-in-out transition-all'>
+                        <button className=' text-xs xl:text-lg cursor-pointer border-3 py-2 px-2 xl:px-4 rounded-2xl border-[#faa818] shadow-xl hover:scale-95 hover:shadow-[#faa818] hover:shadow-sm ease-in-out transition-all'>
                             {button.text}
                         </button>
                     </a>
@@ -22,7 +22,7 @@ const AccountHeroLayout = ({ data }) => {
             }
         </div>
         <a href={data.mainButton.link} className=''>
-            <button className=' mt-12 xl:mt-24 cursor-pointer bg-[#faa818] px-6 py-4 text-gray-50 rounded-2xl text-sm xl:text-2xl shadow-xl hover:scale-105 hover:shadow-gray-300 hover:shadow-sm ease-in-out transition-all'>{data.mainButton.text}</button>
+            <button className=' mt-12 xl:mt-24 cursor-pointer bg-[#faa818] px-6 py-4 text-gray-50 rounded-2xl text-sm xl:text-2xl shadow-xl hover:scale-95 hover:shadow-gray-300 hover:shadow-sm ease-in-out transition-all'>{data.mainButton.text}</button>
         </a>
       </article>
 
