@@ -14,7 +14,7 @@ const LandingPageContent = ({  }) => {
       {
         data?.map(({ index, image, title, description }) => (
           
-          <div className={` ${index % 2 == 0 ? 'xl:flex-row-reverse' : 'xl:flex-row'} flex flex-col items-center justify-between gap-12 xl:gap-24 mt-12`}>
+          <div key={index} className={` ${index % 2 == 0 ? 'xl:flex-row-reverse' : 'xl:flex-row'} flex flex-col w-full items-center justify-between gap-12 xl:gap-24 mt-12`}>
             
             <section className=' flex flex-col basis-1 md:basis-2/4 xl:px-12'>
               <h2 className=' text-lg xl:text-3xl font-semibold'>{title}</h2>
@@ -22,7 +22,7 @@ const LandingPageContent = ({  }) => {
             </section>
 
             <div className=' basis-1 md:basis-2/4 xl:pl-12'>
-              <LandingPageContentCard image={image} />
+              <LandingPageContentCard index={index} image={image} />
             </div>
 
           </div>
