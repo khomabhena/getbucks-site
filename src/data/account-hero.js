@@ -8,6 +8,10 @@ export const getAccountHeroData = {
             text: "Open a Personal Account",
             link: "/personal/login",
         },
+        mainButton2: {
+            text: "Open a Diaspora Account",
+            link: "/diaspora/login",
+        },
         buttons: [
             { text: "Organized Saving", link: "#" },
             { text: "In-App Controls", link: "#" },
@@ -23,6 +27,10 @@ export const getAccountHeroData = {
         mainButton: {
             text: "Open a Diaspora Account",
             link: "/diaspora/login",
+        },
+        mainButton2: {
+            text: "Open a Personal Account",
+            link: "/personal/login",
         },
         buttons: [
             { text: "Organized Saving", link: "#" },

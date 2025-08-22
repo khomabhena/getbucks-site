@@ -36,7 +36,7 @@ function App() {
           <Route path='/business/login' element={<Login data={getLoginData.business} navData={getNavigationData.business} />} />
 
           <Route path='/personal/register' element={<Register data={getRegistrationData.personal} navData={getNavigationData.personal} />} />
-          <Route path='/personal/register' element={<Register data={getRegistrationData.diaspora} navData={getNavigationData.personal} />} />
+          <Route path='/diaspora/register' element={<Register data={getRegistrationData.diaspora} navData={getNavigationData.personal} />} />
           <Route path='/business/register' element={<Register data={getRegistrationData.business} navData={getNavigationData.business} />} />
         </Routes>
       </NavigationContext.Provider>

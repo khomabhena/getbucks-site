@@ -23,8 +23,8 @@ const LoginLayout = ({ data }) => {
         }
         
         <div className=' mt-8 flex w-full flex-col-reverse xl:flex-row justify-center gap-4'>
-          <a className=' min-w-56 text-sm text-center xl:text-lg font-semibold text-gray-50 border-gray-50 xl:border-3 px-8 py-4 rounded-2xl' href="#">Forgot Password</a>
-          <a className=' min-w-56 text-sm text-center xl:text-lg' href="#">
+          <a className=' hover:scale-95 hover:shadow-lg shadow-xl ease-in-out transition-all min-w-56 text-sm text-center xl:text-lg font-semibold text-gray-50 border-gray-50 xl:border-3 px-8 py-4 rounded-2xl' href="#">Forgot Password</a>
+          <a className=' hover:scale-95 hover:shadow-lg shadow-xl ease-in-out transition-all min-w-56 text-sm text-center xl:text-lg' href="#">
             <button className=' w-full cursor-pointer font-semibold border-gray-50 border-3 bg-white text-black px-8 py-4 rounded-2xl' type="submit">Login</button>
           </a>
         </div>

@@ -28,7 +28,7 @@ const RegisterLayout = ({ data }) => {
 
         <div className=' mt-8 mb-12'>
           <a href="#">
-            <button className=' min-w-56 text-sm xl:text-lg cursor-pointer font-semibold border-gray-50 border-3 mt-4 bg-white text-black px-8 py-2 rounded-2xl' type="submit">Create Account</button>
+            <button className=' hover:scale-95 shadow-xl hover:shadow-lg ease-in-out transition-all min-w-56 text-sm xl:text-lg cursor-pointer font-semibold border-gray-50 border-3 mt-4 bg-white text-black px-8 py-4 rounded-2xl' type="submit">Create Account</button>
           </a>
         </div>
 
