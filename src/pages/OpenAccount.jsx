@@ -14,16 +14,16 @@ const OpenAccount = () => {
                 <div className=' flex flex-col xl:flex-row gap-24 xl:gap-32 mt-24 mb-32 xl:mt-48'>
 
                   <a href="/personal" className=' basis-1/2'>
-                    <div>
-                      <img className=' w-[150px] h-[150px] xl:w-[300px] xl:h-[300px] rounded-4xl' src="./accounts/personal.png" alt="" />
+                    <div className=' hover:scale-105 ease-in-out transition-all'>
+                      <img className=' shadow-lg hover:shadow-xl w-[150px] h-[150px] xl:w-[300px] xl:h-[300px] rounded-4xl' src="./accounts/personal.png" alt="" />
                       <p className=' xl:text-center mt-6 xl:text-2xl text-gray-800 font-semibold'>PERSONAL ACCOUNT</p>
                     </div>
                   </a>
                   
-                  <a href="/diaspora" className=' basis-1/2'>
-                    <div>
-                      <img className=' w-[150px] h-[150px] xl:w-[300px] xl:h-[300px] rounded-4xl' src="./accounts/diaspora.png" alt="" />
-                      <p className=' xl:text-center mt-6 xl:text-2xl text-gray-800 font-semibold'>DIASPORA ACCOUNT</p>
+                  <a href="/business" className=' basis-1/2'>
+                    <div className=' hover:scale-105 ease-in-out transition-all'>
+                      <img className=' shadow-lg hover:shadow-xl w-[150px] h-[150px] xl:w-[300px] xl:h-[300px] rounded-4xl' src="./accounts/business.png" alt="" />
+                      <p className=' xl:text-center mt-6 xl:text-2xl text-gray-800 font-semibold'>BUSINESS ACCOUNT</p>
                     </div>
                   </a>
 

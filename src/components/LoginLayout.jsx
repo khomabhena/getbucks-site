@@ -29,7 +29,7 @@ const LoginLayout = ({ data }) => {
           </a>
         </div>
 
-        <p className='mt-4 mb-12 text-sm xl:text-xl text-gray-700'>Don't have an account? <a href={data.registerLink} className='underline'>Register</a></p>
+        <p className='mt-4 mb-12 text-sm xl:text-xl text-gray-700'>Don't have an account? <a href={data.registerLink} className='underline'>Sign Up</a></p>
       </form>
     </div>
   )
