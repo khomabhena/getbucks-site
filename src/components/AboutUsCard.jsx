@@ -16,11 +16,11 @@ const AboutUsCard = ({ title, subtitle, text, points }) => {
       <div className=' pl-6 pr-6 pt-6 absolute flex flex-col rounded-4xl top-0 left-0 w-full min-h-52 shadow-lg hover:shadow-2xl shadow-[#faa819] bg-gradient-to-r from-gray-100 to-gray-200'>
         <h3 className=' text-xl font-semibold' style={{ color: colors.primaryColor }}>{title}</h3>
         <h4 className=' mt-3 text-lg'>"{subtitle}"</h4>
-        <p className=' text-sm mt-4'>{text}</p>
+        <p className=' text-xs md:text-sm mt-4'>{text}</p>
         <div className=' grid grid-cols-2'>
             {
                 points?.map(name => (
-                        <p className=' text-sm flex basis-1/2'>&bull;{name}</p>  
+                        <p className=' text-xs md:text-sm flex basis-1/2'>&bull;{name}</p>  
                 ))
             }
         </div>
