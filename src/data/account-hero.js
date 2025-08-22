@@ -22,7 +22,7 @@ export const getAccountHeroData = {
         image: "./accounts/diaspora.png",
         mainButton: {
             text: "Open a Diaspora Account",
-            link: "/diaspora",
+            link: "/login-diapora",
         },
         buttons: [
             { text: "Organized Saving", link: "#" },
@@ -38,7 +38,7 @@ export const getAccountHeroData = {
         image: "./accounts/business.png",
         mainButton: {
             text: "Open a Business Account",
-            link: "/business",
+            link: "/login-business",
         },
         buttons: [
             { text: "Enhanced Credibility", link: "#" },

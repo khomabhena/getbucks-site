@@ -12,6 +12,7 @@ import Personal from './pages/Personal'
 import Diaspora from './pages/Diaspora'
 import Login from './pages/Login'
 import SignUp from './pages/SignUp'
+import { getLoginData } from './data/login'
 
 function App() {
 
@@ -27,8 +28,9 @@ function App() {
           <Route path='/personal' element={<Personal />} />
           <Route path='/open-account' element={<OpenAccount />} />
           <Route path='/diaspora' element={<Diaspora />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/sign-up' element={<SignUp />} />
+          <Route path='/login' element={<Login data={getLoginData.personal} />} />
+          <Route path='/login-diapora' element={<Login data={getLoginData.diaspora} />} />
+          <Route path='/login-business' element={<Login data={getLoginData.business} />} />
         </Routes>
       </NavigationContext.Provider>
     </>
