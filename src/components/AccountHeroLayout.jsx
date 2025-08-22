@@ -22,18 +22,18 @@ const AccountHeroLayout = ({ data }) => {
             }
         </div>
         <a href={data.mainButton.link} className=''>
-            <button className=' mt-12 xl:mt-24 cursor-pointer bg-[#faa818] px-6 py-4 text-gray-50 rounded-2xl text-sm xl:text-2xl shadow-xl hover:scale-95 hover:shadow-gray-300 hover:shadow-sm ease-in-out transition-all'>{data.mainButton.text}</button>
+            <button className=' mt-12 xl:mt-24 cursor-pointer bg-[#faa818] px-6 py-4 text-gray-50 rounded-2xl text-sm xl:text-xl shadow-xl hover:scale-95 hover:shadow-gray-300 hover:shadow-sm ease-in-out transition-all'>{data.mainButton.text}</button>
         </a>
         {
             data.mainButton2 && 
             <a href={data.mainButton2.link} className=''>
-                <button className=' ml-4 mt-12 xl:mt-24 cursor-pointer bg-[#faa818] px-6 py-4 text-gray-50 rounded-2xl text-sm xl:text-2xl shadow-xl hover:scale-95 hover:shadow-gray-300 hover:shadow-sm ease-in-out transition-all'>{data.mainButton2.text}</button>
+                <button className=' ml-0 xl:ml-4 mt-12 xl:mt-24 cursor-pointer bg-[#faa818] px-6 py-4 text-gray-50 rounded-2xl text-sm xl:text-xl shadow-xl hover:scale-95 hover:shadow-gray-300 hover:shadow-sm ease-in-out transition-all'>{data.mainButton2.text}</button>
             </a>
         }
       </article>
 
       <div className=' basis-1 xl:basis-2/5'>
-        <img className=' rounded-4xl xl:mt-8 scale-70 md:scale-80 xl:scale-90  hover:scale-95 hover:shadow-[#faa819] shadow-lg hover:shadow-2xl ease-in-out transition-all' src={data.image} alt="" />
+        <img className=' rounded-4xl xl:mt-8 scale-60 md:scale-70 xl:scale-80  hover:scale-95 hover:shadow-[#faa819] shadow-lg hover:shadow-2xl ease-in-out transition-all' src={data.image} alt="" />
       </div>
 
     </section>
