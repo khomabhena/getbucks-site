@@ -15,7 +15,7 @@ const LandingPageContentCard = ({ index, image }) => {
           <img src="/about/icon-010.png" alt="" />
         </div>
 
-        <img className=' rounded-4xl xl:max-h-64 object-cover h-[200px] xl:h-[300px]' src={image} />
+        <img className=' rounded-4xl xl:max-h-64 object-cover h-[300px]l wfu xl:h-[300px]' src={image} />
       </div>
 
     </div>

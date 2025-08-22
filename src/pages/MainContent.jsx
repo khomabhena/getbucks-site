@@ -8,6 +8,7 @@ import GetToKnow from '../sections/GetToKnow'
 import ContactUs from '../sections/ContactUs'
 import AboutUs2 from '../sections/AboutUs2'
 import LandingPageContent from '../sections/LandingPageContent'
+import LandingPageContent2 from '../sections/LandingPageContent2'
 
 const MainContent = () => {
 
@@ -28,7 +29,8 @@ const MainContent = () => {
     <Container>
         <div className=' min-h-screen w-ful'>
             <Header scrollPosition={scrollPosition}  />
-            <LandingPageContent />
+            <LandingPageContent2 />
+            {/* <LandingPageContent /> */}
             <Services />
             {/*<InvestorRelations />
             <AboutUs />
