@@ -6,13 +6,13 @@ import { getNavigationData } from '../data/navigation'
 import LoginLayout from '../components/LoginLayout'
 import { getLoginData } from '../data/login'
 
-const Login = ({data}) => {
+const Login = ({data, navData}) => {
   return (
     <Container>
       <div className='min-h-screen w-full'>
-        <MainNavigation data={getNavigationData.business} />
+        <MainNavigation data={navData} />
         <div className='  w-full mt-16 md:mt-32 flex flex-row items-centerl justify-start min-h-screen'>
-          <LoginLayout data={data}  />      
+          <LoginLayout data={data}  />
         </div>
       </div>
     </Container>

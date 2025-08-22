@@ -4,6 +4,7 @@ export const getLoginData = {
         title2: 'Personal Banking',
         subtitle: 'Please enter your credentials to access your personal banking account.',
         image: './accounts/personal.png',
+        registerLink: '/personal/register',
         inputs: [
             {
                 id: 'personal-username',
@@ -24,12 +25,12 @@ export const getLoginData = {
             {
                 text: 'Login',
                 type: 'submit',
-                link: '/personal-dashboard',
+                link: '',
             },
             {
                 text: 'Forgot Password?',
                 type: 'link',
-                link: '/reset-password',
+                link: '',
             }
         ]
     },
@@ -38,6 +39,7 @@ export const getLoginData = {
         title2: 'Business Banking',
         subtitle: 'Please enter your credentials to access your business banking account.',
         image: './accounts/business.png',
+        registerLink: '/business/register',
         inputs: [
             {
                 id: 'business-username',
@@ -58,12 +60,12 @@ export const getLoginData = {
             {
                 text: 'Login',
                 type: 'submit',
-                link: '/business-dashboard',
+                link: '',
             },
             {
                 text: 'Forgot Password?',
                 type: 'link',
-                link: '/reset-password',
+                link: '',
             }
         ],
     },
@@ -72,6 +74,7 @@ export const getLoginData = {
         title2: 'Diaspora Banking',
         subtitle: 'Please enter your credentials to access your diaspora banking account.',
         image: './accounts/diaspora.png',
+        registerLink: '/diaspora/register',
         inputs: [
             {
                 id: 'diaspora-username',
@@ -92,12 +95,12 @@ export const getLoginData = {
             {
                 text: 'Login',
                 type: 'submit',
-                link: '/diaspora-dashboard',
+                link: '',
             },
             {
                 text: 'Forgot Password?',
                 type: 'link',
-                link: '/reset-password',
+                link: '',
             }
         ]
     }

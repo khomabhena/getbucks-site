@@ -11,8 +11,10 @@ import OpenAccount from './pages/OpenAccount'
 import Personal from './pages/Personal'
 import Diaspora from './pages/Diaspora'
 import Login from './pages/Login'
-import SignUp from './pages/SignUp'
+import Register from './pages/Register'
 import { getLoginData } from './data/login'
+import { getNavigationData } from './data/navigation'
+import { getRegistrationData } from './data/register'
 
 function App() {
 
@@ -28,9 +30,14 @@ function App() {
           <Route path='/personal' element={<Personal />} />
           <Route path='/open-account' element={<OpenAccount />} />
           <Route path='/diaspora' element={<Diaspora />} />
-          <Route path='/login' element={<Login data={getLoginData.personal} />} />
-          <Route path='/login-diapora' element={<Login data={getLoginData.diaspora} />} />
-          <Route path='/login-business' element={<Login data={getLoginData.business} />} />
+
+          <Route path='/personal/login' element={<Login data={getLoginData.personal} navData={getNavigationData.personal} />} />
+          <Route path='/diaspora/login' element={<Login data={getLoginData.diaspora} navData={getNavigationData.personal} />} />
+          <Route path='/business/login' element={<Login data={getLoginData.business} navData={getNavigationData.business} />} />
+
+          <Route path='/personal/register' element={<Register data={getRegistrationData.personal} navData={getNavigationData.personal} />} />
+          <Route path='/personal/register' element={<Register data={getRegistrationData.diaspora} navData={getNavigationData.personal} />} />
+          <Route path='/business/register' element={<Register data={getRegistrationData.business} navData={getNavigationData.business} />} />
         </Routes>
       </NavigationContext.Provider>
     </>

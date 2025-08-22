@@ -1,9 +1,10 @@
-export const getSignupData = {
+export const getRegistrationData = {
     personal: {
         title: 'Welcome to',
         title2: 'Personal Banking',
         subtitle: 'Please enter your details to create your personal banking account.',
         image: './accounts/personal.png',
+        loginLink: '/personal/login',
         inputs: [
             {
                 id: 'personal-name',
@@ -61,6 +62,7 @@ export const getSignupData = {
         title2: 'Diaspora Banking',
         subtitle: 'Please enter your details to create your diaspora banking account.',
         image: './accounts/diaspora.png',
+        loginLink: '/diaspora/login',
         inputs: [
             {
                 id: 'diaspora-name',
@@ -125,6 +127,7 @@ export const getSignupData = {
         title2: 'Business Banking',
         subtitle: 'Please enter your details to create your business banking account.',
         image: './accounts/business.png',
+        loginLink: '/business/login',
         inputs: [
             {
                 id: 'business-name',
