@@ -27,7 +27,7 @@ const MainNavigation = ({ scrollPosition, data, prefix = '' }) => {
             </a>
           ))
         }
-        <li style={{ borderColor: primaryColor }} className=' border-3  px-4 py-2 rounded-lg text-base hover:scale-105 hover:shadow-gray-300 hover:border-green-900 hover:bg-[#faa819] hover:text-gray-50 hover:shadow-xl ease-in-out transition-all'><a href={`${prefix}#internet-banking`}>Internet Banking</a></li>
+        <li style={{ borderColor: primaryColor }} className=' border-3  px-4 py-1 rounded-lg text-base hover:scale-105 hover:shadow-gray-300 hover:border-green-900 hover:bg-[#faa819] hover:text-gray-50 hover:shadow-xl ease-in-out transition-all'><a href={`${prefix}#internet-banking`}>Internet Banking</a></li>
       </ul>
 
       {!mobileNavigation && <img onClick={() => {setMobileNavigation(!mobileNavigation)}} className=' xl:hidden cursor-pointer h-8 w-8' src='/menu.svg' width={'auto'} height={'24px'} alt='menu close icon'  />}
