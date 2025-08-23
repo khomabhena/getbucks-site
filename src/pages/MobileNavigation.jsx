@@ -1,9 +1,11 @@
 import React, { useContext } from 'react'
 import { colors } from '../data/colors'
 import NavigationContext from '../context/NavigationContext'
+import { getNavigationData } from '../data/navigation'
 
 const MobileNavigation = () => {
-     const textColor = colors.primaryColor
+    const data = getNavigationData.landingPage
+    const textColor = colors.primaryColor
     const {mobileNavigation, setMobileNavigation} = useContext(NavigationContext)
     
     const closeNavigation = () => {
@@ -19,8 +21,19 @@ const MobileNavigation = () => {
       </div>
     
       <ul className={` flex flex-col h-full mt-12 md:pl-8 items-center md:items-start gap-y-8 text-base md:text-xl lg:text-2xl`} style={{color: textColor}}>
-        <li className=' px-4 py-1 rounded-xl text-lg hover:scale-105'><a onClick={() => closeNavigation()} href="#personal">Personal</a></li>
-        <li style={{ backgroundColor: colors.primaryColor }} className=' text-white px-4 py-1 rounded-lg text-lg hover:scale-105'><a onClick={() => closeNavigation()} href="#business">Business</a></li>
+        {
+          data?.map(({ active, link, name }) => (
+            <a href={`${link}`}>
+              <li key={name} className={` px-8 py-2 rounded-4xl text-base hover:scale-105 hover:shadow-gray-300 ${active ? 'bg-[#faa819] text-gray-50 hover:shadow-xl' : 'hover:bg-[#faa819] hover:text-gray-50 hover:shadow-xl'} ease-in-out transition-all`}>
+                {name}
+              </li>
+            </a>
+          ))
+        }
+
+        {/* <li className=' px-4 py-1 rounded-xl text-lg hover:scale-105'><a onClick={() => closeNavigation()} href="#personal">Personal</a></li>
+        <li className=' px-4 py-1 rounded-xl text-lg hover:scale-105'><a onClick={() => closeNavigation()} href="#personal">Business</a></li>
+        <li className=' px-4 py-1 rounded-xl text-lg hover:scale-105'><a onClick={() => closeNavigation()} href="#personal">About Us</a></li> */}
         <li style={{ borderColor: colors.primaryColor }} className=' border-3  px-4 rounded-lg text-lg hover:scale-105'><a onClick={() => closeNavigation()} href="#internet">Internet Banking</a></li>
       </ul>
 
