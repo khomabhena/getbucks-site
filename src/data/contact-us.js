@@ -20,12 +20,12 @@ export const getContactData = {
         },
         {
             image: './social-icons/x.png',
-            link: '/https://x.com/getbucksbank?s=11',
+            link: 'https://x.com/getbucksbank?s=11',
             text: 'GetBucks Microfinance Bank Zimbabwe'
         },
         {
             image: './social-icons/instagram.png',
-            link: '/https://www.instagram.com/getbucksbank_zw?igsh=N241ZWM4YzY2ZR1/',
+            link: 'https://www.instagram.com/getbucksbank_zw?igsh=N241ZWM4YzY2ZR1/',
             text: 'GetBucks Zimbabwe'
         },
         {
@@ -35,7 +35,7 @@ export const getContactData = {
         },
         {
             image: './social-icons/linkedin.png',
-            link: '/https://www.linkedin.com/company/getbucks-bank/',
+            link: 'https://www.linkedin.com/company/getbucks-bank/',
             text: 'GetBucks Bank'
         },
     ]

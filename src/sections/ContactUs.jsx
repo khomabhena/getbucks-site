@@ -46,7 +46,6 @@ const ContactUs = () => {
                         {
                             image &&
                             <img className=' w-8 h-8' src={image} alt={text} />
-
                         }
                         {text}
                     </a>
