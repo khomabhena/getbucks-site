@@ -7,7 +7,7 @@ const ContactUs = () => {
 
   return (
     <section className=' mt-24 pb-32 flex-col justify-center items-center'>
-        <h2 className=' text-2xl xl:text-4xl lg:text-center font-semibold hidden'>Contact Us</h2>
+        <h2 className=' text-2xl xl:text-4xl lg:text-center font-semibold invisible'>Contact Us</h2>
         <div className=' mt-12 flex flex-col xl:flex-row w-full'>
             <div className=' basis-1/4 flex flex-col'>
                 <p className=' text-sm md:text-lg text-gray-700 xl:pr-8 text-center md:text-start flex justify-center'>"{data.text}"</p>
