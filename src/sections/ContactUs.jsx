@@ -12,10 +12,10 @@ const ContactUs = () => {
             <div className=' basis-1/4 flex flex-col'>
                 <p className=' text-sm md:text-lg text-gray-700 xl:pr-8 text-center md:text-start flex justify-center'>"{data.text}"</p>
                 <a href="https://apps.apple.com/zw/app/getbucks-mobile-banking/id1437807974" target='_blank'>
-                    <img className=' h-32 py-8 w-auto' height={'50px'} width={'100px'} src="./app-store.png" alt="" />
+                    <img className=' h-32 py-10 w-auto' height={'50px'} width={'100px'} src="./app-store.png" alt="" />
                 </a>
                 <a href="https://play.google.com/store/apps/details?id=com.getbucks.banking.gb&pcampaignid=web_share" target='_blank'>
-                    <img className=' h-32 py-8 w-auto' height={'50px'} width={'100px'} src="./google-play.png" alt="" />
+                    <img className=' h-32 py-10 w-auto' height={'50px'} width={'100px'} src="./google-play.png" alt="" />
                 </a>
             </div>
 
