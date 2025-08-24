@@ -7,9 +7,17 @@ const ContactUs = () => {
 
   return (
     <section className=' mt-24 pb-32 flex-col justify-center items-center'>
-        <h2 className=' text-2xl xl:text-4xl lg:text-center font-semibold'>Contact Us</h2>
+        <h2 className=' text-2xl xl:text-4xl lg:text-center font-semibold hidden'>Contact Us</h2>
         <div className=' mt-12 flex flex-col xl:flex-row w-full'>
-            <p className=' text-sm md:text-lg text-gray-700  text-center md:text-start flex justify-center basis-1/4'>"{data.text}"</p>
+            <div className=' basis-1/4 flex flex-col'>
+                <p className=' text-sm md:text-lg text-gray-700 xl:pr-8 text-center md:text-start flex justify-center'>"{data.text}"</p>
+                <a href="https://apps.apple.com/zw/app/getbucks-mobile-banking/id1437807974" target='_blank'>
+                    <img className=' h-32 py-8 w-auto' height={'50px'} width={'100px'} src="./app-store.png" alt="" />
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.getbucks.banking.gb&pcampaignid=web_share" target='_blank'>
+                    <img className=' h-32 py-8 w-auto' height={'50px'} width={'100px'} src="./google-play.png" alt="" />
+                </a>
+            </div>
 
             <form className=' flex flex-col max-w-[450px] mt-12 xl:mt-0 lg:mt-8 gap-6 justify-center basis-1/4' action="">
                 <input className=' bg-gray-200 py-4 px-8 text-sm xl:text-lg rounded-xl' type="text" name="" placeholder='Full Name' id="" />
