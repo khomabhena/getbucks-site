@@ -4,6 +4,7 @@ import MainNavigation from '../components/MainNavigation'
 import { getNavigationData } from '../data/navigation'
 import AccountHeroLayout from '../components/AccountHeroLayout'
 import { getAccountHeroData } from '../data/account-hero'
+import ContactUs from '../sections/ContactUs'
 
 const Business = () => {
   return (
@@ -13,6 +14,7 @@ const Business = () => {
             <div className=' w-full mt-16 md:mt-32 flex flex-row items-center justify-start min-h-screen'>
               <AccountHeroLayout data={getAccountHeroData.business} />
             </div>
+            <ContactUs />
         </div>
     </Container>
   )

@@ -3,7 +3,7 @@ import React from 'react'
 const AccountHeroLayout = ({ data }) => {
 
   return (
-    <section className=' w-full -mt-24 md:-mt-64 xl:mt-4 mb-32 min-h-screen flex flex-col-reverse xl:flex-row'>
+    <section className=' w-full -mt-24 md:-mt-32 xl:mt-4 mb-32 min-h-screenl flex flex-col-reverse xl:flex-row'>
       
       <article className=' basis-1 xl:basis-3/5'>
         <h1 className=' text-xl xl:text-5xl mt-12 xl:mt-32 font-semibold text-gray-800'><span>{data.title}</span><br />{data.title2}</h1>
@@ -27,7 +27,7 @@ const AccountHeroLayout = ({ data }) => {
         {
             data.mainButton2 && 
             <a href={data.mainButton2.link} className=''>
-                <button className=' ml-0 xl:ml-4 mt-12 xl:mt-24 cursor-pointer bg-[#faa818] px-6 py-4 text-gray-50 rounded-2xl text-sm xl:text-xl shadow-xl hover:scale-95 hover:shadow-gray-300 hover:shadow-sm ease-in-out transition-all'>{data.mainButton2.text}</button>
+                <button className=' ml-0 md:ml-4 mt-12 xl:mt-24 cursor-pointer bg-[#faa818] px-6 py-4 text-gray-50 rounded-2xl text-sm xl:text-xl shadow-xl hover:scale-95 hover:shadow-gray-300 hover:shadow-sm ease-in-out transition-all'>{data.mainButton2.text}</button>
             </a>
         }
       </article>

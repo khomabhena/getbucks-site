@@ -22,11 +22,7 @@ const AboutUsSection = () => {
            }
         </div>
 
-        <div className=' mt-24 w-full flex flex-wrap justify-center gap-8 px-8'>
-           <button style={{ backgroundColor: colors.primaryColor }} 
-            className=' font-semibold text-gray-50 min-w-64 px-8 py-2 text-sm xl:text-2xl rounded-xl cursor-pointer hover:scale-105 hover:shadow-lg transition-all ease-in-out '>Our Board</button>
-           <button style={{ backgroundColor: colors.primaryColor }} className=' font-semibold text-gray-50 min-w-64 px-8 py-2 text-sm xl:text-2xl rounded-xl cursor-pointer hover:scale-105 hover:shadow-lg transition-all ease-in-out '>Our Management</button>
-        </div>
+        
 
     </section>
   )

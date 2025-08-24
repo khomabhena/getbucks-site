@@ -20,7 +20,7 @@ const MobileNavigation = () => {
         <img onClick={() => {setMobileNavigation(!mobileNavigation)}} className=' cursor-pointer h-8 md:h-10' src='' alt='menu close button' width={'auto'} height={'32px'}  />
       </div>
     
-      <ul className={` flex flex-col h-full mt-12 md:pl-8 items-center md:items-start gap-y-8 text-base md:text-xl lg:text-2xl`} style={{color: textColor}}>
+      <ul className={` flex flex-col h-full mt-12 md:mt-24 md:pl-8 items-center md:items-start gap-y-8 text-base md:text-xl lg:text-2xl`} style={{color: textColor}}>
         {
           data?.map(({ active, link, name }) => (
             <a href={`${link}`}>

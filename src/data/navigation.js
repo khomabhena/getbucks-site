@@ -14,6 +14,11 @@ export const getNavigationData = {
         },
         {
             active: false,
+            link: '/investor-relations',
+            name: 'Investor Relations',
+        },
+        {
+            active: false,
             link: '/about-us',
             name: 'About Us',
         },
@@ -28,6 +33,11 @@ export const getNavigationData = {
             active: false,
             link: '/business',
             name: 'Business',
+        },
+        {
+            active: false,
+            link: '/investor-relations',
+            name: 'Investor Relations',
         },
         {
             active: false,
@@ -47,6 +57,11 @@ export const getNavigationData = {
             name: 'Business',
         },
         {
+            active: true,
+            link: '/investor-relations',
+            name: 'Investor Relations',
+        },
+        {
             active: false,
             link: '/about-us',
             name: 'About Us',
@@ -64,7 +79,34 @@ export const getNavigationData = {
             name: 'Business',
         },
         {
+            active: false,
+            link: '/investor-relations',
+            name: 'Investor Relations',
+        },
+        {
             active: true,
+            link: '/about-us',
+            name: 'About Us',
+        },
+    ],
+    investorRelations: [
+        {
+            active: false,
+            link: '/personal',
+            name: 'Personal',
+        },
+        {
+            active: false,
+            link: '/business',
+            name: 'Business',
+        },
+        {
+            active: true,
+            link: '/investor-relations',
+            name: 'Investor Relations',
+        },
+        {
+            active: false,
             link: '/about-us',
             name: 'About Us',
         },

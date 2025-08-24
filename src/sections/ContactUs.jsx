@@ -31,7 +31,7 @@ const ContactUs = () => {
                 
             </div>
 
-            <div className=' flex lg:px-0 flex-col mt-12 lg:mt-8 xl:mt-0 gap-2 md:gap-8 text-sm md:text-lg basis-1/4 text-gray-700'>
+            <div className=' flex lg:px-0 flex-col mt-12 lg:mt-8 xl:mt-0 gap-2 md:gap-4 text-sm md:text-lg basis-1/4 text-gray-700'>
             {
                 data?.contacts.map(({ image, link, text }) => (
                     <a href={link}>

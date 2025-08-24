@@ -17,14 +17,14 @@ const LoginLayout = ({ data }) => {
               name={input.name}
               placeholder={input.placeholder}
               required={input.required}
-              className=' py-4 px-4 xl:py-2 max-w-[500px] xl:px-12 shadow-lg rounded-2xl xl:text-xl bg-[#f7f2ec]/60 w-full xl:w-[800px] mt-4'
+              className=' py- px-4 xl:py-4 max-w-[500px] xl:max-w-[600px] xl:px-12 shadow-lg rounded-2xl xl:text-xl bg-[#f7f2ec]/60 w-full xl:w-[800px] mt-4'
             />
           ))
         }
         
-        <div className=' mt-8 flex w-full flex-col-reverse xl:flex-row justify-center gap-4'>
-          <a className=' hover:scale-95 hover:shadow-lg shadow-xl ease-in-out transition-all min-w-56 text-sm text-center xl:text-lg font-semibold text-gray-50 border-gray-50 xl:border-3 px-8 py-4 rounded-2xl' href="#">Forgot Password</a>
-          <a className=' hover:scale-95 hover:shadow-lg shadow-xl ease-in-out transition-all min-w-56 text-sm text-center xl:text-lg' href="#">
+        <div className=' mt-12 flex w-full flex-col-reverse xl:flex-row justify-center items-center gap-4'>
+          <a className=' hover:scale-95 hover:shadow-lg w-full max-w-[500px] lg:max-w-[300px] shadow-xl ease-in-out transition-all min-w-56 text-sm text-center xl:text-lg font-semibold text-gray-50 border-gray-50 xl:border-3 px-8 py-4 rounded-2xl' href="#">Forgot Password</a>
+          <a className=' hover:scale-95 hover:shadow-lg w-full max-w-[500px] lg:max-w-[300px] shadow-xl ease-in-out transition-all min-w-56 text-sm text-center xl:text-lg' href="#">
             <button className=' w-full cursor-pointer font-semibold border-gray-50 border-3 bg-white text-black px-8 py-4 rounded-2xl' type="submit">Login</button>
           </a>
         </div>

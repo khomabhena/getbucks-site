@@ -12,23 +12,23 @@ const RegisterLayout = ({ data }) => {
         <div className=' flex flex-col xl:flex-row flex-wrap w-full'>
           {
             data.inputs.map((input, index) => (
-              <div key={index} className=' w-full basis-1 xl:basis-1/2 px-2 py-2'>
+              <div key={index} className='  w-full text-center basis-1 xl:basis-1/2 px-2 py-2'>
                 <input
                   id={input.id}
                   type={input.type}
                   name={input.name}
                   placeholder={input.placeholder}
                   required={input.required}
-                  className=' py-3 xl:py-4 px-4 xl:px-12 shadow-lg rounded-2xl text-sm xl:text-xl bg-[#f7f2ec]/60 w-full'
+                  className=' py-4 xl:py-4 px-4 xl:px-12 max-w-[500px] shadow-lg rounded-2xl text-sm xl:text-xl bg-[#f7f2ec]/60 w-full'
                 />
               </div>
             ))
           }
         </div>
 
-        <div className=' mt-8 mb-12'>
+        <div className=' mt-8 mb-12 max-w-[500px] w-full'>
           <a href="#">
-            <button className=' hover:scale-95 shadow-xl hover:shadow-lg ease-in-out transition-all min-w-56 text-sm xl:text-lg cursor-pointer font-semibold border-gray-50 border-3 mt-4 bg-white text-black px-8 py-4 rounded-2xl' type="submit">Create Account</button>
+            <button className=' w-full hover:scale-95 shadow-xl hover:shadow-lg ease-in-out transition-all min-w-56 text-sm xl:text-lg cursor-pointer font-semibold border-gray-50 border-3 mt-4 bg-white text-black px-8 py-4 rounded-2xl' type="submit">Create Account</button>
           </a>
         </div>
 
