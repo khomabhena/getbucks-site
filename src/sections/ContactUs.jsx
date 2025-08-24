@@ -9,13 +9,13 @@ const ContactUs = () => {
     <section className=' mt-24 pb-32 flex-col justify-center items-center'>
         <h2 className=' text-2xl xl:text-4xl lg:text-center font-semibold invisible'>Contact Us</h2>
         <div className=' mt-12 flex flex-col xl:flex-row w-full'>
-            <div className=' basis-1/4 flex flex-col'>
+            <div className=' basis-1/4 flex flex-col gap-4'>
                 <p className=' text-sm md:text-lg text-gray-700 xl:pr-8 text-center md:text-start flex justify-center'>"{data.text}"</p>
-                <a href="https://apps.apple.com/zw/app/getbucks-mobile-banking/id1437807974" target='_blank'>
-                    <img className=' h-32 py-10 w-auto' height={'50px'} width={'100px'} src="./app-store.png" alt="" />
+                <a className=' h-[50px]' href="https://apps.apple.com/zw/app/getbucks-mobile-banking/id1437807974" target='_blank'>
+                    <img className=' h-32 py-10 w-auto' height={'50px'} width={'100px'} src="./social-icons/app-store.png" alt="" />
                 </a>
                 <a href="https://play.google.com/store/apps/details?id=com.getbucks.banking.gb&pcampaignid=web_share" target='_blank'>
-                    <img className=' h-32 py-10 w-auto' height={'50px'} width={'100px'} src="./google-play.png" alt="" />
+                    <img className=' h-32 py-10 w-auto' height={'50px'} width={'100px'} src="./social-icons/google-play.png" alt="" />
                 </a>
             </div>
 
@@ -42,8 +42,12 @@ const ContactUs = () => {
             <div className=' flex lg:px-0 flex-col mt-12 lg:mt-8 xl:mt-0 gap-2 md:gap-4 text-sm md:text-lg basis-1/4 text-gray-700'>
             {
                 data?.contacts.map(({ image, link, text }) => (
-                    <a href={link}>
-                        <img src={image} alt="" />
+                    <a href={link} className=' flex items-center gap-4' key={text} target='_blank' rel="noreferrer">
+                        {
+                            image &&
+                            <img className=' w-8 h-8' src={image} alt={text} />
+
+                        }
                         {text}
                     </a>
                 ))

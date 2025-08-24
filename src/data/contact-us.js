@@ -9,29 +9,34 @@ export const getContactData = {
     },
     contacts: [
         {
-            image: '/',
-            link: '',
+            image: '',
+            link: '#',
             text: '+263 861257 0000'
         },
         {
-            image: '/',
-            link: '',
+            image: '',
+            link: '#',
             text: 'enquiries@getbucksbank.com'
         },
         {
-            image: '/',
-            link: '/',
+            image: './social-icons/x.png',
+            link: '/https://x.com/getbucksbank?s=11',
+            text: 'GetBucks Microfinance Bank Zimbabwe'
+        },
+        {
+            image: './social-icons/instagram.png',
+            link: '/https://www.instagram.com/getbucksbank_zw?igsh=N241ZWM4YzY2ZR1/',
             text: 'GetBucks Zimbabwe'
         },
         {
-            image: '/',
-            link: '',
-            text: '@BankGetbucks'
+            image: './social-icons/facebook.png',
+            link: 'https://www.facebook.com/share/17C3rzs8bR/?mibextid=wwXlfr',
+            text: 'GetBucks Bank Zimbabwe'
         },
         {
-            image: '/',
-            link: '/',
-            text: '@getbucksbank'
+            image: './social-icons/linkedin.png',
+            link: '/https://www.linkedin.com/company/getbucks-bank/',
+            text: 'GetBucks Bank'
         },
     ]
 }
