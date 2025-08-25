@@ -7,15 +7,17 @@ const BoardMembersCard = ({title = 'Board Members', data}) => {
   return (
     <div className=' w-full flex items-center flex-col mt-12'>
         <h2 className=' text-2xl mt-12l self-start lg:self-center md:text-5xl font-medium'>{title}</h2>
-        <div className=' relative w-full flex flex-wrap mt-48 min-h-screen shadow-xl rounded-2xl' style={{ backgroundColor: colors.primaryColor}}>
+        <div className=' relative w-full flex flex-wrap mt-48 min-h-screen rounded-2xl'>
       
             {
               data?.map(({name, position, image, text }) => (
                   <div className=' -mt-24 mb-24 bg-red-600l px-4 basis-1/3 flex items-center flex-col minh'>
-                      <img className=' w-48 h-48 rounded-xl bg-cover object-cover shadow-xl' src={image} alt={name} />
+                    <div style={{ backgroundColor: colors.primaryColor}} className=' hover:scale-105 hover:shadow-2xl ease-in-out transition-all mt-48 w-ful shadow-xl flex flex-col items-center py-12 px-4 rounded-2xl text-gray-800'>
+                      <img className=' w-48 -mt-36 h-48 rounded-xl bg-cover object-cover shadow-xl' src={image} alt={name} />
                       <h3 className=' text-xl mt-8 font-semibold'>{name}</h3>
                       <h4 className=' text-base font-semibold mt-4'>{position}</h4>
-                      <p className=' text-justify text-lg min-h-[350px] px-8 mt-12'>{text}</p>
+                      <p className=' text-justify text-base min-h-[300px] px-8 mt-12'>{text}</p>
+                    </div>
                   </div>
               ))
             }
