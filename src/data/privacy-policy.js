@@ -121,7 +121,7 @@ export const getPrivacyPolicy = [
         ]
     },
     {
-        title: 'gi',
+        title: '',
         titleNumber: '',
         paragraphs: [
             {
@@ -222,7 +222,7 @@ export const getPrivacyPolicy = [
         ]
     },
     {
-        title: 'Terms of Use',
+        title: '',
         titleNumber: '',
         paragraphs: [
             {
