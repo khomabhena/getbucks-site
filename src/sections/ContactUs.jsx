@@ -19,12 +19,12 @@ const ContactUs = () => {
                 </a>
             </div>
 
-            <form className=' flex flex-col max-w-[450px] mt-12 xl:mt-0 lg:mt-8 gap-6 justify-center basis-1/4' action="">
+            <form action="/" className=' flex flex-col max-w-[450px] mt-12 xl:mt-0 lg:mt-8 gap-6 justify-center basis-1/4' >
                 <input className=' bg-gray-200 py-4 px-8 text-sm xl:text-lg rounded-xl' type="text" name="" placeholder='Full Name' id="" />
                 <input className=' bg-gray-200 py-4 px-8 text-sm xl:text-lg rounded-xl' type="text" name="" placeholder='Email' id="" />
                 <input className=' bg-gray-200 py-4 px-8 text-sm xl:text-lg rounded-xl' type="text" name="" placeholder='Mobile Number' id="" />
                 <textarea className=' bg-gray-200 py-4 px-8 text-sm xl:text-lg rounded-xl' name="" placeholder='Your Message' id=""></textarea>
-                <button className=' hover:shadow-xl hover:scale-105 transition-all ease-in-out cursor-pointer rounded-xl py-4 text-sm xl:text-xl font-semibold' style={{ backgroundColor: colors.primaryColor }} type="button">Send Message</button>
+                <button type="submit" className=' hover:shadow-xl hover:scale-95 transition-all ease-in-out cursor-pointer rounded-xl py-4 text-sm xl:text-xl font-semibold' style={{ backgroundColor: colors.primaryColor }} >Send Message</button>
             </form>
 
             <div className=' flex mt-12 lg:mt-8 xl:mt-0 xl:justify-center basis-1/4'>

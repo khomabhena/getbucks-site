@@ -10,6 +10,11 @@ export const getContactData = {
     contacts: [
         {
             image: '',
+            link: '/privacy-policy',
+            text: 'Privacy Policy'
+        },
+        {
+            image: '',
             link: '#',
             text: '+263 861257 0000'
         },

@@ -10,7 +10,7 @@ const InvestorRelationsSection = () => {
     <section className=' mt-32 flex flex-col items-center'>
         <h2 className=' text-2xl mt-12l self-start lg:self-center md:text-5xl font-medium'>Investor Relations</h2>
         
-        <div className=' mt-24 w-full flex flex-wrap justify-center gap-8 px-8'>
+        <div className=' mt-24 mb-24 w-full flex flex-wrap justify-center gap-8 px-8'>
           <a href="/board-members">
            <button style={{ backgroundColor: colors.primaryColor }} 
             className=' font-semibold text-gray-50 min-w-64 px-8 py-2 text-sm xl:text-2xl rounded-xl cursor-pointer hover:scale-105 hover:shadow-lg transition-all ease-in-out '>Our Board</button>

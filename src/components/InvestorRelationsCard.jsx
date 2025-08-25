@@ -15,7 +15,7 @@ const InvestorRelationsCard = ({ title, heading, reverse, buttonLink, image, tex
             <h4 className={` ${heading ? '' : 'hidden'} text-lg md:text-xl font-light mt-2`}>{heading}</h4>
             <p className=' mt-6 text-sm md:text-base text-gray-700'>{text}</p>
             <a href={buttonLink}>
-              <button className={` ${ reverse ? ' self-end' : ' self-start'} font-semibold px-8 py-2 text-base rounded-3xl mt-4 shadow-xl hover:scale-95 transition-all ease-in-out cursor-pointer`} style={{ backgroundColor: colors.primaryColor}}>{buttonName}</button>
+              <button className={` ${ reverse ? ' self-end' : ' self-start'} font-semibold px-8 py-2 text-base rounded-3xl mt-4 shadow-lg hover:scale-95 transition-all ease-in-out cursor-pointer`} style={{ backgroundColor: colors.primaryColor}}>{buttonName}</button>
             </a>
           </div>
 

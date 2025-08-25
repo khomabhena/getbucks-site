@@ -16,7 +16,7 @@ const BoardMembersCard = ({title = 'Board Members', data}) => {
                       <img className=' w-48 -mt-36 h-48 rounded-xl bg-cover object-cover shadow-xl' src={image} alt={name} />
                       <h3 className=' text-xl mt-8 font-semibold'>{name}</h3>
                       <h4 className=' text-base font-semibold mt-4'>{position}</h4>
-                      <p className=' text-justify text-base min-h-[300px] md:min-h-[200px] px-8 mt-12'>{text}</p>
+                      <p className=' text-justify text-base min-h-[200px] md:min-h-[300px] px-8 mt-12'>{text}</p>
                     </div>
                   </div>
               ))

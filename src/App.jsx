@@ -20,6 +20,7 @@ import OurBoard from './pages/OurBoard'
 import Management from './pages/Management'
 import FinancialReports from './pages/FinancialReports'
 import Events from './pages/Events'
+import PrivacyPolicy from './pages/PrivacyPolicy'
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
           <Route path='/management' element={<Management navData={getNavigationData.investorRelations } />} />
           <Route path='/financial-reports' element={<FinancialReports navData={getNavigationData.investorRelations } />} />
           <Route path='/events' element={<Events navData={getNavigationData.investorRelations } />} />
+          <Route path='/privacy-policy' element={<PrivacyPolicy navData={getNavigationData.investorRelations } />} />
 
           <Route path='/personal/login' element={<Login data={getLoginData.personal} navData={getNavigationData.personal} />} />
           <Route path='/diaspora/login' element={<Login data={getLoginData.diaspora} navData={getNavigationData.personal} />} />
