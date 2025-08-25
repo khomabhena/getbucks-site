@@ -57,7 +57,7 @@ export const getNavigationData = {
             name: 'Business',
         },
         {
-            active: true,
+            active: false,
             link: '/investor-relations',
             name: 'Investor Relations',
         },

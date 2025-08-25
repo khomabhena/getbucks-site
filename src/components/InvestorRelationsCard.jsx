@@ -12,8 +12,8 @@ const InvestorRelationsCard = ({ title, heading, reverse, buttonLink, image, tex
 
           <div className={` flex flex-col justify-start pr-2 ${ reverse ? 'xl:text-end' : ''} `}>
             <h3 style={{ borderColor: colors.primaryColor }} className={` text-xl md:text-3xl border-b-4 border-l-0 border-r-0 border-t-0 border p-2 font-medium w-fit ${ reverse ? ' text-start xl:text-end self-start xl:self-end' : ''}`}>{title}</h3>
-            <h4 className={` ${heading ? '' : 'hidden'} text-lg md:text-xl font-light mt-4`}>{heading}</h4>
-            <p className=' mt-8 text-sm md:text-base text-gray-700'>{text}</p>
+            <h4 className={` ${heading ? '' : 'hidden'} text-lg md:text-xl font-light mt-2`}>{heading}</h4>
+            <p className=' mt-6 text-sm md:text-base text-gray-700'>{text}</p>
             <a href={buttonLink}>
               <button className={` ${ reverse ? ' self-end' : ' self-start'} font-semibold px-8 py-2 text-base rounded-3xl mt-4 shadow-xl hover:scale-95 transition-all ease-in-out cursor-pointer`} style={{ backgroundColor: colors.primaryColor}}>{buttonName}</button>
             </a>
