@@ -2,6 +2,7 @@ import React from 'react'
 import InvestorRelationsCard from '../components/InvestorRelationsCard'
 import { getInvestorRelations } from '../data/investor'
 import { colors } from '../data/colors'
+import FinancialReports from './FinancialReports'
 
 const InvestorRelationsSection = () => {
     const data = getInvestorRelations
@@ -27,6 +28,7 @@ const InvestorRelationsSection = () => {
                 ))
             }
         </div>
+        <FinancialReports />
     </section>
   )
 }
