@@ -2,7 +2,6 @@ import React from 'react'
 import InvestorRelationsCard from '../components/InvestorRelationsCard'
 import { getInvestorRelations } from '../data/investor'
 import { colors } from '../data/colors'
-import FinancialReports from './FinancialReports'
 
 const InvestorRelationsSection = () => {
     const data = getInvestorRelations
@@ -23,12 +22,11 @@ const InvestorRelationsSection = () => {
 
         <div className=' mt-12 flex flex-col gap-24 '>
             {
-                data.data?.map(({ image, reverse, title, heading, text, button }) => (
-                <InvestorRelationsCard reverse={reverse} image={image} title={title} heading={heading} text={text} button={button} />
+                data.data?.map(({ image, reverse, title, heading, text, buttonLink, buttonName }) => (
+                <InvestorRelationsCard reverse={reverse} image={image} title={title} heading={heading} buttonName={buttonName} text={text} buttonLink={buttonLink} />
                 ))
             }
         </div>
-        <FinancialReports />
     </section>
   )
 }

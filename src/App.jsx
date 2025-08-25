@@ -18,6 +18,8 @@ import { getRegistrationData } from './data/register'
 import InvestorRelations from './pages/InvestorRelations'
 import OurBoard from './pages/OurBoard'
 import Management from './pages/Management'
+import FinancialReports from './pages/FinancialReports'
+import Events from './pages/Events'
 
 function App() {
 
@@ -36,6 +38,8 @@ function App() {
           <Route path='/investor-relations' element={<InvestorRelations />} />
           <Route path='/board-members' element={<OurBoard navData={getNavigationData.investorRelations } />} />
           <Route path='/management' element={<Management navData={getNavigationData.investorRelations } />} />
+          <Route path='/financial-reports' element={<FinancialReports navData={getNavigationData.investorRelations } />} />
+          <Route path='/events' element={<Events navData={getNavigationData.investorRelations } />} />
 
           <Route path='/personal/login' element={<Login data={getLoginData.personal} navData={getNavigationData.personal} />} />
           <Route path='/diaspora/login' element={<Login data={getLoginData.diaspora} navData={getNavigationData.personal} />} />
