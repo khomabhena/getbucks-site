@@ -1,13 +1,8 @@
-export const financeReports = [
+export const getFinancialReports = [
     {
         type: 'pdf',
-        name: 'GETBUCKS Annual Report 2020',
-        link: '/financial-reports/GETBUCKS-Annual-Report-2020.pdf'
-    },
-    {
-        type: 'pdf',
-        name: 'GETBUCKS Annual Report December 2023',
-        link: '/financial-reports/GETBUCKS-Annual-Report-December 2023.pdf'
+        name: 'GETBUCKS Annual Report Dec 2024',
+        link: '/financial-reports/GetbucksAnnualReportDec2024.pdf'
     },
     {
         type: 'pdf',
@@ -16,7 +11,12 @@ export const financeReports = [
     },
     {
         type: 'pdf',
-        name: 'GETBUCKS Annual Report Dec 2024',
-        link: '/financial-reports/GetbucksAnnualReportDec2024.pdf'
-    }
+        name: 'GETBUCKS Annual Report December 2023',
+        link: '/financial-reports/GETBUCKS-Annual-Report-December 2023.pdf'
+    },
+    {
+        type: 'pdf',
+        name: 'GETBUCKS Annual Report 2020',
+        link: '/financial-reports/GETBUCKS-Annual-Report-2020.pdf'
+    },
 ]
