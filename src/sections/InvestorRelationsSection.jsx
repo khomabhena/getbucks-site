@@ -11,9 +11,13 @@ const InvestorRelationsSection = () => {
         <h2 className=' text-2xl mt-12l self-start lg:self-center md:text-5xl font-medium'>Investor Relations</h2>
         
         <div className=' mt-24 w-full flex flex-wrap justify-center gap-8 px-8'>
+          <a href="/board-members">
            <button style={{ backgroundColor: colors.primaryColor }} 
             className=' font-semibold text-gray-50 min-w-64 px-8 py-2 text-sm xl:text-2xl rounded-xl cursor-pointer hover:scale-105 hover:shadow-lg transition-all ease-in-out '>Our Board</button>
+          </a>
+          <a href="/management">
            <button style={{ backgroundColor: colors.primaryColor }} className=' font-semibold text-gray-50 min-w-64 px-8 py-2 text-sm xl:text-2xl rounded-xl cursor-pointer hover:scale-105 hover:shadow-lg transition-all ease-in-out '>Our Management</button>
+          </a>
         </div>
 
         <div className=' mt-12 flex flex-col gap-24 '>
