@@ -111,4 +111,38 @@ export const getNavigationData = {
             name: 'About Us',
         },
     ],
+    ourBoard: [
+        {
+            active: true,
+            link: '/board-members',
+            name: 'Board Members',
+        },
+        {
+            active: false,
+            link: '/management',
+            name: 'Management Team',
+        },
+        {
+            active: false,
+            link: '/investor-relations',
+            name: 'Investor Relations',
+        },
+    ],
+    management: [
+        {
+            active: false,
+            link: '/board-members',
+            name: 'Board Members',
+        },
+        {
+            active: true,
+            link: '/management',
+            name: 'Management Team',
+        },
+        {
+            active: false,
+            link: '/investor-relations',
+            name: 'Investor Relations',
+        },
+    ],
 }

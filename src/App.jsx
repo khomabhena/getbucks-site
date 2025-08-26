@@ -36,9 +36,10 @@ function App() {
           <Route path='/personal' element={<Personal />} />
           <Route path='/open-account' element={<OpenAccount />} />
           <Route path='/diaspora' element={<Diaspora />} />
+
           <Route path='/investor-relations' element={<InvestorRelations />} />
-          <Route path='/board-members' element={<OurBoard navData={getNavigationData.investorRelations } />} />
-          <Route path='/management' element={<Management navData={getNavigationData.investorRelations } />} />
+          <Route path='/board-members' element={<OurBoard navData={getNavigationData.ourBoard } />} />
+          <Route path='/management' element={<Management navData={getNavigationData.management } />} />
           <Route path='/financial-reports' element={<FinancialReports navData={getNavigationData.investorRelations } />} />
           <Route path='/events' element={<Events navData={getNavigationData.investorRelations } />} />
           <Route path='/privacy-policy' element={<PrivacyPolicy navData={getNavigationData.investorRelations } />} />

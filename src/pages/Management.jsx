@@ -6,11 +6,11 @@ import BoardMembersCard from '../components/BoardMembersCard'
 import { getOurBoardData } from '../data/our-board'
 import ContactUs from '../sections/ContactUs'
 
-const Management = () => {
+const Management = ({ navData }) => {
   return (
     <Container>
         <div className=' min-h-screen w-full'>
-            <MainNavigation data={getNavigationData.investorRelations} />
+            <MainNavigation data={navData} />
             <div className=' w-full mt-16 md:mt-32 flex flex-col items-center justify-start'>
                 <BoardMembersCard title='The Management Team' data={getOurBoardData.managementTeam} />
                 <ContactUs />
