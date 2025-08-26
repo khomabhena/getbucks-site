@@ -57,11 +57,11 @@ export const getOurBoardData = {
             position: 'Head of Treasury',
             text: 'Mr. Wushe is a seasoned banker with more than three decades of expertise in Retail, Corporate, Treasury, and Investment Banking. With a substantial 25-year tenure in the Treasury Division, he ascended from Junior Dealer to the esteemed position of Head of Treasury at leading Zimbabwean banks. He holds a BComm. in Economics from the University of Pretoria, South Africa, and is a certified Associate member of the Institute of Bankers in South Africa, along with multiple International Treasury Qualifications.'
         },
-        /*{
-            image: '/board-members/yvonne.jpg',
-            name: 'YVONNE R DIZA',
+        {
+            image: '/board-members/anilly.jpg',
+            name: 'ANILLY MUROMBA',
             position: 'Head of International Banking & Exchange Control',
-            text: 'Yvonne Rita Diza boasts sixteen years in banking with expertise in Exchange Control, International Banking Operations, Trade Finance, Retail Banking, Operations, and Customer Service. Certified in Microfinance by Frankfurt School of Finance and Management, she holds a Business Administration and Marketing Management degree from IMM, South Africa, and an MBA from the University of Suffolk, UK.',
-        }*/
+            text: 'Anilly holds a B Com Honours in Business Management from National University of Science and Technology (NUST),and a Diploma in Management (MDP)(NUST).She has over 25 years’ experience in International Banking, Exchange Control, SME Banking and Trade Finance having worked in various commercial Banks in Management and Head of Department Roles before joining Getbucks Microfinance Bank. Main areas of expertise include Exchange Control Advisory, International Banking and Trade Finance with knowledge in Business development processes, Correspondent Banking Relationship Management and Client Relationship Management.',
+        }
     ]
 }
