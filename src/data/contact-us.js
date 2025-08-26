@@ -7,6 +7,18 @@ export const getContactData = {
         line3: 'No. 64 Kwame Nkrumah Ave',
         line4: 'Harare, Zimbabwe',
     },
+    addressGweru: {
+        line1: 'Gweru Branch',
+        line2: 'M FLoor New Post Office (CAIPF) Building',
+        line3: 'Corner 7th / Robert Mugabe St',
+        line4: 'Gweru, Zimbabwe',
+    },
+    addressMasvingo: {
+        line1: 'Masvingo Branch',
+        line2: 'Ground Floor, Zimre Centre',
+        line3: 'Corner Hughes St and Simon Mazorodze Road',
+        line4: 'Masvingo, Zimbabwe',
+    },
     contacts: [
         {
             image: '',

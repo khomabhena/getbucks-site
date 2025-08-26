@@ -30,12 +30,27 @@ const ContactUs = () => {
             <div className=' flex mt-12 lg:mt-8 xl:mt-0 xl:justify-center basis-1/4'>
                 
                     <img src={data.address.image} alt="" />
-                    <div className=' flex flex-col gap-2 text-sm md:text-lg text-gray-700'>
-                        <p>{data.address.line1}</p>
-                        <p>{data.address.line2}</p>
-                        <p>{data.address.line3}</p>
-                        <p>{data.address.line4}</p>
-                    </div> 
+                    <div>
+                        <div className=' flex flex-col gap-2 text-sm md:text-sm text-gray-700'>
+                            <p>{data.address.line1}</p>
+                            <p>{data.address.line2}</p>
+                            <p>{data.address.line3}</p>
+                            <p>{data.address.line4}</p>
+                        </div> 
+                        <div className=' mt-8 flex flex-col gap-2 text-sm md:text-sm text-gray-700'>
+                            <p>{data.addressGweru.line1}</p>
+                            <p>{data.addressGweru.line2}</p>
+                            <p>{data.addressGweru.line3}</p>
+                            <p>{data.addressGweru.line4}</p>
+                        </div> 
+                        <div className=' mt-8 flex flex-col gap-2 text-sm md:text-sm text-gray-700'>
+                            <p>{data.addressMasvingo.line1}</p>
+                            <p>{data.addressMasvingo.line2}</p>
+                            <p>{data.addressMasvingo.line3}</p>
+                            <p>{data.addressMasvingo.line4}</p>
+                        </div> 
+
+                    </div>
                 
             </div>
 
