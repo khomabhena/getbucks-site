@@ -40,8 +40,8 @@ function App() {
           <Route path='/investor-relations' element={<InvestorRelations />} />
           <Route path='/board-members' element={<OurBoard navData={getNavigationData.ourBoard } />} />
           <Route path='/management' element={<Management navData={getNavigationData.management } />} />
-          <Route path='/financial-reports' element={<FinancialReports navData={getNavigationData.investorRelations } />} />
-          <Route path='/events' element={<Events navData={getNavigationData.investorRelations } />} />
+          <Route path='/financial-reports' element={<FinancialReports navData={getNavigationData.financialReports } />} />
+          <Route path='/events' element={<Events navData={getNavigationData.keyEvents } />} />
           <Route path='/privacy-policy' element={<PrivacyPolicy navData={getNavigationData.investorRelations } />} />
 
           <Route path='/personal/login' element={<Login data={getLoginData.personal} navData={getNavigationData.personal} />} />

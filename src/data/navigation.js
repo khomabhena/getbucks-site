@@ -145,4 +145,38 @@ export const getNavigationData = {
             name: 'Investor Relations',
         },
     ],
+    financialReports: [
+        {
+            active: true,
+            link: '/financial-reports',
+            name: 'Financial Reports',
+        },
+        {
+            active: false,
+            link: '/events',
+            name: 'Key Events',
+        },
+        {
+            active: false,
+            link: '/investor-relations',
+            name: 'Investor Relations',
+        },
+    ],
+    keyEvents: [
+        {
+            active: false,
+            link: '/financial-reports',
+            name: 'Financial Reports',
+        },
+        {
+            active: true,
+            link: '/events',
+            name: 'Key Events',
+        },
+        {
+            active: false,
+            link: '/investor-relations',
+            name: 'Investor Relations',
+        },
+    ],
 }

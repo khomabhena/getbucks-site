@@ -6,13 +6,13 @@ import ContactUs from '../sections/ContactUs'
 import { getEventsData } from '../data/events'
 import PDFCard from '../components/PDFCard'
 
-const Events = () => {
+const Events = ({ navData }) => {
     const data = getEventsData
 
   return (
     <Container>
         <div className=' min-h-screen w-full'>
-            <MainNavigation data={getNavigationData.investorRelations} />
+            <MainNavigation data={navData} />
             <div className='w-full mt-16 md:mt-32 flex flex-col items-center justify-start'>
                 <h1 className=' text-xl md:text-4xl xl:text-6xl font-semibold text-gray-700 text-center mt-24'>Events</h1>
 
