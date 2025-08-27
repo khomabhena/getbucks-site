@@ -30,6 +30,11 @@ const MobileNavigation = () => {
             </a>
           ))
         }
+        <a href={`/contact-us`}>
+          <li key={'contact-us'} className={` px-8 py-2 rounded-4xl text-base hover:scale-105 hover:shadow-gray-300 ${ 'hover:bg-[#faa819] hover:text-gray-50 hover:shadow-xl'} ease-in-out transition-all`}>
+            {'Contact Us'}
+          </li>
+        </a>
 
         {/* <li className=' px-4 py-1 rounded-xl text-lg hover:scale-105'><a onClick={() => closeNavigation()} href="#personal">Personal</a></li>
         <li className=' px-4 py-1 rounded-xl text-lg hover:scale-105'><a onClick={() => closeNavigation()} href="#personal">Business</a></li>
