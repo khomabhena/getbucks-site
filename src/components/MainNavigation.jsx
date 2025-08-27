@@ -20,12 +20,15 @@ const MainNavigation = ({ scrollPosition, data, prefix = '' }) => {
       <ul className=' hidden z-30 xl:flex gap-2 text-base pr-4' style={{ color: primaryColor }}>
         {
           data.map(({ active, link, name, subMenu }) => (
+            <>
             <a className=' group relative' href={`${prefix}${link}`}>
               <li key={name} className={` px-8 py-2 rounded-4xl text-base hover:scale-105 hover:shadow-gray-300 ${active ? 'bg-[#faa819] text-gray-50 hover:shadow-xl' : 'hover:bg-[#faa819] hover:text-gray-50 hover:shadow-xl'} ease-in-out transition-all`}>
                 {name}
               </li>
-              {subMenu[0] && <div className={` ${subMenu[0] ? 'flex' : ' hidden'} hidden group-hover:flex absolute top-0 flex-col gap-8 h-fit pt-20 pb-12 font-semiboldl text-xl left-0`}>
-
+            </a>
+              {
+              subMenu[0] && 
+            <div className={` ${subMenu[0] ? 'flex' : ' hidden'} hidden group-hover:flex absolute top-0 flex-col gap-8 h-fit pt-20 pb-12 font-semiboldl text-xl left-0`}>
               <div style={{ backgroundColor: colors.backgroundColor }} className=' rounded-bl-2xl rounded-br-2xl flex flex-col shadow-2xl px-8 py-8 gap-8'>
               {
                 subMenu.map(({name, link}) => (
@@ -33,8 +36,8 @@ const MainNavigation = ({ scrollPosition, data, prefix = '' }) => {
                 ))
               }
               </div>
-                  </div>}
-            </a>
+            </div>}
+            </>
           ))
         }
         <li style={{ borderColor: primaryColor }} className=' border-3  px-4 py-1 rounded-4xl text-base hover:scale-105 hover:shadow-gray-300 hover:border-green-900 hover:bg-[#faa819] hover:text-gray-50 hover:shadow-xl ease-in-out transition-all'><a href={`${prefix}#internet-banking`}>Internet Banking</a></li>

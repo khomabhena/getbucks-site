@@ -17,7 +17,7 @@ export const getAccountHeroData = {
             { text: "In-App Controls", link: "#" },
             { text: "Instant Tracking", link: "#" },
             { text: "Bills Manager", link: "#" }
-        ]
+        ],
     },
     diaspora: {
         title: "Stay Connected to home,",

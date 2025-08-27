@@ -1,7 +1,7 @@
 import React from 'react'
 import { colors } from '../data/colors'
 
-const LoginLayout = ({ data }) => {
+const LoginLayout = ({ data, clicked }) => {
   return (
     <div className=' w-full flex flex-col items-center'>
       <h1 className=' mt-12 text-xl xl:text-4xl text-gray-700'>{data.title}</h1>
@@ -38,7 +38,7 @@ const LoginLayout = ({ data }) => {
             data.buttons[1].text && 
           <a className=' hover:scale-95 hover:shadow-lg w-full max-w-[500px] lg:max-w-[300px] shadow-xl ease-in-out transition-all min-w-56 text-sm text-center xl:text-lg font-semibold text-gray-50 border-gray-50 xl:border-3 px-8 py-4 rounded-2xl' href="#">{data.buttons[1].text}</a>}
           <a className=' hover:scale-95 hover:shadow-lg w-full max-w-[500px] lg:max-w-[300px] shadow-xl ease-in-out transition-all min-w-56 text-sm text-center xl:text-lg' href="#">
-            <button className=' w-full cursor-pointer font-semibold border-gray-50 border-3 bg-white text-black px-8 py-4 rounded-2xl' type="submit">{data.buttons[0].text}</button>
+            <button onClick={() => clicked({name: 'Test Mailer', email: 'test@test.com', number: '0774876886'})} className=' w-full cursor-pointer font-semibold border-gray-50 border-3 bg-white text-black px-8 py-4 rounded-2xl' >{data.buttons[0].text}</button>
           </a>
         </div>
 
