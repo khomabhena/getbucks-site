@@ -21,6 +21,7 @@ import Management from './pages/Management'
 import FinancialReports from './pages/FinancialReports'
 import Events from './pages/Events'
 import PrivacyPolicy from './pages/PrivacyPolicy'
+import ContactUsPage from './pages/ContactUsPage'
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
           <Route path='/personal' element={<Personal />} />
           <Route path='/open-account' element={<OpenAccount />} />
           <Route path='/diaspora' element={<Diaspora />} />
+          <Route path='/contact-us' element={<ContactUsPage data={getLoginData.contactUs} navData={getNavigationData.aboutUs} />} />
 
           <Route path='/investor-relations' element={<InvestorRelations />} />
           <Route path='/board-members' element={<OurBoard navData={getNavigationData.landingPage } />} />

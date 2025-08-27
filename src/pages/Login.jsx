@@ -12,7 +12,7 @@ const Login = ({data, navData}) => {
     <Container>
       <div className='min-h-screen w-full'>
         <MainNavigation data={navData} />
-        <div className='  w-full mt-16 md:mt-32 flex flex-row items-centerl justify-start min-h-screenf mb-64'>
+        <div className='w-full mt-16 md:mt-32 flex flex-row items-centerl justify-start min-h-screenf mb-64'>
           <LoginLayout data={data}  />
         </div>
         <ContactUs />

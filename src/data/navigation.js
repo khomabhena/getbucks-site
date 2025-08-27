@@ -6,21 +6,34 @@ export const getNavigationData = {
             active: false,
             link: '/personal',
             name: 'Personal',
+            subMenu: [],
         },
         {
             active: false,
             link: '/business',
             name: 'Business',
+            subMenu: [],
         },
         {
             active: false,
             link: '/investor-relations',
             name: 'Investor Relations',
+            subMenu: [],
         },
         {
             active: false,
             link: '/about-us',
             name: 'About Us',
+            subMenu: [
+                {
+                    name: "About Us",
+                    link: "/about-us",
+                },
+                {
+                    name: "Contact Us",
+                    link: "/contact-us",
+                },
+            ]
         },
     ],
     personal: [
@@ -28,21 +41,34 @@ export const getNavigationData = {
             active: true,
             link: '/personal',
             name: 'Personal',
+            subMenu: [],
         },
         {
             active: false,
             link: '/business',
             name: 'Business',
+            subMenu: [],
         },
         {
             active: false,
             link: '/investor-relations',
             name: 'Investor Relations',
+            subMenu: [],
         },
         {
             active: false,
             link: '/about-us',
             name: 'About Us',
+            subMenu: [
+                {
+                    name: "About Us",
+                    link: "/about-us",
+                },
+                {
+                    name: "Contact Us",
+                    link: "/contact-us",
+                },
+            ],
         },
     ],
     business: [
@@ -50,21 +76,34 @@ export const getNavigationData = {
             active: false,
             link: '/personal',
             name: 'Personal',
+            subMenu: [],
         },
         {
             active: true,
             link: '/business',
             name: 'Business',
+            subMenu: [],
         },
         {
             active: false,
             link: '/investor-relations',
             name: 'Investor Relations',
+            subMenu: [],
         },
         {
             active: false,
             link: '/about-us',
             name: 'About Us',
+            subMenu: [
+                {
+                    name: "About Us",
+                    link: "/about-us",
+                },
+                {
+                    name: "Contact Us",
+                    link: "/contact-us",
+                },
+            ],
         },
     ],
     aboutUs: [
@@ -72,21 +111,34 @@ export const getNavigationData = {
             active: false,
             link: '/personal',
             name: 'Personal',
+            subMenu: [],
         },
         {
             active: false,
             link: '/business',
             name: 'Business',
+            subMenu: [],
         },
         {
             active: false,
             link: '/investor-relations',
             name: 'Investor Relations',
+            subMenu: [],
         },
         {
             active: true,
             link: '/about-us',
             name: 'About Us',
+            subMenu: [
+                {
+                    name: "About Us",
+                    link: "/about-us",
+                },
+                {
+                    name: "Contact Us",
+                    link: "/contact-us",
+                },
+            ],
         },
     ],
     investorRelations: [
@@ -94,21 +146,34 @@ export const getNavigationData = {
             active: false,
             link: '/personal',
             name: 'Personal',
+            subMenu: [],
         },
         {
             active: false,
             link: '/business',
             name: 'Business',
+            subMenu: [],
         },
         {
             active: true,
             link: '/investor-relations',
             name: 'Investor Relations',
+            subMenu: [],
         },
         {
             active: false,
             link: '/about-us',
             name: 'About Us',
+            subMenu: [
+                {
+                    name: "About Us",
+                    link: "/about-us",
+                },
+                {
+                    name: "Contact Us",
+                    link: "/contact-us",
+                },
+            ],
         },
     ],
     ourBoard: [
@@ -116,16 +181,19 @@ export const getNavigationData = {
             active: true,
             link: '/board-members',
             name: 'Board Members',
+            subMenu: [],
         },
         {
             active: false,
             link: '/management',
             name: 'Management Team',
+            subMenu: [],
         },
         {
             active: false,
             link: '/investor-relations',
             name: 'Investor Relations',
+            subMenu: [],
         },
     ],
     management: [
@@ -133,16 +201,19 @@ export const getNavigationData = {
             active: false,
             link: '/board-members',
             name: 'Board Members',
+            subMenu: [],
         },
         {
             active: true,
             link: '/management',
             name: 'Management Team',
+            subMenu: [],
         },
         {
             active: false,
             link: '/investor-relations',
             name: 'Investor Relations',
+            subMenu: [],
         },
     ],
     financialReports: [
@@ -150,16 +221,19 @@ export const getNavigationData = {
             active: true,
             link: '/financial-reports',
             name: 'Financial Reports',
+            subMenu: [],
         },
         {
             active: false,
             link: '/events',
             name: 'Key Events',
+            subMenu: [],
         },
         {
             active: false,
             link: '/investor-relations',
             name: 'Investor Relations',
+            subMenu: [],
         },
     ],
     keyEvents: [
@@ -167,16 +241,19 @@ export const getNavigationData = {
             active: false,
             link: '/financial-reports',
             name: 'Financial Reports',
+            subMenu: [],
         },
         {
             active: true,
             link: '/events',
             name: 'Key Events',
+            subMenu: [],
         },
         {
             active: false,
             link: '/investor-relations',
             name: 'Investor Relations',
+            subMenu: [],
         },
     ],
 }

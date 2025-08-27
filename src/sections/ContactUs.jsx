@@ -9,8 +9,13 @@ const ContactUs = () => {
     <section className=' mt-24 pb-32 flex-col justify-center items-center'>
         <h2 className=' text-2xl xl:text-4xl lg:text-center font-semibold invisible'>Contact Us</h2>
         <div className=' mt-12 flex flex-col xl:flex-row w-full'>
+
             <div className=' basis-1/4 flex flex-col gap-4'>
                 <p className=' text-sm md:text-lg text-gray-700 xl:pr-8 text-center md:text-start flex justify-center'>"{data.text}"</p>
+            </div>
+
+            <div className=' basis-1/4 flex items-center flex-col gap-'>
+                <p className=' font-bold text-xl md:text-2xl text-gray-700 xl:pr-8 text-center md:text-start flex justify-centerl'>Get Our Apps</p>
                 <a className=' hover:scale-105 ease-in-out transition-all mt-12' href="https://apps.apple.com/zw/app/getbucks-mobile-banking/id1437807974" target='_blank'>
                     <img className=' w-[200px] h-auto' height={'50px'} width={'100px'} src="./social-icons/app-store.png" alt="" />
                 </a>
@@ -19,7 +24,10 @@ const ContactUs = () => {
                 </a>
             </div>
 
-            <form action="/" className=' flex flex-col max-w-[450px] mt-12 xl:mt-0 lg:mt-8 gap-6 justify-center basis-1/4' >
+
+
+
+            <form action="/" className=' hidden flex flex-col max-w-[450px] mt-12 xl:mt-0 lg:mt-8 gap-6 justify-center basis-1/4' >
                 <input className=' bg-gray-200 py-4 px-8 text-sm xl:text-lg rounded-xl' type="text" name="" placeholder='Full Name' id="" />
                 <input className=' bg-gray-200 py-4 px-8 text-sm xl:text-lg rounded-xl' type="text" name="" placeholder='Email' id="" />
                 <input className=' bg-gray-200 py-4 px-8 text-sm xl:text-lg rounded-xl' type="text" name="" placeholder='Mobile Number' id="" />
