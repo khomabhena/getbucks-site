@@ -22,7 +22,7 @@ export const getNavigationData = {
         },
         {
             active: false,
-            link: '/about-us',
+            link: '#',
             name: 'About Us',
             subMenu: [
                 {
@@ -57,7 +57,7 @@ export const getNavigationData = {
         },
         {
             active: false,
-            link: '/about-us',
+            link: '#',
             name: 'About Us',
             subMenu: [
                 {
@@ -92,7 +92,7 @@ export const getNavigationData = {
         },
         {
             active: false,
-            link: '/about-us',
+            link: '#',
             name: 'About Us',
             subMenu: [
                 {
@@ -127,7 +127,7 @@ export const getNavigationData = {
         },
         {
             active: true,
-            link: '/about-us',
+            link: '#',
             name: 'About Us',
             subMenu: [
                 {
@@ -162,7 +162,7 @@ export const getNavigationData = {
         },
         {
             active: false,
-            link: '/about-us',
+            link: '#',
             name: 'About Us',
             subMenu: [
                 {
