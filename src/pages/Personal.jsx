@@ -5,6 +5,7 @@ import { getNavigationData } from '../data/navigation'
 import AccountHeroLayout from '../components/AccountHeroLayout'
 import { getAccountHeroData } from '../data/account-hero'
 import ContactUs from '../sections/ContactUs'
+import { getPersonalExtraData } from '../data/personalExtraData'
 
 const Personal = () => {
   return (
@@ -12,7 +13,7 @@ const Personal = () => {
         <div className='min-h-screen w-full'>
             <MainNavigation data={getNavigationData.personal} />
             <div className=' w-full mt-16 md:mt-32 flex flex-row items-center justify-start min-h-screen'>
-              <AccountHeroLayout data={getAccountHeroData.personal} />
+              <AccountHeroLayout data={getAccountHeroData.personal} extraData={getPersonalExtraData} />
             </div>
             <ContactUs />
         </div>

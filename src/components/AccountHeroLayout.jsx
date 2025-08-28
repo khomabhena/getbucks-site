@@ -1,7 +1,8 @@
 import React from 'react'
 import { getPersonalExtraData } from '../data/personalExtraData'
+import HeroExtraData from './HeroExtraData'
 
-const AccountHeroLayout = ({ data }) => {
+const AccountHeroLayout = ({ data, extraData }) => {
 
   return (
     <section className=' w-full -mt-24 md:-mt-32 xl:mt-4 mb-32 min-h-screenl flex flex-col'>
@@ -39,21 +40,8 @@ const AccountHeroLayout = ({ data }) => {
       </div>
       </div>
 
-      <div className=' w-full min-h-64 mt-24 flex flex-wrap flex-col xl:flex-row '>
-        {
-          getPersonalExtraData?.map(({ text, subText}) => (
-            <div className=' w-full flex flex-col gap-8 min-h-32 basis-1 xl:basis-1/2'>
-              <div className=' mx-8'>
-                <h3 className=' mt-4 text-xl font-semibold'>{text}</h3>
-                <p className=' mt-4 text-sm md:text-base'>{subText}</p>
-              </div>
-            </div>
-          ))
-        }
+      <HeroExtraData data={extraData} />
 
-        <div className=' hidden bg-green-600 min-h-32 basis-1 xl:basis-1/2'></div>
-
-      </div>
     </section>
   )
 }
