@@ -10,9 +10,31 @@ import { colors } from '../data/colors'
 const FinancialReports = ({ navData }) => {
   const data = getFinancialReports
 
-  useEffect(() => {
+ useEffect(() => {
     document.title = "Financial Reports | GetBucks Bank"
-  }, [])
+    // Add meta tags
+    const metaDescription = document.createElement('meta')
+    metaDescription.name = "description"
+    metaDescription.content = "Download and view Financial Reports from GetBucks Bank. Stay informed about our financial performance."
+    document.head.appendChild(metaDescription)
+
+    const metaKeywords = document.createElement('meta')
+    metaKeywords.name = "keywords"
+    metaKeywords.content = [
+      "GetBucks Bank",
+      "Financial Reports",
+      "Banking",
+      "Zimbabwe",
+      ...data.map(report => report.name)
+    ].join(', ')
+    document.head.appendChild(metaKeywords)
+
+    // Cleanup on unmount
+    return () => {
+      document.head.removeChild(metaDescription)
+      document.head.removeChild(metaKeywords)
+    }
+  }, [data])
 
   return (
     <Container>

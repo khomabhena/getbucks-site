@@ -12,7 +12,29 @@ const Events = ({ navData }) => {
 
     useEffect(() => {
         document.title = "Events | GetBucks Bank"
-    }, [])
+        // Add meta tags
+        const metaDescription = document.createElement('meta')
+        metaDescription.name = "description"
+        metaDescription.content = "See upcoming and past events from GetBucks Bank. Download event documents and stay updated."
+        document.head.appendChild(metaDescription)
+
+        const metaKeywords = document.createElement('meta')
+        metaKeywords.name = "keywords"
+        metaKeywords.content = [
+            "GetBucks Bank",
+            "Events",
+            "Banking",
+            "Zimbabwe",
+            ...data.map(event => event.name)
+        ].join(', ')
+        document.head.appendChild(metaKeywords)
+
+        // Cleanup on unmount
+        return () => {
+            document.head.removeChild(metaDescription)
+            document.head.removeChild(metaKeywords)
+        }
+    }, [data])
 
   return (
     <Container>

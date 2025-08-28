@@ -7,11 +7,38 @@ import { getAccountHeroData } from '../data/account-hero'
 import ContactUs from '../sections/ContactUs'
 import { getBusinessExtraData } from '../data/accountExtraData'
 
-const Business = () => {
-
+const Business = () => { 
+  const hero = getAccountHeroData.business
+  
   useEffect(() => {
     document.title = "Business Account | GetBucks Bank"
-  }, [])
+    // Add meta tags using hero data
+    const metaDescription = document.createElement('meta')
+    metaDescription.name = "description"
+    metaDescription.content = hero.subtitle
+    document.head.appendChild(metaDescription)
+
+    const metaKeywords = document.createElement('meta')
+    metaKeywords.name = "keywords"
+    metaKeywords.content = [
+      "GetBucks Bank",
+      "Business Account",
+      "Banking",
+      "Zimbabwe",
+      "Corporate",
+      "SME",
+      hero.title,
+      hero.title2,
+      ...hero.buttons.map(btn => btn.text)
+    ].join(', ')
+    document.head.appendChild(metaKeywords)
+
+    // Cleanup on unmount
+    return () => {
+      document.head.removeChild(metaDescription)
+      document.head.removeChild(metaKeywords)
+    }
+  }, [hero])
 
   return (
     <Container>

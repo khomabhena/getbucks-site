@@ -11,6 +11,22 @@ const Login = ({data, navData}) => {
 
   useEffect(() => {
     document.title = "Login | GetBucks Bank"
+    // Add meta tags
+    const metaDescription = document.createElement('meta')
+    metaDescription.name = "description"
+    metaDescription.content = "Login to your GetBucks Bank account to access personal and business banking services securely."
+    document.head.appendChild(metaDescription)
+
+    const metaKeywords = document.createElement('meta')
+    metaKeywords.name = "keywords"
+    metaKeywords.content = "GetBucks Bank, Login, Online Banking, Zimbabwe, Personal Account, Business Account"
+    document.head.appendChild(metaKeywords)
+
+    // Cleanup on unmount
+    return () => {
+      document.head.removeChild(metaDescription)
+      document.head.removeChild(metaKeywords)
+    }
   }, [])
 
   return (
