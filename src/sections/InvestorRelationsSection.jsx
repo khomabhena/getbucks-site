@@ -23,7 +23,7 @@ const InvestorRelationsSection = () => {
         <div className=' mt-12 flex flex-col gap-24 '>
             {
                 data.data?.map(({ image, reverse, title, heading, text, buttonLink, buttonName }) => (
-                <InvestorRelationsCard reverse={reverse} image={image} title={title} heading={heading} buttonName={buttonName} text={text} buttonLink={buttonLink} />
+                <InvestorRelationsCard key={title} reverse={reverse} image={image} title={title} heading={heading} buttonName={buttonName} text={text} buttonLink={buttonLink} />
                 ))
             }
         </div>

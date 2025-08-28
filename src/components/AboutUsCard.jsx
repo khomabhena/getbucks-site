@@ -20,7 +20,7 @@ const AboutUsCard = ({ title, subtitle, text, points }) => {
         <div className=' grid grid-cols-2'>
             {
                 points?.map(name => (
-                        <p className=' text-xs md:text-sm flex basis-1/2'>&bull;{name}</p>  
+                        <p key={name} className=' text-xs md:text-sm flex basis-1/2'>&bull;{name}</p>  
                 ))
             }
         </div>

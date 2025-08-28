@@ -21,7 +21,7 @@ const PrivacyPolicy = () => {
                     {
                         data?.map(({ title, titleNumber, paragraphs }) => (
                             <>
-                                <PolicyHeading title={title} titleNumber={titleNumber} />
+                                <PolicyHeading key={title} title={title} titleNumber={titleNumber} />
                                 {
                                     paragraphs?.map(({paragraph, index}) => (
                                         <>

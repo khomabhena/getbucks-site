@@ -1,6 +1,6 @@
 import React from 'react'
-import { getPersonalExtraData } from '../data/personalExtraData'
-import HeroExtraData from './HeroExtraData'
+import { getPersonalExtraData } from '../data/accountExtraData'
+import AccountHeroExtraData from './AccountHeroExtraData'
 
 const AccountHeroLayout = ({ data, extraData }) => {
 
@@ -40,7 +40,7 @@ const AccountHeroLayout = ({ data, extraData }) => {
       </div>
       </div>
 
-      <HeroExtraData data={extraData} />
+      <AccountHeroExtraData data={extraData} />
 
     </section>
   )

@@ -4,41 +4,41 @@ export const getLandingPageContent = {
     data: [
         {
             index: 1,
+            image: "./landing-page/loans.png",
+            title: "Loans",
+            description: "Get access to credit faster than ever. With flexible repayment options, our loans are designed to power your personal or business goals.",
+        },
+        {
+            index: 2,
+            image: "./landing-page/security.png",
+            title: "Security",
+            description: "From biometric logins to fraud detection, your money is always protected. We use next-gen encryption and real-time monitoring to keep your banking safe, so you can focus on what matters.",
+        },
+        {
+            index: 6,
+            image: "./landing-page/credit-cards.png",
+            title: "Credit & Debit Cards",
+            description: "Get more from every swipe. With built in security and rewards designed around your lifestyle, our credit cards give you fexibility and fnancial power.",
+        },
+        {
+            index: 3,
             image: "./landing-page/notifications.png",
             title: "Instant Notifications",
             description: "Get real time alerts every time money moves in or out of your account. From deposits to purchases, our smart notifications keep you informed, in control, and protected",
 
         },
         {
-            index: 2,
+            index: 4,
             image: "./landing-page/insurance.png",
             title: "Insurance",
             description: "From health to travel to assets, our insurance solutions are built into your banking experience.",
 
         },
         {
-            index: 3,
-            image: "./landing-page/loans.png",
-            title: "Loans",
-            description: "Get access to credit faster than ever. With flexible repayment options, our loans are designed to power your personal or business goals.",
-        },
-        {
-            index: 4,
+            index: 5,
             image: "./landing-page/savings.png",
             title: "Saving",
             description: "So your money grows while you live your life. build your future with intelligent savings tools. Automate deposits, set goals, and track progress in real time",
-        },
-        {
-            index: 5,
-            image: "./landing-page/credit-cards.png",
-            title: "Credit & Debit Cards",
-            description: "Get more from every swipe. With built in security and rewards designed around your lifestyle, our credit cards give you fexibility and fnancial power.",
-        },
-        {
-            index: 6,
-            image: "./landing-page/security.png",
-            title: "Security",
-            description: "From biometric logins to fraud detection, your money is always protected. We use next-gen encryption and real-time monitoring to keep your banking safe, so you can focus on what matters.",
         },
         {
             index: 7,

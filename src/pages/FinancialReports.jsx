@@ -20,7 +20,7 @@ const FinancialReports = ({ navData }) => {
             
             {
               data?.map(({name, link}) => (
-                <PDFCard name={name} link={link} />
+                <PDFCard key={name} name={name} link={link} />
               ))
             }
 

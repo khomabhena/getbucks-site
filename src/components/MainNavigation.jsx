@@ -21,7 +21,7 @@ const MainNavigation = ({ scrollPosition, data, prefix = '' }) => {
         {
           data.map(({ active, link, name, subMenu }) => (
             <>
-            <a className=' group relative' href={`${prefix}${link}`}>
+            <a key={name} className=' group relative' href={`${prefix}${link}`}>
               <li key={name} className={` px-8 py-2 rounded-4xl text-base hover:scale-105 hover:shadow-gray-300 ${active ? 'bg-[#faa819] text-gray-50 hover:shadow-xl' : 'hover:bg-[#faa819] hover:text-gray-50 hover:shadow-xl'} ease-in-out transition-all`}>
                 {name}
               </li>
@@ -32,7 +32,7 @@ const MainNavigation = ({ scrollPosition, data, prefix = '' }) => {
               <div style={{ backgroundColor: colors.backgroundColor }} className=' rounded-bl-2xl rounded-br-2xl flex flex-col shadow-2xl px-8 py-8 gap-8'>
               {
                 subMenu.map(({name, link}) => (
-                    <a href={link} style={{ backgroundColor: colors.backgroundColor }}><li className=' w-48 hover:underline'>{name}</li></a>
+                    <a key={name} href={link} style={{ backgroundColor: colors.backgroundColor }}><li className=' w-48 hover:underline'>{name}</li></a>
                 ))
               }
               </div>

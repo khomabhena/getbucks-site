@@ -5,7 +5,7 @@ import { getNavigationData } from '../data/navigation'
 import AccountHeroLayout from '../components/AccountHeroLayout'
 import { getAccountHeroData } from '../data/account-hero'
 import ContactUs from '../sections/ContactUs'
-import { getPersonalExtraData } from '../data/personalExtraData'
+import { getPersonalExtraData } from '../data/accountExtraData'
 
 const Personal = () => {
   return (

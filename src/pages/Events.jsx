@@ -20,7 +20,7 @@ const Events = ({ navData }) => {
                 <div className=' w-full flex gap-4l flex-wrap mt-24 mb-48'>  
                     {
                     data?.map(({name, link}) => (
-                        <PDFCard name={name} link={link} />
+                        <PDFCard key={name} name={name} link={link} />
                     ))
                     }
                 </div>

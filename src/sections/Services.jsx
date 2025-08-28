@@ -10,7 +10,7 @@ const Services = () => {
       <div className=' w-full justify-center flex-wrap flex'>
           {
             data.services?.map(({ image, title, text }) => (
-                <ServicesCard image={image} title={title} text={text} />
+                <ServicesCard key={title} image={image} title={title} text={text} />
             ))
           }
       </div>
