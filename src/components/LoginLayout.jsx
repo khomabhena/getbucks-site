@@ -18,7 +18,7 @@ const LoginLayout = ({ data, clicked }) => {
               type={input.type}
               placeholder={input.placeholder}
               name={input.name}
-              className=' py- px-4 xl:py-4 max-w-[500px] xl:max-w-[600px] xl:px-12 shadow-lg rounded-2xl xl:text-xl bg-[#f7f2ec]/60 w-full xl:w-[800px] mt-4'>
+              className=' py-4 px-4 xl:py-4 max-w-[500px] xl:max-w-[600px] xl:px-12 shadow-lg rounded-2xl xl:text-xl bg-[#f7f2ec]/60 w-full xl:w-[800px] mt-4'>
             </textarea> 
             :
             <input
@@ -28,7 +28,7 @@ const LoginLayout = ({ data, clicked }) => {
               name={input.name}
               placeholder={input.placeholder}
               required={input.required}
-              className=' py- px-4 xl:py-4 max-w-[500px] xl:max-w-[600px] xl:px-12 shadow-lg rounded-2xl xl:text-xl bg-[#f7f2ec]/60 w-full xl:w-[800px] mt-4'
+              className=' py-4 px-4 xl:py-4 max-w-[500px] xl:max-w-[600px] xl:px-12 shadow-lg rounded-2xl xl:text-xl bg-[#f7f2ec]/60 w-full xl:w-[800px] mt-4'
             />
           ))
         }
