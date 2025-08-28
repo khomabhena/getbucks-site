@@ -21,10 +21,9 @@ const MainNavigation = ({ scrollPosition, data, prefix = '' }) => {
         {
           data.map(({ active, link, name, subMenu }) => (
             <>
-            <a key={name} className=' group relative' href={`${prefix}${link}`}>
-              <li key={name} className={` px-8 py-2 rounded-4xl text-base hover:scale-105 hover:shadow-gray-300 ${active ? 'bg-[#faa819] text-gray-50 hover:shadow-xl' : 'hover:bg-[#faa819] hover:text-gray-50 hover:shadow-xl'} ease-in-out transition-all`}>
+              <li key={name} className={`group relative hover:scale-105 hover:shadow-gray-300  ease-in-out transition-all`}>
+            <a key={name} className={` px-8 py-2 rounded-4xl text-base ${active ? 'bg-[#faa819] text-gray-50 hover:shadow-xl' : 'hover:bg-[#faa819] hover:text-gray-50 hover:shadow-xl'}`} href={`${prefix}${link}`}>
                 {name}
-              </li>
             </a>
               {
               subMenu[0] && 
@@ -37,10 +36,11 @@ const MainNavigation = ({ scrollPosition, data, prefix = '' }) => {
               }
               </div>
             </div>}
+              </li>
             </>
           ))
         }
-        <li style={{ borderColor: primaryColor }} className=' border-3  px-4 py-1 rounded-4xl text-base hover:scale-105 hover:shadow-gray-300 hover:border-green-900 hover:bg-[#faa819] hover:text-gray-50 hover:shadow-xl ease-in-out transition-all'><a href={`${prefix}#internet-banking`}>Internet Banking</a></li>
+        <li style={{ borderColor: primaryColor }} className=' border-3 -mt-1  px-4 py-1 rounded-4xl text-base hover:scale-105 hover:shadow-gray-300 hover:border-green-900 hover:bg-[#faa819] hover:text-gray-50 hover:shadow-xl ease-in-out transition-all'><a href={`${prefix}#internet-banking`}>Internet Banking</a></li>
       </ul>
 
       {!mobileNavigation && <img onClick={() => {setMobileNavigation(!mobileNavigation)}} className=' xl:hidden cursor-pointer h-8 w-8 md:h-10 md:w-10' src='/menu.svg' width={'auto'} height={'24px'} alt='menu close icon'  />}
