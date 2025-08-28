@@ -14,9 +14,15 @@ const Business = () => {
     document.title = "Business Account | GetBucks Bank"
     // Add meta tags using hero data
     const metaDescription = document.createElement('meta')
+    const metaDescriptionOG = document.createElement('meta')
     metaDescription.name = "description"
+    metaDescriptionOG.name = "og:description"
+    metaDescriptionOG.title = "og:title"
     metaDescription.content = hero.subtitle
+    metaDescriptionOG.content = hero.subtitle
+    metaDescriptionOG.content = hero.subtitle
     document.head.appendChild(metaDescription)
+    document.head.appendChild(metaDescriptionOG)
 
     const metaKeywords = document.createElement('meta')
     metaKeywords.name = "keywords"
