@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Container from './Container'
 import MainNavigation from '../components/MainNavigation'
 import { getNavigationData } from '../data/navigation'
@@ -8,6 +8,11 @@ import ContactUs from '../sections/ContactUs'
 import { getBusinessExtraData } from '../data/accountExtraData'
 
 const Business = () => {
+
+  useEffect(() => {
+    document.title = "Business Account | GetBucks Bank"
+  }, [])
+
   return (
     <Container>
         <div className='min-h-screen w-full'>
@@ -20,6 +25,5 @@ const Business = () => {
     </Container>
   )
 }
-
 export default Business
 

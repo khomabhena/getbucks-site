@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Container from './Container'
 import MainNavigation from '../components/MainNavigation'
 import { getNavigationData } from '../data/navigation'
@@ -9,6 +9,10 @@ import { colors } from '../data/colors'
 
 const Events = ({ navData }) => {
     const data = getEventsData
+
+    useEffect(() => {
+        document.title = "Events | GetBucks Bank"
+    }, [])
 
   return (
     <Container>

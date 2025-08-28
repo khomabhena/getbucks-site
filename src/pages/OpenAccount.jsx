@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Container from './Container'
 import MainNavigation from '../components/MainNavigation'
 import { getNavigationData } from '../data/navigation'
 
 const OpenAccount = () => {
+
+  useEffect(() => {
+    document.title = "Open Account | GetBucks Bank"
+  }, [])
+
   return (
     <Container>
         <div className=' min-h-screen w-full'>

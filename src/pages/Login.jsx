@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import MainNavigation from '../components/MainNavigation'
 import AccountHeroLayout from '../components/AccountHeroLayout'
 import Container from './Container'
@@ -8,6 +8,11 @@ import { getLoginData } from '../data/login'
 import ContactUs from '../sections/ContactUs'
 
 const Login = ({data, navData}) => {
+
+  useEffect(() => {
+    document.title = "Login | GetBucks Bank"
+  }, [])
+
   return (
     <Container>
       <div className='min-h-screen w-full'>

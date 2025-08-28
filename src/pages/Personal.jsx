@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Container from './Container'
 import MainNavigation from '../components/MainNavigation'
 import { getNavigationData } from '../data/navigation'
@@ -8,6 +8,11 @@ import ContactUs from '../sections/ContactUs'
 import { getPersonalExtraData } from '../data/accountExtraData'
 
 const Personal = () => {
+
+  useEffect(() => {
+    document.title = "Personal Account | GetBucks Bank"
+  }, [])
+
   return (
     <Container>
         <div className='min-h-screen w-full'>

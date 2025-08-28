@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Container from './Container'
 import MainNavigation from '../components/MainNavigation'
 import { getNavigationData } from '../data/navigation'
@@ -7,6 +7,11 @@ import { getAccountHeroData } from '../data/account-hero'
 import ContactUs from '../sections/ContactUs'
 
 const Diaspora = () => {
+
+  useEffect(() => {
+    document.title = "Diaspora | GetBucks Bank"
+  }, [])
+
   return (
     <Container>
         <div className='min-h-screen w-full'>

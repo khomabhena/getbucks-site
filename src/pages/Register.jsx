@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Container from './Container'
 import MainNavigation from '../components/MainNavigation'
 import RegisterLayout from '../components/RegisterLayout'
 import ContactUs from '../sections/ContactUs'
 
 const Register = ({data, navData}) => {
+
+  useEffect(() => {
+    document.title = "Sign Up | GetBucks Bank"
+  }, [])
+
   return (
     <Container>
         <div className='min-h-screenl w-full'>

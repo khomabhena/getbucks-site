@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Container from './Container'
 import MainNavigation from '../components/MainNavigation'
 import { getNavigationData } from '../data/navigation'
@@ -9,6 +9,11 @@ import { getContactData } from '../data/contact-us'
 
 const AboutUs = () => {
   const addressData = getContactData
+
+  useEffect(() => {
+    document.title = "About Us | GetBucks Bank"
+  }, [])
+
   return (
     <Container>
         <div className='min-h-screen w-full'>

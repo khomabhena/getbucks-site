@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Container from './Container'
 import MainNavigation from '../components/MainNavigation'
 import { getNavigationData } from '../data/navigation'
@@ -9,6 +9,11 @@ import { colors } from '../data/colors'
 
 const FinancialReports = ({ navData }) => {
   const data = getFinancialReports
+
+  useEffect(() => {
+    document.title = "Financial Reports | GetBucks Bank"
+  }, [])
+
   return (
     <Container>
       <div className=' min-h-screen w-full'>

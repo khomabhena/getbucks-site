@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import PolicyContainer from '../components/PolicyContainer'
 import { getPrivacyPolicy } from '../data/privacy-policy'
 import PolicyHeading from '../components/PolicyHeading'
@@ -11,6 +11,11 @@ import ContactUs from '../sections/ContactUs'
 
 const PrivacyPolicy = () => {
     const data = getPrivacyPolicy
+
+    useEffect(() => {
+        document.title = "Privacy Policy | GetBucks Bank"
+    }, [])
+
   return (
     <Container>
         <div className=' min-h-screen w-full'>

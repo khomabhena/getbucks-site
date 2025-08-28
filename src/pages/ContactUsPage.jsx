@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Container from './Container'
 import MainNavigation from '../components/MainNavigation'
 import LoginLayout from '../components/LoginLayout'
@@ -6,6 +6,11 @@ import { data } from 'react-router-dom'
 import ContactUs from '../sections/ContactUs'
 
 const ContactUsPage = ({ data, navData }) => {
+
+  useEffect(() => {
+    document.title = "Contact Us | GetBucks Bank"
+  }, [])
+
   const clicked = (obj) => {
     console.log('Clicked Contact US', obj)
   }
