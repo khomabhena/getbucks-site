@@ -1,5 +1,3 @@
-import { text } from "express";
-
 export const getContactData = {
     text: 'Reach out anytime, anywhere, we’re here to deliver smarter, faster, and more seamless banking solutions.',
     address: {
@@ -79,30 +77,40 @@ export const getContactData = {
                 text: 'Internet Banking',
             },
         ],
-        footer: [
+        company: [
             {
-                link: 'Privacy Policy',
-                text: '/privacy-policy',
+                link: '/investor-relations',
+                text: 'Investor Relations',
             },
             {
-                link: 'Investor Relations',
-                text: '/investor-relations',
+                link: '/board-members',
+                text: 'Board-Members',
             },
             {
-                link: 'Board-Members',
-                text: '/board',
+                link: '/financial-reports',
+                text: 'Financial Reports',
             },
             {
-                link: 'Management Team',
-                text: '/management',
+                link: '/events',
+                text: 'AGM Reports',
+            },
+        ],
+        policies: [
+            {
+                link: '/about-us',
+                text: 'About Us',
             },
             {
-                link: 'Financial Reports',
-                text: '/financial-reports',
+                link: '/privacy-policy',
+                text: 'Privacy Policy',
             },
             {
-                link: 'AGM Reports',
-                text: '/events',
+                link: '/terms',
+                text: 'Terms of Use',
+            },
+            {
+                link: '/cookies',
+                text: 'Cookies',
             },
         ],
     }
