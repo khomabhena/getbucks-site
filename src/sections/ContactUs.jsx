@@ -10,8 +10,8 @@ const ContactUs = () => {
         <h2 className=' text-2xl xl:text-4xl lg:text-center font-semibold invisible'>Contact Us</h2>
         <div className=' mt-12 flex flex-col xl:flex-row w-full'>
 
-            <div className=' flex lg:px-0 flex-col mt-12 lg:mt-8 xl:mt-0 gap-2 md:gap-4 text-sm md:text-lg basis-1/4 text-gray-700'>
-                
+            <div className=' basis-1/4 flex flex-col gap-4'>
+                <p className=' text-sm md:text-lg text-gray-700 xl:pr-8 text-center md:text-start flex justify-center'>{data.text}</p>
             </div>
 
             <div className=' basis-1/4 flex items-center flex-col gap-'>

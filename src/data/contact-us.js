@@ -1,8 +1,7 @@
 import { text } from "express";
 
 export const getContactData = {
-    // text: 'Reach out anytime, anywhere, we’re here to deliver smarter, faster, and more seamless banking solutions.',
-    text: 'GetBucks is a member of the Deposit Protection Scheme administered by the Deposit Protection Corporation (DPC) in terms of the DPC Act [Chapter] 24:29',
+    text: 'Reach out anytime, anywhere, we’re here to deliver smarter, faster, and more seamless banking solutions.',
     address: {
         image: '/',
         line1: 'Head Office',
