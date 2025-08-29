@@ -4,7 +4,7 @@ import MainNavigation from '../components/MainNavigation'
 import { getNavigationData } from '../data/navigation'
 import BoardMembersCard from '../components/BoardMembersCard'
 import { getOurBoardData } from '../data/our-board'
-import ContactUs from '../sections/ContactUs'
+import Footer from '../sections/Footer'
 
 const Management = ({ navData }) => {
 
@@ -18,7 +18,7 @@ const Management = ({ navData }) => {
             <MainNavigation data={navData} />
             <div className=' w-full mt-16 md:mt-32 flex flex-col items-center justify-start'>
                 <BoardMembersCard title='The Management Team' data={getOurBoardData.managementTeam} />
-                <ContactUs />
+                <Footer />
             </div>
         </div>
     </Container>

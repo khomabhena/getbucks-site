@@ -3,7 +3,7 @@ import Container from './Container'
 import Header from '../components/Header'
 import Services from '../sections/Services'
 import LandingPageContent from '../sections/LandingPageContent'
-import ContactUs from '../sections/ContactUs'
+import Footer from '../sections/Footer'
 
 const MainContent = () => {
 
@@ -26,7 +26,7 @@ const MainContent = () => {
             <Header scrollPosition={scrollPosition}  />
             <LandingPageContent />
             <Services />
-            <ContactUs />
+            <Footer />
         </div>
     </Container>
   )

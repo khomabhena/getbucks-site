@@ -3,7 +3,7 @@ import Container from './Container'
 import MainNavigation from '../components/MainNavigation'
 import { getNavigationData } from '../data/navigation'
 import GetToKnow from '../sections/GetToKnow'
-import ContactUs from '../sections/ContactUs'
+import Footer from '../sections/Footer'
 import AboutUsSection from '../sections/AboutUsSection'
 import { getContactData } from '../data/contact-us'
 
@@ -42,7 +42,7 @@ const AboutUs = () => {
               <p>{addressData.addressMasvingo.line4}</p>
           </div>
         </div>
-            <ContactUs />
+            <Footer />
         </div>
     </Container>
   )

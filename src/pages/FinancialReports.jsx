@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import Container from './Container'
 import MainNavigation from '../components/MainNavigation'
 import { getNavigationData } from '../data/navigation'
-import ContactUs from '../sections/ContactUs'
+import Footer from '../sections/Footer'
 import { getFinancialReports } from '../data/financial-reports'
 import PDFCard from '../components/PDFCard'
 import { colors } from '../data/colors'
@@ -54,7 +54,7 @@ const FinancialReports = ({ navData }) => {
           </div>
 
         </div>
-        <ContactUs />
+        <Footer />
       </div>
     </Container>
   )

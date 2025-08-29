@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import MobileNavigation from './MobileNavigation'
 import NavigationContext from '../context/NavigationContext'
 import { colors } from '../data/colors'
-import ContactUs from '../sections/ContactUs'
+import Footer from '../sections/Footer'
 
 const Container = ({ children }) => {
     const { mobileNavigation } = useContext(NavigationContext)
@@ -13,7 +13,7 @@ const Container = ({ children }) => {
         { children }
     </div>
     <div style={{ backgroundColor: colors.primaryColor }} className=' hidden px-8 md:px-12 lg:px-24 xl:px-24 2xl:px-32'>
-      <ContactUs white={true} />
+      <Footer white={true} />
     </div>
 
     </>

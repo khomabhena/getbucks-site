@@ -4,7 +4,7 @@ import MainNavigation from '../components/MainNavigation'
 import { getNavigationData } from '../data/navigation'
 import AccountHeroLayout from '../components/AccountHeroLayout'
 import { getAccountHeroData } from '../data/account-hero'
-import ContactUs from '../sections/ContactUs'
+import Footer from '../sections/Footer'
 import { getPersonalExtraData } from '../data/accountExtraData'
 
 const Personal = () => {
@@ -20,7 +20,7 @@ const Personal = () => {
             <div className=' w-full mt-16 md:mt-32 flex flex-row items-center justify-start min-h-screen'>
               <AccountHeroLayout data={getAccountHeroData.personal} extraData={getPersonalExtraData} />
             </div>
-            <ContactUs />
+            <Footer />
         </div>
     </Container>
   )

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import Container from './Container'
 import MainNavigation from '../components/MainNavigation'
 import RegisterLayout from '../components/RegisterLayout'
-import ContactUs from '../sections/ContactUs'
+import Footer from '../sections/Footer'
 
 const Register = ({data, navData}) => {
 
@@ -17,7 +17,7 @@ const Register = ({data, navData}) => {
             <div className='  w-full mt-16 md:mt-32 flex flex-row items-centerl justify-start min-h-screenl mb-32'>
                 <RegisterLayout data={data} />
             </div>
-            <ContactUs />
+            <Footer />
         </div>
     </Container>
   )

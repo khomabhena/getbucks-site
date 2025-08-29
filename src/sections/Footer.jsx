@@ -3,13 +3,13 @@ import { getContactData } from '../data/contact-us'
 import { colors } from '../data/colors'
 import FooterLinks from '../components/FooterLinks'
 
-const ContactUs = ({ white }) => {
+const Footer = ({ white }) => {
     const data = getContactData
 
   return (
     <footer className=' mt-24 pb-12 flex-col justify-center items-center bg-red-600l'>
         <h2 className=' text-2xl xl:text-4xl lg:text-center font-semibold invisible'>Contact Us</h2>
-        <div className=' mt-12 flex flex-col xl:flex-row w-full'>
+        <div className=' mt-12 flex flex-col lg:flex-row w-full'>
 
             <FooterLinks white={white} data={data?.footerLinks?.banking} heading={"Get Started"} />
 
@@ -51,4 +51,4 @@ const ContactUs = ({ white }) => {
   )
 }
 
-export default ContactUs
+export default Footer

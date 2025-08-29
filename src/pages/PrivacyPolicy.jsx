@@ -7,7 +7,7 @@ import { colors } from '../data/colors'
 import Container from './Container'
 import MainNavigation from '../components/MainNavigation'
 import { getNavigationData } from '../data/navigation'
-import ContactUs from '../sections/ContactUs'
+import Footer from '../sections/Footer'
 
 const PrivacyPolicy = ({ navData, title, data }) => {
 
@@ -37,7 +37,7 @@ const PrivacyPolicy = ({ navData, title, data }) => {
                         ))
                     }
                 </PolicyContainer>
-                <ContactUs />
+                <Footer />
 
             </div>
         </div>

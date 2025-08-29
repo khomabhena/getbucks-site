@@ -3,7 +3,7 @@ import Container from './Container'
 import MainNavigation from '../components/MainNavigation'
 import LoginLayout from '../components/LoginLayout'
 import { data } from 'react-router-dom'
-import ContactUs from '../sections/ContactUs'
+import Footer from '../sections/Footer'
 
 const ContactUsPage = ({ data, navData }) => {
 
@@ -22,7 +22,7 @@ const ContactUsPage = ({ data, navData }) => {
             <div className='w-full mt-16 md:mt-32 flex flex-row items-centerl justify-start min-h-screenf mb-64'>
                 <LoginLayout clicked={clicked} data={data} />
             </div>
-            <ContactUs />
+            <Footer />
         </div>
     </Container>
   )

@@ -5,7 +5,7 @@ import Container from './Container'
 import { getNavigationData } from '../data/navigation'
 import LoginLayout from '../components/LoginLayout'
 import { getLoginData } from '../data/login'
-import ContactUs from '../sections/ContactUs'
+import Footer from '../sections/Footer'
 
 const Login = ({data, navData}) => {
 
@@ -42,7 +42,7 @@ const Login = ({data, navData}) => {
         <div className='w-full mt-16 md:mt-32 flex flex-row items-centerl justify-start min-h-screenf mb-64'>
           <LoginLayout formSubmit={formSubmit} data={data}  />
         </div>
-        <ContactUs />
+        <Footer />
       </div>
     </Container>
   )
