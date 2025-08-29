@@ -1,3 +1,5 @@
+import { text } from "express";
+
 export const getContactData = {
     // text: 'Reach out anytime, anywhere, we’re here to deliver smarter, faster, and more seamless banking solutions.',
     text: 'GetBucks is a member of the Deposit Protection Scheme administered by the Deposit Protection Corporation (DPC) in terms of the DPC Act [Chapter] 24:29',
@@ -58,5 +60,51 @@ export const getContactData = {
             link: 'https://www.linkedin.com/company/getbucks-bank/',
             text: 'GetBucks Bank'
         },
-    ]
+    ],
+    footerLinks: {
+        banking: [
+            {
+                link: '/personal',
+                text: 'Personal Banking',
+            },
+            {
+                link: '/business',
+                text: 'Business Banking',
+            },
+            {
+                link: '/diaspora',
+                text: 'Diaspora Banking',
+            },
+            {
+                link: '#',
+                text: 'Internet Banking',
+            },
+        ],
+        footer: [
+            {
+                link: 'Privacy Policy',
+                text: '/privacy-policy',
+            },
+            {
+                link: 'Investor Relations',
+                text: '/investor-relations',
+            },
+            {
+                link: 'Board-Members',
+                text: '/board',
+            },
+            {
+                link: 'Management Team',
+                text: '/management',
+            },
+            {
+                link: 'Financial Reports',
+                text: '/financial-reports',
+            },
+            {
+                link: 'AGM Reports',
+                text: '/events',
+            },
+        ],
+    }
 }
