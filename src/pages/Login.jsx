@@ -29,12 +29,18 @@ const Login = ({data, navData}) => {
     }
   }, [])
 
+  const formSubmit = (e, data) => {
+    e.preventDefault()
+    console.log('form submitted')
+    console.log(data)
+  }
+
   return (
     <Container>
       <div className='min-h-screen w-full'>
         <MainNavigation data={navData} />
         <div className='w-full mt-16 md:mt-32 flex flex-row items-centerl justify-start min-h-screenf mb-64'>
-          <LoginLayout data={data}  />
+          <LoginLayout formSubmit={formSubmit} data={data}  />
         </div>
         <ContactUs />
       </div>

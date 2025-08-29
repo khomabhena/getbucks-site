@@ -2,7 +2,7 @@
 export const getPersonalExtraData = [
     {
         text: "This account comes with :",
-        subText: "Comes with a GetBucks swipe card(Debit card) with access to Zimswitch",
+        subText: "A GetBucks swipe card(Debit card) with access to Zimswitch",
     },
     {
         text: "Free internet & mobile banking.",
@@ -28,7 +28,7 @@ export const getPersonalExtraData = [
 export const getBusinessExtraData = [
     {
         text: "This account comes with :",
-        subText: "Comes with a GetBucks swipe card(Debit card) with access to Zimswitch",
+        subText: "A GetBucks swipe card(Debit card) with access to Zimswitch",
     },
     {
         text: "Free internet & mobile banking.",

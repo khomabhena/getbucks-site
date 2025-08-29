@@ -35,6 +35,8 @@ export const getContactData = {
             link: '#',
             text: 'enquiries@getbucksbank.com'
         },
+    ],
+    socialIcons: [
         {
             image: './social-icons/x.png',
             link: 'https://x.com/getbucksbank?s=11',

@@ -1,7 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { colors } from '../data/colors'
 
-const LoginLayout = ({ data, clicked }) => {
+const LoginLayout = ({ formSubmit, data }) => {
+  const [inputs, setInputs] = useState({})
+
+  const handleChange = (e) => {
+    const name = e.target.name
+    const value = e.target.value
+    setInputs(prev => ({...prev, [name]: value }))
+    console.log(inputs)
+  }
+
   return (
     <div className=' w-full flex flex-col items-center'>
       <h1 className=' mt-12 text-xl xl:text-4xl text-gray-700'>{data.title}</h1>
@@ -18,6 +27,7 @@ const LoginLayout = ({ data, clicked }) => {
               type={input.type}
               placeholder={input.placeholder}
               name={input.name}
+              onChange={handleChange}
               className=' py-4 px-4 xl:py-4 max-w-[500px] xl:max-w-[600px] xl:px-12 shadow-lg rounded-2xl xl:text-xl bg-[#f7f2ec]/60 w-full xl:w-[800px] mt-4'>
             </textarea> 
             :
@@ -28,6 +38,7 @@ const LoginLayout = ({ data, clicked }) => {
               name={input.name}
               placeholder={input.placeholder}
               required={input.required}
+              onChange={handleChange}
               className=' py-4 px-4 xl:py-4 max-w-[500px] xl:max-w-[600px] xl:px-12 shadow-lg rounded-2xl xl:text-xl bg-[#f7f2ec]/60 w-full xl:w-[800px] mt-4'
             />
           ))
@@ -38,7 +49,7 @@ const LoginLayout = ({ data, clicked }) => {
             data.buttons[1].text && 
           <a className=' hover:scale-95 hover:shadow-lg w-full max-w-[500px] lg:max-w-[300px] shadow-xl ease-in-out transition-all min-w-56 text-sm text-center xl:text-lg font-semibold text-gray-50 border-gray-50 xl:border-3 px-8 py-4 rounded-2xl' href="#">{data.buttons[1].text}</a>}
           <a className=' hover:scale-95 hover:shadow-lg w-full max-w-[500px] lg:max-w-[300px] shadow-xl ease-in-out transition-all min-w-56 text-sm text-center xl:text-lg' href="#">
-            <button onClick={() => clicked({name: 'Test Mailer', email: 'test@test.com', number: '0774876886'})} className=' w-full cursor-pointer font-semibold border-gray-50 border-3 bg-white text-black px-8 py-4 rounded-2xl' >{data.buttons[0].text}</button>
+            <div onClick={(e) => formSubmit(e, inputs)} className=' w-full cursor-pointer font-semibold border-gray-50 border-3 bg-white text-black px-8 py-4 rounded-2xl' >{data.buttons[0].text}</div>
           </a>
         </div>
 

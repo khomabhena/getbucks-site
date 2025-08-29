@@ -1,7 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { colors } from '../data/colors'
 
 const RegisterLayout = ({ data }) => {
+
+  const [inputs, setInputs] = useState({})
+
+  const handleChange = (e) => {
+    const name = e.target.name
+    const value = e.target.value
+    setInputs(prev => ({...prev, [name]: value}))
+  }
+
   return (
     <div className=' w-full flex flex-col items-center'>
       <h1 className=' mt-12 text-xl xl:text-4xl text-gray-700'>{data.title}</h1>
@@ -19,6 +28,7 @@ const RegisterLayout = ({ data }) => {
                   name={input.name}
                   placeholder={input.placeholder}
                   required={input.required}
+                  onChange={handleChange}
                   className=' py-4 xl:py-4 px-4 xl:px-12 max-w-[500px] shadow-lg rounded-2xl text-sm xl:text-xl bg-[#f7f2ec]/60 w-full'
                 />
               </div>

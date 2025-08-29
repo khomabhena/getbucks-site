@@ -16,10 +16,10 @@ const Business = () => {
     const metaDescription = document.createElement('meta')
     const metaDescriptionOG = document.createElement('meta')
     metaDescription.name = "description"
+    metaDescription.content = hero.subtitle
+    metaDescription.content = hero.subtitle
     metaDescriptionOG.name = "og:description"
     metaDescriptionOG.title = "og:title"
-    metaDescription.content = hero.subtitle
-    metaDescriptionOG.content = hero.subtitle
     metaDescriptionOG.content = hero.subtitle
     document.head.appendChild(metaDescription)
     document.head.appendChild(metaDescriptionOG)
