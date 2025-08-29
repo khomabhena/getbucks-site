@@ -109,8 +109,8 @@ export const getContactData = {
                 text: 'Terms of Use',
             },
             {
-                link: '/cookies',
-                text: 'Cookies',
+                link: '/info',
+                text: 'Additional Infomation',
             },
         ],
     }

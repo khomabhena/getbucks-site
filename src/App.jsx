@@ -22,6 +22,7 @@ import FinancialReports from './pages/FinancialReports'
 import Events from './pages/Events'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import ContactUsPage from './pages/ContactUsPage'
+import { getAdditionalInformationData, getPrivacyPolicy, getTermsAndConditionsData } from './data/privacy-policy'
 
 function App() {
 
@@ -44,7 +45,9 @@ function App() {
           <Route path='/management' element={<Management navData={getNavigationData.landingPage } />} />
           <Route path='/financial-reports' element={<FinancialReports navData={getNavigationData.landingPage } />} />
           <Route path='/events' element={<Events navData={getNavigationData.landingPage } />} />
-          <Route path='/privacy-policy' element={<PrivacyPolicy navData={getNavigationData.landingPage } />} />
+          <Route path='/privacy-policy' element={<PrivacyPolicy navData={getNavigationData.landingPage } title={"Privacy Policy"} data={getPrivacyPolicy} />} />
+          <Route path='/terms' element={<PrivacyPolicy navData={getNavigationData.landingPage } title={"Terms and Conditions"} data={getTermsAndConditionsData} />} />
+          <Route path='/info' element={<PrivacyPolicy navData={getNavigationData.landingPage } title={"Additional Information"} data={getAdditionalInformationData} />} />
 
           <Route path='/personal/login' element={<Login data={getLoginData.personal} navData={getNavigationData.personal} />} />
           <Route path='/diaspora/login' element={<Login data={getLoginData.diaspora} navData={getNavigationData.personal} />} />

@@ -221,12 +221,22 @@ export const getPrivacyPolicy = [
             },
         ]
     },
+
+]
+
+
+
+
+
+
+
+export const getTermsAndConditionsData = [
     {
-        title: '',
+        title: 'Definitions and Interpretation',
         titleNumber: '',
         paragraphs: [
             {
-                paragraph: ''
+                paragraph: 'For purposes of the Terms: “Terms” means these terms, consisting of: 1. these terms of use; and 2. any other relevant specific terms, policies, disclaimers, rules and notices agreed between the parties, (including any that may be applicable to a specific section or module of this web site); “GetBucks” means GetBucks (Pty) Ltd with Reg No. 2010/015748/07; “Visitor” or “you” means any person who visits this web site. Interpretation. A word defined or assigned a meaning in the Terms will start with a capital letter. All headings are inserted for reference purposes only and must not affect the interpretation of the Terms. Whenever “including” or “include”, or “excluding” or “exclude”, together with specific examples or items follow a term, they will not limit its ambit. Terms other than those defined within the Terms will be given their plain English meaning. References to any enactment will be deemed to include references to the enactment as re-enacted, amended, or extended from time to time. A reference to a person includes a natural and juristic person and a reference to either party includes the party’s successors or permitted assigns. Unless otherwise stated in the Terms, when any number of days is prescribed in the Terms the first day will be excluded and the last day included. The rule of construction that an agreement must be interpreted against the party responsible for its drafting or preparation does not apply. Central African Time or GMT +2 will be used to calculate any times. Conflict. If there is a conflict of meaning between these terms of use and any other relevant specific terms, policies, disclaimers, rules and notices agreed between the parties, the specific terms will prevail in respect of your use of the relevant section or module of the web site.'
             }
         ]
     },
@@ -267,6 +277,17 @@ export const getPrivacyPolicy = [
             }
         ]
     },
+]
+
+
+
+
+
+
+
+
+
+export const getAdditionalInformationData = [
     {
         title: 'Cookies',
         titleNumber: '',

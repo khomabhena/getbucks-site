@@ -9,8 +9,7 @@ import MainNavigation from '../components/MainNavigation'
 import { getNavigationData } from '../data/navigation'
 import ContactUs from '../sections/ContactUs'
 
-const PrivacyPolicy = () => {
-    const data = getPrivacyPolicy
+const PrivacyPolicy = ({ navData, title, data }) => {
 
     useEffect(() => {
         document.title = "Privacy Policy | GetBucks Bank"
@@ -19,10 +18,10 @@ const PrivacyPolicy = () => {
   return (
     <Container>
         <div className=' min-h-screen w-full'>
-            <MainNavigation data={getNavigationData.landingPage} />
+            <MainNavigation data={navData} />
             <div className=' w-full mt-16 md:mt-32 flex flex-col items-center'>
                 <PolicyContainer>
-                    <h1 className=' text-xl md:text-2xl font-bold'>Privacy Policy</h1>
+                    <h1 className=' text-xl md:text-2xl font-bold'>{title}</h1>
                     {
                         data?.map(({ title, titleNumber, paragraphs }) => (
                             <>

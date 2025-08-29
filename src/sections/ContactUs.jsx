@@ -36,7 +36,7 @@ const ContactUs = ({ white }) => {
             {
                 data?.socialIcons?.map(({ image, link, text }) => (
                     <a key={link} target='_blank' rel='noreferrer' href={link} className=' hover:scale-105 transition-all ease-in-out flex items-center gap-4'>
-                        <img className=' w-10 h-10' src={image} alt={text} />
+                        <img className=' w-8 h-8' src={image} alt={text} />
                     </a>
                 ))
             }
