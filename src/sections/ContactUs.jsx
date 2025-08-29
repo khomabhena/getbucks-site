@@ -16,11 +16,11 @@ const ContactUs = () => {
 
             <div className=' basis-1/4 flex items-center flex-col gap-'>
                 <p className=' font-boldl text-sm md:text-lg text-gray-700 xl:pr-8 text-center md:text-start flex justify-centerl'>Get Our Apps</p>
-                <a className=' hover:scale-105 ease-in-out transition-all mt-12' href="https://apps.apple.com/zw/app/getbucks-mobile-banking/id1437807974" target='_blank'>
-                    <img className=' w-[200px] h-auto' height={'50px'} width={'100px'} src="./social-icons/app-store.png" alt="" />
+                <a className=' hover:scale-105 ease-in-out transition-all mt-4' href="https://apps.apple.com/zw/app/getbucks-mobile-banking/id1437807974" target='_blank'>
+                    <img className=' w-[150px] h-auto' height={'40px'} width={'80px'} src="./social-icons/app-store.png" alt="" />
                 </a>
                 <a className=' hover:scale-105 ease-in-out transition-all mt-4' href="https://play.google.com/store/apps/details?id=com.getbucks.banking.gb&pcampaignid=web_share" target='_blank'>
-                    <img className=' w-[200px] h-auto' height={'50px'} width={'100px'} src="./social-icons/google-play.png" alt="" />
+                    <img className=' w-[150px] h-auto' height={'40px'} width={'80px'} src="./social-icons/google-play.png" alt="" />
                 </a>
             </div>
 
