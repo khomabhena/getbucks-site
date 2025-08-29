@@ -11,7 +11,7 @@ const ContactUs = () => {
         <div className=' mt-12 flex flex-col xl:flex-row w-full'>
 
             <div className=' basis-1/4 flex flex-col gap-4'>
-                <p className=' text-sm md:text-lg text-gray-700 xl:pr-8 text-center md:text-start flex justify-center'>"{data.text}"</p>
+                <p className=' text-sm md:text-lg text-gray-700 xl:pr-8 text-center md:text-start flex justify-center'>{data.text}</p>
             </div>
 
             <div className=' basis-1/4 flex items-center flex-col gap-'>
