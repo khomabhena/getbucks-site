@@ -6,7 +6,7 @@ const ContactUs = () => {
     const data = getContactData
 
   return (
-    <section className=' mt-24 pb-32 flex-col justify-center items-center'>
+    <section className=' mt-24 pb-12 flex-col justify-center items-center'>
         <h2 className=' text-2xl xl:text-4xl lg:text-center font-semibold invisible'>Contact Us</h2>
         <div className=' mt-12 flex flex-col xl:flex-row w-full'>
 
@@ -85,6 +85,10 @@ const ContactUs = () => {
                 </div>
             </div>
 
+        </div>
+        <div className=' bg-red-600l flex gap-4 items-center mt-12 text-base'>
+            <img className=' w-24 h-24 rounded-full' src="./social-icons/dpc-logo.jpg" alt="" />
+            <p>GetBucks is a member of the Deposit Protection Scheme administered by the Deposit Protection Corporation (DPC) in terms of the DPC Act [Chapter] 24:29.<br />Head Office, 1st Floor Unity Court, No. 64 Kwame Nkrumah Ave, Harare, Zimbabwe<br />&copy; GetBucks Bank {new Date().getFullYear()}. All rights reserved.</p>
         </div>
     </section>
   )
