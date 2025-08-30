@@ -3,7 +3,7 @@ import { colors } from '../data/colors'
 
 const ServicesCard = ({ image, title, text }) => {
   return (
-    <div className=' min-h-48 mt-12 pr-4 lg:pr-8 basis-1/1 lg:basis-1/2 xl:basis-1/2 2xl:basis-1/3'>
+    <div className=' min-h-48 mt-12 pr-4 lg:pr-8 basis-full lg:basis-1/2 xl:basis-1/2 2xl:basis-1/3'>
       <div style={{ backgroundColor: colors.backgroundColor }} className=' w-full h-full flex rounded-xl shadow-lg 
       hover:scale-105 hover:shadow-[#faa819] hover:shadow-lg ease-in-out transition-all'>
 

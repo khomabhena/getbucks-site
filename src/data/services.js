@@ -18,9 +18,9 @@ export const getServicesData = {
             text: 'Our suite of smart SME banking products will allow you the freedom of transaction, and easy access to funds for your business needs.'
         },
         {
-            image: '/services/icon-02.png',
+            image: '/services/icon-06.png',
             title: 'SSB',
-            text: 'Our suite of smart SME banking products will allow you the freedom of transaction, and easy access to funds for your business needs.'
+            text: 'From personal needs to big plans, our SSB loans give you the financial support you need with flexible terms and affordable repayments.'
         },
         {
             image: '/services/icon-05.png',
