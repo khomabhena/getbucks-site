@@ -15,7 +15,7 @@ const Container = ({ children }) => {
     <div style={{ backgroundColor: colors.primaryColor }} className=' hiddenl px-8 md:px-12 lg:px-24 xl:px-24 2xl:px-32'>
       <Footer white={true} />
     </div>
-    <div style={{ backgroundColor: "black" }} className=' hiddenl px-8 md:px-12 lg:px-24 xl:px-24 2xl:px-32'>
+    <div style={{ backgroundColor: "black" }} className=' hidden px-8 md:px-12 lg:px-24 xl:px-24 2xl:px-32'>
       <Footer white={true} />
     </div>
 

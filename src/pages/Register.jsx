@@ -17,7 +17,7 @@ const Register = ({data, navData}) => {
             <div className='  w-full mt-16 md:mt-32 flex flex-row items-centerl justify-start min-h-screenl mb-32'>
                 <RegisterLayout data={data} />
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     </Container>
   )

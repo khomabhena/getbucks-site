@@ -53,7 +53,7 @@ const Business = () => {
             <div className=' w-full mt-16 md:mt-32 flex flex-row items-center justify-start min-h-screen'>
               <AccountHeroLayout data={getAccountHeroData.business} extraData={getBusinessExtraData} />
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     </Container>
   )

@@ -45,7 +45,7 @@ const Diaspora = () => {
             <div className=' w-full pt-16 xl:pt-32 flex flex-row items-center justify-start min-h-screen'>
               <AccountHeroLayout data={getAccountHeroData.diaspora} />
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     </Container>
   )

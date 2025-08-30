@@ -37,7 +37,7 @@ const PrivacyPolicy = ({ navData, title, data }) => {
                         ))
                     }
                 </PolicyContainer>
-                <Footer />
+                {/* <Footer /> */}
 
             </div>
         </div>

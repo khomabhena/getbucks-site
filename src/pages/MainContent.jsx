@@ -26,7 +26,7 @@ const MainContent = () => {
             <Header scrollPosition={scrollPosition}  />
             <LandingPageContent />
             <Services />
-            <Footer />
+            {/* <Footer /> */}
         </div>
     </Container>
   )

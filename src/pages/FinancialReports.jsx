@@ -54,7 +54,7 @@ const FinancialReports = ({ navData }) => {
           </div>
 
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Container>
   )

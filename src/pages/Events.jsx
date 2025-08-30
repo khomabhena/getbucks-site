@@ -52,7 +52,7 @@ const Events = ({ navData }) => {
                 </div>
 
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     </Container>
   )

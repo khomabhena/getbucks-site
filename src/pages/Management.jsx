@@ -18,7 +18,7 @@ const Management = ({ navData }) => {
             <MainNavigation data={navData} />
             <div className=' w-full mt-16 md:mt-32 flex flex-col items-center justify-start'>
                 <BoardMembersCard title='The Management Team' data={getOurBoardData.managementTeam} />
-                <Footer />
+                {/* <Footer /> */}
             </div>
         </div>
     </Container>

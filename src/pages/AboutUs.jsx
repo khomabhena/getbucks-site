@@ -42,7 +42,7 @@ const AboutUs = () => {
               <p>{addressData.addressMasvingo.line4}</p>
           </div>
         </div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     </Container>
   )
