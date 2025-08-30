@@ -13,7 +13,7 @@ const AboutUsCard = ({ title, subtitle, text, points }) => {
         <img src="/about/icon-02.png" alt="" />
       </div>
 
-      <div className=' pl-6 pr-6 pt-6 absolute flex flex-col rounded-4xl top-0 left-0 w-full min-h-52 shadow-lg hover:shadow-2xl shadow-[#faa819] bg-gradient-to-r from-[#f7f2ec] to-gray-100'>
+      <div className=' pl-6 pr-6 pt-6 absolute flex flex-col rounded-4xl top-0 left-0 w-full min-h-48 shadow-lg hover:shadow-2xl shadow-[#faa819] bg-gradient-to-r from-[#f7f2ec] to-gray-100'>
         <h3 className=' text-lg font-semibold' style={{ color: colors.primaryColor }}>{title}</h3>
         <h4 className=' mt-3 text-base'>"{subtitle}"</h4>
         <p className=' text-xs md:text-xs mt-4'>{text}</p>
