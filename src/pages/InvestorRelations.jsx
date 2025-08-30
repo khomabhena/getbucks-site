@@ -44,7 +44,7 @@ const InvestorRelations = () => {
             <MainNavigation data={getNavigationData.investorRelations} />
             <div className=' w-full mt-16 md:mt-32 flex flex-col items-center justify-start min-h-screenl'>
               <InvestorRelationsSection />
-              <Footer />
+              {/* <Footer /> */}
             </div>
         </div>
     </Container>
