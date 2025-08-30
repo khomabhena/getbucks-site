@@ -27,11 +27,11 @@ const MainNavigation = ({ scrollPosition, data, prefix = '' }) => {
             </a>
               {
               subMenu[0] && 
-            <div className={` ${subMenu[0] ? 'flex' : ' hidden'} hidden group-hover:flex absolute top-0 flex-col gap-8 h-fit pt-20 pb-12 font-semiboldl text-xl left-0`}>
+            <div className={` ${subMenu[0] ? 'flex' : ' hidden'} hidden group-hover:flex absolute top-0 flex-col gap-8 h-fit pt-14 pb-12 font-semiboldl text-xl left-0`}>
               <div style={{ backgroundColor: colors.backgroundColor }} className=' rounded-bl-2xl rounded-br-2xl flex flex-col shadow-2xl px-8 py-8 gap-8'>
               {
                 subMenu.map(({name, link}) => (
-                    <a key={name} href={link} style={{ backgroundColor: colors.backgroundColor }}><li className=' text-sm w-48 hover:underline'>{name}</li></a>
+                    <a key={name} href={link} style={{ backgroundColor: colors.backgroundColor }}><li className=' text-sm w-24 hover:underline'>{name}</li></a>
                 ))
               }
               </div>
