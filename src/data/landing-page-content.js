@@ -29,9 +29,9 @@ export const getLandingPageContent = {
         },
         {
             index: 5,
-            image: "./landing-page/loans.png",
+            image: "./landing-page/airtime.png",
             title: "Airtime Topups ",
-            description: "Get access to credit faster than ever. With flexible repayment options, our loans are designed to power your personal or business goals.",
+            description: "Top up your airtime instantly, wherever you are. Whether it’s for quick chats, long calls, or staying online, our airtime top-up service makes sure you never miss a moment.",
         },
         {
             index: 6,

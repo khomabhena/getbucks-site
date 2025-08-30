@@ -19,7 +19,7 @@ const PrivacyPolicy = ({ navData, title, data }) => {
     <Container>
         <div className=' min-h-screen w-full'>
             <MainNavigation data={navData} />
-            <div className=' w-full mt-16 md:mt-32 flex flex-col items-center'>
+            <div className=' w-full mt-16 md:mt-24 flex flex-col items-center'>
                 <PolicyContainer>
                     <h1 className=' text-xl md:text-2xl font-bold'>{title}</h1>
                     {

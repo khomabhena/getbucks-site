@@ -14,7 +14,7 @@ const Register = ({data, navData}) => {
     <Container>
         <div className='min-h-screenl w-full'>
             <MainNavigation data={navData} />
-            <div className='  w-full mt-16 md:mt-32 flex flex-row items-centerl justify-start min-h-screenl mb-32'>
+            <div className='  w-full mt-16 md:mt-24 flex flex-row items-centerl justify-start min-h-screenl mb-32'>
                 <RegisterLayout data={data} />
             </div>
             {/* <Footer /> */}

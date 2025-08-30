@@ -11,7 +11,7 @@ const MainNavigation = ({ scrollPosition, data, prefix = '' }) => {
     }
 
   return ( 
-    <nav style={{ boxShadow: colors.primaryColor, backgroundColor: colors.backgroundColor }} className={` fixed ${scrollPosition > 82 ? ' shadow-xl shadow-[#faa819]/10' : ' shadow-lg' } shadow-[#faa819]/30l shadow-lgk sha top-0 left-0 right-0 m-auto w-full max-w-[1920px] z-20 flex justify-between items-center px-8 md:px-12 lg:px-24 2xl:px-32 h-16 md:h-32 ease-in-out transition-all`}>
+    <nav style={{ boxShadow: colors.primaryColor, backgroundColor: colors.backgroundColor }} className={` fixed ${scrollPosition > 82 ? ' shadow-xl shadow-[#faa819]/10' : ' shadow-lg' } shadow-[#faa819]/30l shadow-lgk sha top-0 left-0 right-0 m-auto w-full max-w-[1920px] z-20 flex justify-between items-center px-8 md:px-12 lg:px-24 2xl:px-32 h-16 md:h-24 ease-in-out transition-all`}>
 
       <a href="/">
         <img className=' cursor-pointer h-8 md:h-10 xl:h-14 w-auto hover:scale-105 ease-in-out transition-all' src="/logo.png" height={'auto'}  alt="White Appletree logo" />

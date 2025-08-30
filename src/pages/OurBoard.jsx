@@ -16,7 +16,7 @@ const OurBoard = ({ navData }) => {
     <Container>
         <div className=' min-h-screen w-full'>
             <MainNavigation data={navData} />
-            <div className=' w-full mt-16 md:mt-32 flex flex-col items-center justify-start min-h-screenl'>
+            <div className=' w-full mt-16 md:mt-24 flex flex-col items-center justify-start min-h-screenl'>
                 <BoardMembersCard title='Our Board Members' data={getOurBoardData.boardMembers} />
                 {/* <Footer /> */}
             </div>

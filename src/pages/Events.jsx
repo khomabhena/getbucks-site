@@ -40,7 +40,7 @@ const Events = ({ navData }) => {
     <Container>
         <div className=' min-h-screen w-full'>
             <MainNavigation data={navData} />
-            <div className='w-full mt-16 md:mt-32 flex flex-col items-center justify-start'>
+            <div className='w-full mt-16 md:mt-24 flex flex-col items-center justify-start'>
                 <h1 className=' text-xl md:text-4xl xl:text-6xl font-semibold text-gray-700 text-center mt-24'>Events</h1>
                 
                 <div className=' w-full flex gap-4l flex-wrap mt-24 mb-48'>  
