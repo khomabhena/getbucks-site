@@ -25,7 +25,7 @@ const AccountHeroLayout = ({ data, extraData }) => {
             }
         </div>
         <a href={data.mainButton.link} className=''>
-            <button className=' mt-12 xl:mt-24 cursor-pointer bg-[#faa818] px-6 py-4 text-gray-50 rounded-2xl text-sm xl:text-xs shadow-xl hover:scale-95 hover:shadow-gray-300 hover:shadow-sm ease-in-out transition-all'>{data.mainButton.text}</button>
+            <button className=' mt-12 xl:mt-24 cursor-pointer bg-[#faa818] px-6 py-4 text-gray-50 rounded-2xl text-sm xl:text-sm shadow-xl hover:scale-95 hover:shadow-gray-300 hover:shadow-sm ease-in-out transition-all'>{data.mainButton.text}</button>
         </a>
         {
             data.mainButton2 && 

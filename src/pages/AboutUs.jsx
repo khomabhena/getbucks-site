@@ -22,24 +22,24 @@ const AboutUs = () => {
             <GetToKnow />
           <div className=' flex md:flex-col xl:flex-row gap-8 justify-evenly w-full mt-54 pb-24 text-lg'>
             <div className=' shadow rounded-2xl py-4 mx-4 w-full text-center basis-1 md:basis-1/2 xl:basis-1/3 mt-8 flex flex-col text-gray-700'>
-                <p className=' font-semibold text-xl md:text-2xl'>{addressData.address.line1}</p>
-                <p className=' mt-4'>{addressData.address.line2}</p>
-                <p>{addressData.address.line3}</p>
-                <p>{addressData.address.line4}</p>
+                <p className=' font-semibold text-sm md:text-lg'>{addressData.address.line1}</p>
+                <p className=' mt-4 text-sm'>{addressData.address.line2}</p>
+                <p className=' text-sm'>{addressData.address.line3}</p>
+                <p className=' text-sm'>{addressData.address.line4}</p>
             </div>
 
             <div className=' shadow rounded-2xl py-4 mx-4 w-full text-center basis-1 md:basis-1/2 xl:basis-1/3 mt-8 flex flex-col text-gray-700'>
-                <p className=' font-semibold text-xl md:text-2xl'>{addressData.addressGweru.line1}</p>
-                <p className=' mt-4'>{addressData.addressGweru.line2}</p>
-                <p>{addressData.addressGweru.line3}</p>
-                <p>{addressData.addressGweru.line4}</p>
+                <p className=' font-semibold text-sm md:text-lg'>{addressData.addressGweru.line1}</p>
+                <p className=' mt-4 text-sm'>{addressData.addressGweru.line2}</p>
+                <p className=' text-sm'>{addressData.addressGweru.line3}</p>
+                <p className=' text-sm'>{addressData.addressGweru.line4}</p>
             </div>
 
             <div className=' shadow rounded-2xl py-4 mx-4 w-full text-center basis-1 md:basis-1/2 xl:basis-1/3 mt-8 flex flex-col text-gray-700'>
-                <p className=' font-semibold text-xl md:text-2xl'>{addressData.addressMasvingo.line1}</p>
-                <p className=' mt-4'>{addressData.addressMasvingo.line2}</p>
-                <p>{addressData.addressMasvingo.line3}</p>
-                <p>{addressData.addressMasvingo.line4}</p>
+                <p className=' font-semibold text-sm md:text-lg'>{addressData.addressMasvingo.line1}</p>
+                <p className=' mt-4 text-sm'>{addressData.addressMasvingo.line2}</p>
+                <p className=' text-sm'>{addressData.addressMasvingo.line3}</p>
+                <p className=' text-sm'>{addressData.addressMasvingo.line4}</p>
             </div>
           </div>
             {/* <Footer /> */}
