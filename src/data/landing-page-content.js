@@ -22,9 +22,9 @@ export const getLandingPageContent = {
         },
         {
             index: 4,
-            image: "./landing-page/loans.png",
+            image: "./landing-page/bill-payments.png",
             title: "Bill Payments ",
-            description: "Get access to credit faster than ever. With flexible repayment options, our loans are designed to power your personal or business goals.",
+            description: "Payiong your bills shouldn't be a chore. Our platform brings together utilities, subscriptions, and everyday expenses in a single, secure space.",
         },
         {
             index: 5,
