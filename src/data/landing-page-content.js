@@ -5,7 +5,7 @@ export const getLandingPageContent = {
         {
             index: 1,
             image: "./landing-page/loans.png",
-            title: "Loans",
+            title: "Bank Accounts",
             description: "Get access to credit faster than ever. With flexible repayment options, our loans are designed to power your personal or business goals.",
         },
         {
@@ -16,26 +16,44 @@ export const getLandingPageContent = {
         },
         {
             index: 3,
+            image: "./landing-page/loans.png",
+            title: "Loans",
+            description: "Get access to credit faster than ever. With flexible repayment options, our loans are designed to power your personal or business goals.",
+        },
+        {
+            index: 4,
+            image: "./landing-page/loans.png",
+            title: "Bill Payments ",
+            description: "Get access to credit faster than ever. With flexible repayment options, our loans are designed to power your personal or business goals.",
+        },
+        {
+            index: 5,
+            image: "./landing-page/loans.png",
+            title: "Airtime Topups ",
+            description: "Get access to credit faster than ever. With flexible repayment options, our loans are designed to power your personal or business goals.",
+        },
+        {
+            index: 6,
             image: "./landing-page/notifications.png",
             title: "Instant Notifications",
             description: "Get real time alerts every time money moves in or out of your account. From deposits to purchases, our smart notifications keep you informed, in control, and protected",
             
         },
         {
-            index: 4,
+            index: 7,
             image: "./landing-page/insurance.png",
             title: "Insurance",
             description: "From health to travel to assets, our insurance solutions are built into your banking experience.",
             
         },
         {
-            index: 5,
+            index: 8,
             image: "./landing-page/cash-back.png",
             title: "Cash Back",
             description: "Get value in every transaction, with purchases that pays you back.",
         },
         {
-            index: 6,
+            index: 9,
             image: "./landing-page/security.png",
             title: "Security",
             description: "From biometric logins to fraud detection, your money is always protected. We use next-gen encryption and real-time monitoring to keep your banking safe, so you can focus on what matters.",

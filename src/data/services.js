@@ -18,6 +18,11 @@ export const getServicesData = {
             text: 'Our suite of smart SME banking products will allow you the freedom of transaction, and easy access to funds for your business needs.'
         },
         {
+            image: '/services/icon-02.png',
+            title: 'SSB',
+            text: 'Our suite of smart SME banking products will allow you the freedom of transaction, and easy access to funds for your business needs.'
+        },
+        {
             image: '/services/icon-05.png',
             title: 'Treasury',
             text: 'Our Treasury section offers smart tools and expert services to help you manage liquidity, investments, and financial risk with confidence.'

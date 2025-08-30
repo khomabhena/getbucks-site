@@ -10,8 +10,8 @@ const Hero = () => {
         <h1 className=' ease-in-out md:pt-32 lg:pt-32 text-xl md:text-2xl 2xl:text-2xl text-slate-700 font-semibold text-center'>
           <span className=' text-2xl md:text-5xl lg:text-7xl xl:text-7xl 2xl:text-8xl font-bold' 
           style={{ color: primaryColor }}>Smart with Money</span><br /><br />
-          <span className=' text-sm md:text-lg hidden'>Next-Gen Banking - Little bank, Innovative to the Core</span>
-          <span className=' text-sm md:text-lg'>Game-Changing Banking - Little bank, Tech-Savvy</span>
+          <span className=' text-sm md:text-base hidden'>Next-Gen Banking - Little bank, Innovative to the Core</span>
+          <span className=' text-sm md:text-base'>Game-Changing Banking - Little bank, Tech-Savvy</span>
         </h1>
 
         <a className=' self-center' href="/open-account">
