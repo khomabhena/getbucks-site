@@ -17,7 +17,7 @@ const Footer = ({ white }) => {
 
             <FooterLinks white={white} data={data?.footerLinks?.policies} heading={"Policies"} />
 
-            <div className=' mt-8 xl:mt-0 basis-1/4 flex flex-col items-centerc'>
+            <div className=' mt-8 xl:mt-0 basis-1/4 flex flex-col items-centerp'>
                 {/* <div className=''> */}
                 <p className={` xl:text-lg font-semibold ${ white ? ' text-gray-100' : 'text-gray-800'} mb-4`}>Get Our Apps</p>
                 <a className=' hover:scale-105 ease-in-out transition-all' href="https://apps.apple.com/zw/app/getbucks-mobile-banking/id1437807974" target='_blank'>
@@ -45,7 +45,8 @@ const Footer = ({ white }) => {
         <div className={` bg-red-600l ${ white ? ' text-gray-200' : ' text-gray-500'} flex flex-col md:flex-row text-center md:text-start gap-4 items-center mt-16 text-xs md:text-sm`}>
 
             <img className=' w-10 h-10 md:w-14 md:h-14 rounded-full' src="./social-icons/dpc-logo.jpg" alt="" />
-            <p>GetBucks is registered in Zimbabwe as GetBucks Bank (No. 00000263). We are a member of the Deposit Protection Scheme administered by the Deposit Protection Corporation (DPC) in terms of the DPC Act [Chapter] 24:29.<br />Head Office, 1st Floor Unity Court, No. 64 Kwame Nkrumah Ave, Harare, Zimbabwe<br />&copy; GetBucks Bank {new Date().getFullYear()}. All rights reserved.</p>
+            <p className=' hidden'>GetBucks is registered in Zimbabwe as GetBucks Bank (No. 322/2012). We are a member of the Deposit Protection Scheme administered by the Deposit Protection Corporation (DPC) in terms of the DPC Act [Chapter] 24:29.<br />1st Floor Unity Court, No. 64 Kwame Nkrumah Ave, Harare, Zimbabwe<br />&copy; GetBucks Bank {new Date().getFullYear()}. All rights reserved.</p>
+            <p>GetBucks Bank is registered in Zimbabwe as GetBucks Microfinance Bank Limited (322/2012), 1st Floor Unity Court, No. 64 Kwame Nkrumah Ave, Harare. We are authorised by and regulated by the Reserve Bank of Zimbabwe under Licence No. 000002. We are a member of the Deposit Protection Scheme administered by the Deposit Protection Corporation (DPC) in terms of the DPC Act [Chapter] 24:29.</p>
         </div>
     </footer>
   )
