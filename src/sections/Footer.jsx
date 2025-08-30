@@ -7,7 +7,7 @@ const Footer = ({ white }) => {
     const data = getContactData
 
   return (
-    <footer className=' mt-24 pb-12 flex-col justify-center items-center bg-red-600l'>
+    <footer className=' mt-24l pb-12 flex-col justify-center items-center bg-red-600l'>
         <h2 className=' text-2xl xl:text-4xl lg:text-center font-semibold invisible'>Contact Us</h2>
         <div className=' mt-12 flex flex-col lg:flex-row w-full'>
 
