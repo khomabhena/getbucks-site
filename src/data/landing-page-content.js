@@ -4,9 +4,9 @@ export const getLandingPageContent = {
     data: [
         {
             index: 1,
-            image: "./landing-page/loans.png",
+            image: "./landing-page/accounts.png",
             title: "Bank Accounts",
-            description: "Get access to credit faster than ever. With flexible repayment options, our loans are designed to power your personal or business goals.",
+            description: "With modern tools, strong security, and round-the-clock access, our bank accounts are designed to make banking simpler.",
         },
         {
             index: 2,

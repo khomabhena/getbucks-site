@@ -4,7 +4,7 @@ import NavigationContext from '../context/NavigationContext'
 import { getNavigationData } from '../data/navigation'
 
 const MainNavigation = ({ scrollPosition, data, prefix = '' }) => {
-    const {mobileNavigation, setMobileNavigation} = useContext(NavigationContext)
+    const {mobileNavigation, setMobileNavigation}= useContext(NavigationContext)
    const primaryColor = colors.primaryColor
     if (!data) {
       data = getNavigationData.landingPage
@@ -14,7 +14,7 @@ const MainNavigation = ({ scrollPosition, data, prefix = '' }) => {
     <nav style={{ boxShadow: colors.primaryColor, backgroundColor: colors.backgroundColor }} className={` fixed ${scrollPosition > 82 ? ' shadow-xl shadow-[#faa819]/10' : ' shadow-lg' } shadow-[#faa819]/30l shadow-lgk sha top-0 left-0 right-0 m-auto w-full max-w-[1920px] z-20 flex justify-between items-center px-8 md:px-12 lg:px-24 2xl:px-32 h-16 md:h-32 ease-in-out transition-all`}>
 
       <a href="/">
-        <img className=' cursor-pointer h-8 md:h-10 xl:h-16 w-auto hover:scale-105 ease-in-out transition-all' src="/logo.png" height={'auto'}  alt="White Appletree logo" />
+        <img className=' cursor-pointer h-8 md:h-10 xl:h-14 w-auto hover:scale-105 ease-in-out transition-all' src="/logo.png" height={'auto'}  alt="White Appletree logo" />
       </a>
 
       <ul className=' hidden z-30 xl:flex gap-2 text-base pr-4' style={{ color: primaryColor }}>
@@ -22,7 +22,7 @@ const MainNavigation = ({ scrollPosition, data, prefix = '' }) => {
           data.map(({ active, link, name, subMenu }) => (
             <>
               <li key={name} className={`group relative hover:scale-105 hover:shadow-gray-300  ease-in-out transition-all`}>
-            <a key={name} className={` px-8 py-2 rounded-4xl text-base ${active ? 'bg-[#faa819] text-gray-50 hover:shadow-xl' : 'hover:bg-[#faa819] hover:text-gray-50 hover:shadow-xl'}`} href={`${prefix}${link}`}>
+            <a key={name} className={` px-8 py-2 rounded-4xl text-xs ${active ? 'bg-[#faa819] text-gray-50 hover:shadow-xl' : 'hover:bg-[#faa819] hover:text-gray-50 hover:shadow-xl'}`} href={`${prefix}${link}`}>
                 {name}
             </a>
               {
@@ -40,7 +40,7 @@ const MainNavigation = ({ scrollPosition, data, prefix = '' }) => {
             </>
           ))
         }
-        <li style={{ borderColor: primaryColor }} className=' border-3 -mt-1  px-4 py-1 rounded-4xl text-base hover:scale-105 hover:shadow-gray-300 hover:border-green-900 hover:bg-[#faa819] hover:text-gray-50 hover:shadow-xl ease-in-out transition-all'><a target='_blank' href={`https://internetbanking.getbucks.co.zw/signin`}>Internet Banking</a></li>
+        <li style={{ borderColor: primaryColor }} className=' border-3 -mt-1  px-4 py-1 rounded-4xl text-xs hover:scale-105 hover:shadow-gray-300 hover:border-green-900 hover:bg-[#faa819] hover:text-gray-50 hover:shadow-xl ease-in-out transition-all'><a target='_blank' href={`https://internetbanking.getbucks.co.zw/signin`}>Internet Banking</a></li>
       </ul>
 
       {!mobileNavigation && <img onClick={() => {setMobileNavigation(!mobileNavigation)}} className=' xl:hidden cursor-pointer h-8 w-8 md:h-10 md:w-10' src='/menu.svg' width={'auto'} height={'24px'} alt='menu close icon'  />}

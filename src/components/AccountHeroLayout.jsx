@@ -8,8 +8,8 @@ const AccountHeroLayout = ({ data, extraData }) => {
     <section className=' w-full -mt-24 md:-mt-32 xl:mt-4 mb-32 min-h-screenl flex flex-col'>
       <div className=' w-full flex flex-col-reverse xl:flex-row mt-4'>
       <article className=' basis-1 xl:basis-3/5'>
-        <h1 className=' text-xl xl:text-5xl mt-12 xl:mt-32 font-semibold text-gray-800'><span>{data.title}</span><br />{data.title2}</h1>
-        <p className=' text-sm xl:text-2xl mt-4 xl:mt-12 text-gray-800'>
+        <h1 className=' text-xl xl:text-4xl mt-12 xl:mt-32 font-semibold text-gray-800'><span>{data.title}</span><br />{data.title2}</h1>
+        <p className=' text-sm xl:text-lg mt-4 xl:mt-12 text-gray-800'>
             {data.subtitle}
         </p>
         
@@ -17,7 +17,7 @@ const AccountHeroLayout = ({ data, extraData }) => {
             {
                 data?.buttons?.map((button, index) => (
                     <a key={index} href={button.link}>
-                        <button className=' text-xs xl:text-lg cursor-pointer border-3 py-2 px-2 xl:px-4 rounded-2xl border-[#faa818] shadow-xl hover:scale-95 hover:shadow-[#faa818] hover:shadow-sm ease-in-out transition-all'>
+                        <button className=' text-xs xl:text-xs cursor-pointer border-3 py-2 px-2 xl:px-4 rounded-2xl border-[#faa818] shadow-xl hover:scale-95 hover:shadow-[#faa818] hover:shadow-sm ease-in-out transition-all'>
                             {button.text}
                         </button>
                     </a>
@@ -25,12 +25,12 @@ const AccountHeroLayout = ({ data, extraData }) => {
             }
         </div>
         <a href={data.mainButton.link} className=''>
-            <button className=' mt-12 xl:mt-24 cursor-pointer bg-[#faa818] px-6 py-4 text-gray-50 rounded-2xl text-sm xl:text-xl shadow-xl hover:scale-95 hover:shadow-gray-300 hover:shadow-sm ease-in-out transition-all'>{data.mainButton.text}</button>
+            <button className=' mt-12 xl:mt-24 cursor-pointer bg-[#faa818] px-6 py-4 text-gray-50 rounded-2xl text-sm xl:text-xs shadow-xl hover:scale-95 hover:shadow-gray-300 hover:shadow-sm ease-in-out transition-all'>{data.mainButton.text}</button>
         </a>
         {
             data.mainButton2 && 
             <a href={data.mainButton2.link} className=''>
-                <button className=' ml-0 md:ml-4 mt-12 xl:mt-24 cursor-pointer bg-[#faa818] px-6 py-4 text-gray-50 rounded-2xl text-sm xl:text-xl shadow-xl hover:scale-95 hover:shadow-gray-300 hover:shadow-sm ease-in-out transition-all'>{data.mainButton2.text}</button>
+                <button className=' ml-0 md:ml-4 mt-12 xl:mt-24 cursor-pointer bg-[#faa818] px-6 py-4 text-gray-50 rounded-2xl text-xs xl:text-sm shadow-xl hover:scale-95 hover:shadow-gray-300 hover:shadow-sm ease-in-out transition-all'>{data.mainButton2.text}</button>
             </a>
         }
       </article>

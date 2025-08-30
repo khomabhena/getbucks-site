@@ -17,8 +17,8 @@ const LandingPageContent = ({  }) => {
 
             <div className=' basis-1 md:basis-3/5'>
               <section className={` md:mt-0 flex flex-col basis-1 md:basis-3/5 xl:px-12`}>
-                <h2 className=' text-lg xl:text-3xl font-semibold'>{title}</h2>
-                <p className=' text-sm xl:text-base  text-gray-700 mt-4'>{description}</p>
+                <h2 className=' text-lg xl:text-2xl font-semibold'>{title}</h2>
+                <p className=' text-xs xl:text-sm  text-gray-700 mt-4'>{description}</p>
               </section>
             </div>
             

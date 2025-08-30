@@ -11,7 +11,7 @@ const AboutUsSection = () => {
 
   return (
     <section className=' flex flex-col items-center pb-24 pt-48 justify-center'>
-        <h2 className=' text-2xl xl:text-4xl self-start lg:self-center font-medium'>{heading}</h2>
+        <h2 className=' text-xl xl:text-3xl self-start lg:self-center font-medium'>{heading}</h2>
         <div className=' w-full min-h-48 lmt-24 flex flex-wrap justify-center'>
 
           {

@@ -19,7 +19,7 @@ const Footer = ({ white }) => {
 
             <div className=' mt-8 xl:mt-0 basis-1/4 flex flex-col items-centerp'>
                 {/* <div className=''> */}
-                <p className={` xl:text-lg font-semibold ${ white ? ' text-gray-100' : 'text-gray-800'} mb-4`}>Get Our Apps</p>
+                <p className={` text-base xl:text-lg font-semibold ${ white ? ' text-gray-100' : 'text-gray-800'} mb-4`}>Get Our Apps</p>
                 <a className=' hover:scale-105 ease-in-out transition-all' href="https://apps.apple.com/zw/app/getbucks-mobile-banking/id1437807974" target='_blank'>
                     <img className=' w-[100px] md:w-[150px] h-auto' height={'40px'} width={'80px'} src="./social-icons/app-store.png" alt="" />
                 </a>
@@ -31,7 +31,7 @@ const Footer = ({ white }) => {
 
 
         </div>
-        <p className={` mt-16 xl:text-lg font-semibold  ${ white ? ' text-gray-100' : 'text-gray-800'} mb-4`}>Connect with Us</p>
+        <p className={` mt-16 text-base xl:text-lg font-semibold  ${ white ? ' text-gray-100' : 'text-gray-800'} mb-4`}>Connect with Us</p>
                 <div className=' mt-4 flex gap-4'>
             {
                 data?.socialIcons?.map(({ image, link, text }) => (
