@@ -24,7 +24,7 @@ export const getLandingPageContent = {
             index: 4,
             image: "./landing-page/bill-payments.png",
             title: "Bill Payments ",
-            description: "Payiong your bills shouldn't be a chore. Our platform brings together utilities, subscriptions, and everyday expenses in a single, secure space.",
+            description: "Paying your bills shouldn't be a chore. Our platform brings together utilities, subscriptions, and everyday expenses in a single, secure space.",
         },
         {
             index: 5,
