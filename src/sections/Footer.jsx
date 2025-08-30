@@ -46,7 +46,7 @@ const Footer = ({ white }) => {
 
             <img className=' w-10 h-10 md:w-14 md:h-14 rounded-full' src="./social-icons/dpc-logo.jpg" alt="" />
             <p className=' hidden'>GetBucks is registered in Zimbabwe as GetBucks Bank (No. 322/2012). We are a member of the Deposit Protection Scheme administered by the Deposit Protection Corporation (DPC) in terms of the DPC Act [Chapter] 24:29.<br />1st Floor Unity Court, No. 64 Kwame Nkrumah Ave, Harare, Zimbabwe<br />&copy; GetBucks Bank {new Date().getFullYear()}. All rights reserved.</p>
-            <p>GetBucks Bank is registered in Zimbabwe as GetBucks Microfinance Bank Limited (322/2012), 1st Floor Unity Court, No. 64 Kwame Nkrumah Ave, Harare. We are authorised by and regulated by the Reserve Bank of Zimbabwe under Licence No. 000002. We are a member of the Deposit Protection Scheme administered by the Deposit Protection Corporation (DPC) in terms of the DPC Act [Chapter] 24:29.</p>
+            <p className=' text-xs'>GetBucks Bank is registered in Zimbabwe as GetBucks Microfinance Bank Limited (322/2012), 1st Floor Unity Court, No. 64 Kwame Nkrumah Ave, Harare. We are authorised by and regulated by the Reserve Bank of Zimbabwe under Licence No. 000002. We are a member of the Deposit Protection Scheme administered by the Deposit Protection Corporation (DPC) in terms of the DPC Act [Chapter] 24:29.<br />&copy; GetBucks Bank {new Date().getFullYear()}. All rights reserved.</p>
         </div>
     </footer>
   )
