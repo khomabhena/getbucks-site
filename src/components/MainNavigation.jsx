@@ -31,7 +31,7 @@ const MainNavigation = ({ scrollPosition, data, prefix = '' }) => {
               <div style={{ backgroundColor: colors.backgroundColor }} className=' rounded-bl-2xl rounded-br-2xl flex flex-col shadow-2xl px-8 py-8 gap-8'>
               {
                 subMenu.map(({name, link}) => (
-                    <a key={name} href={link} style={{ backgroundColor: colors.backgroundColor }}><li className=' w-48 hover:underline'>{name}</li></a>
+                    <a key={name} href={link} style={{ backgroundColor: colors.backgroundColor }}><li className=' text-sm w-48 hover:underline'>{name}</li></a>
                 ))
               }
               </div>
