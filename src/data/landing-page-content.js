@@ -1,6 +1,6 @@
 export const getLandingPageContent = {
     // heading: 'Everything you need, in one place',
-    heading: 'One Place for Everything Banking',
+    heading: 'One Solution for Everything Banking',
     subHeading: 'Loans, payments, transfers, and tools to grow, available on one platform.',
     data: [
         {
