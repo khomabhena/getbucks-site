@@ -11,8 +11,9 @@ const ContactUsPage = ({ data, navData }) => {
     document.title = "Contact Us | GetBucks Bank"
   }, [])
 
-  const clicked = (obj) => {
-    console.log('Clicked Contact US', obj)
+  const formSubmit = (e, data) => {
+    e.preventDefault()
+    console.log('Form submitted', data)
   }
 
   return (
@@ -20,7 +21,7 @@ const ContactUsPage = ({ data, navData }) => {
         <div className=' min-h-screen w-full'>
             <MainNavigation data={navData} />
             <div className='w-full mt-16 md:mt-24 flex flex-row items-centerl justify-start min-h-screenf mb-64'>
-                <LoginLayout clicked={clicked} data={data} />
+                <LoginLayout formSubmit={formSubmit} data={data} />
             </div>
             {/* <Footer /> */}
         </div>
