@@ -1,0 +1,6 @@
+export const getGetToKnow = {
+    title: 'Get to know about US',
+    text: `Embodying excellence in the microfinance landscape, GetBucks Microfinance Bank Limited stands as a premier deposit-taking institution, offering a diverse suite of financial services tailored for civil servants, individuals, and enterprises. Founded in 2012 with a focus on credit services, the microfinance bank elevated its status by debuting on the Zimbabwe Stock Exchange in 2016. Not content with the ordinary, the year 2019 marked a significant milestone as GetBucks Microfinance Bank Limited transitioned into a deposit-taking powerhouse, broadening its scope and impact.`,
+    text2: 'Fast forward to 2020, the institution achieved yet another milestone with the acquisition of an authorized dealer license, enabling seamless cross-border trade transactions. A pivotal moment arrived with the majority shareholding acquisition by Ever Prosperous Worldwide, leading to a transformation into a privately held entity.',
+    text3: 'With a dedicated workforce of 47 professionals spread across 3 branches and an extensive agent network, GetBucks has empowered over 200,000 consumer and 3,000 SME ventures with loans. Unwavering in its commitment to excellence, the bank proudly upholds membership in the esteemed Deposit Protection Corporation.',
+}
