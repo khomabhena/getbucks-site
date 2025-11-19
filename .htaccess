@@ -1,3 +1,22 @@
+# MIME Types - Fix for JavaScript module loading
+<IfModule mod_mime.c>
+  AddType application/javascript .js
+  AddType application/javascript .mjs
+  AddType application/wasm .wasm
+  AddType text/css .css
+  AddType application/json .json
+  AddType image/svg+xml .svg
+  AddType image/png .png
+  AddType image/jpeg .jpg .jpeg
+  AddType image/gif .gif
+  AddType image/webp .webp
+  AddType application/pdf .pdf
+  AddType application/font-woff .woff
+  AddType application/font-woff2 .woff2
+  AddType font/ttf .ttf
+  AddType font/otf .otf
+</IfModule>
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
