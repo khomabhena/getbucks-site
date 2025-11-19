@@ -8,7 +8,13 @@ const FooterLinks = ({ white, heading, data }) => {
         <div className={` mt-4 flex flex-col gap-2 text-sm md:text-base xl:text-lg ${ white ? ' text-gray-200' : 'text-gray-700'}`}>
             {
                 data?.map(({ link, text }) => (
-                    <a href={link} className=' text-sm hover:underline w-fit transition-all ease-in-out' key={link} target='' rel="noreferrer">
+                    <a 
+                        href={link} 
+                        className=' text-sm hover:underline w-fit transition-all ease-in-out' 
+                        key={link} 
+                        target={text === 'Internet Banking' ? '_blank' : undefined}
+                        rel={text === 'Internet Banking' ? 'noreferrer' : undefined}
+                    >
                         {text}
                     </a>
                 ))
