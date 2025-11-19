@@ -21,10 +21,10 @@ const Footer = ({ white }) => {
                 {/* <div className=''> */}
                 <p className={` text-base xl:text-lg font-semibold ${ white ? ' text-gray-100' : 'text-gray-800'} mb-4`}>Get Our Apps</p>
                 <a className=' hover:scale-105 ease-in-out transition-all' href="https://apps.apple.com/zw/app/getbucks-mobile-banking/id1437807974" target='_blank'>
-                    <img className=' w-[100px] md:w-[150px] h-auto' height={'40px'} width={'80px'} src="./social-icons/app-store.png" alt="" />
+                    <img className=' w-[100px] md:w-[150px] h-auto' height={'40px'} width={'80px'} src="/social-icons/app-store.png" alt="" />
                 </a>
                 <a className=' hover:scale-105 ease-in-out transition-all mt-3' href="https://play.google.com/store/apps/details?id=com.getbucks.banking.gb&pcampaignid=web_share" target='_blank'>
-                    <img className=' w-[100px] md:w-[150px] h-auto' height={'40px'} width={'80px'} src="./social-icons/google-play.png" alt="" />
+                    <img className=' w-[100px] md:w-[150px] h-auto' height={'40px'} width={'80px'} src="/social-icons/google-play.png" alt="" />
                 </a>
                 {/* </div> */}
             </div>
@@ -44,7 +44,7 @@ const Footer = ({ white }) => {
         <p className=' hidden'>+263 861257 0000</p>
         <div className={` bg-red-600l ${ white ? ' text-gray-200' : ' text-gray-500'} flex flex-col md:flex-row text-center md:text-start gap-4 items-center mt-16 text-xs md:text-sm`}>
 
-            <img className=' w-10 h-10 md:w-14 md:h-14 rounded-full' src="./social-icons/dpc-logo.jpg" alt="" />
+            <img className=' w-10 h-10 md:w-14 md:h-14 rounded-full' src="/social-icons/dpc-logo.jpg" alt="" />
             <p className=' hidden'>GetBucks is registered in Zimbabwe as GetBucks Bank (No. 322/2012). We are a member of the Deposit Protection Scheme administered by the Deposit Protection Corporation (DPC) in terms of the DPC Act [Chapter] 24:29.<br />1st Floor Unity Court, No. 64 Kwame Nkrumah Ave, Harare, Zimbabwe<br />&copy; GetBucks Bank {new Date().getFullYear()}. All rights reserved.</p>
             <p className=' text-xs'>GetBucks Bank is registered in Zimbabwe as GetBucks Microfinance Bank Limited (322/2012), 1st Floor Unity Court, No. 64 Kwame Nkrumah Ave, Harare. We are authorised by and regulated by the Reserve Bank of Zimbabwe under Licence No. 000002. We are a member of the Deposit Protection Scheme administered by the Deposit Protection Corporation (DPC) in terms of the DPC Act [Chapter] 24:29.<br />&copy; GetBucks Bank {new Date().getFullYear()}. All rights reserved.</p>
         </div>

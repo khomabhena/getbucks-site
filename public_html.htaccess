@@ -24,6 +24,11 @@
   RewriteEngine On
   RewriteBase /
   
+  # Remove trailing slashes (except for root)
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} (.+)/$
+  RewriteRule ^ %1 [R=301,L]
+  
   # Path to your dist folder relative to public_html
   # Adjust this path based on where your repository is located
   # Example: If repo is at /home/username/repo-name, and dist is at /home/username/repo-name/dist

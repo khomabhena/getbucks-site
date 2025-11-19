@@ -38,22 +38,22 @@ export const getContactData = {
     ],
     socialIcons: [
         {
-            image: './social-icons/x.png',
+            image: '/social-icons/x.png',
             link: 'https://x.com/getbucksbank?s=11',
             text: 'GetBucks Microfinance Bank Zimbabwe'
         },
         {
-            image: './social-icons/instagram.png',
+            image: '/social-icons/instagram.png',
             link: 'https://www.instagram.com/getbucksbank_zw?igsh=N241ZWM4YzY2ZR1/',
             text: 'GetBucks Zimbabwe'
         },
         {
-            image: './social-icons/facebook.png',
+            image: '/social-icons/facebook.png',
             link: 'https://www.facebook.com/share/17C3rzs8bR/?mibextid=wwXlfr',
             text: 'GetBucks Bank Zimbabwe'
         },
         {
-            image: './social-icons/linkedin.png',
+            image: '/social-icons/linkedin.png',
             link: 'https://www.linkedin.com/company/getbucks-bank/',
             text: 'GetBucks Bank'
         },
