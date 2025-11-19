@@ -24,12 +24,32 @@ const AccountHeroLayout = ({ data, extraData }) => {
                 ))
             }
         </div>
-        <a href={data.mainButton.link} target="_blank" rel="noopener noreferrer" className=''>
+        <a 
+            href={data.mainButton.link || '#'} 
+            target={data.mainButton.link ? "_blank" : undefined} 
+            rel={data.mainButton.link ? "noopener noreferrer" : undefined} 
+            onClick={(e) => {
+                if (!data.mainButton.link) {
+                    e.preventDefault();
+                }
+            }}
+            className=''
+        >
             <button className=' mt-12 xl:mt-24 cursor-pointer bg-[#faa818] px-6 py-4 text-gray-50 rounded-2xl text-sm xl:text-sm shadow-xl hover:scale-95 hover:shadow-gray-300 hover:shadow-sm ease-in-out transition-all'>{data.mainButton.text}</button>
         </a>
         {
             data.mainButton2 && 
-            <a href={data.mainButton2.link} target="_blank" rel="noopener noreferrer" className=''>
+            <a 
+                href={data.mainButton2.link || '#'} 
+                target={data.mainButton2.link ? "_blank" : undefined} 
+                rel={data.mainButton2.link ? "noopener noreferrer" : undefined} 
+                onClick={(e) => {
+                    if (!data.mainButton2.link) {
+                        e.preventDefault();
+                    }
+                }}
+                className=''
+            >
                 <button className=' ml-0 md:ml-4 mt-12 xl:mt-24 cursor-pointer bg-[#faa818] px-6 py-4 text-gray-50 rounded-2xl text-xs xl:text-sm shadow-xl hover:scale-95 hover:shadow-gray-300 hover:shadow-sm ease-in-out transition-all'>{data.mainButton2.text}</button>
             </a>
         }
