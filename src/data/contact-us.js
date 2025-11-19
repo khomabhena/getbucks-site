@@ -68,10 +68,10 @@ export const getContactData = {
                 link: '/business',
                 text: 'Business Banking',
             },
-            {
-                link: '/diaspora',
-                text: 'Diaspora Banking',
-            },
+            // {
+            //     link: '/diaspora',
+            //     text: 'Diaspora Banking',
+            // },
             {
                 link: '#',
                 text: 'Internet Banking',

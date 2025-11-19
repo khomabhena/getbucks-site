@@ -14,7 +14,7 @@ export const getPersonalExtraData = [
     },
     {
         text: "Card Management.",
-        subText: "Manage your card from our branch : card issuing, pin reset, blocking and activating card.",
+        subText: "Manage your card on our Internet Banking: card issuing, pin reset, blocking and activating card.",
     },
     {
         text: "Instant Transfers.",
@@ -40,7 +40,7 @@ export const getBusinessExtraData = [
     },
     {
         text: "Card Management.",
-        subText: "Manage your card from our branch : card issuing, pin reset, blocking and activating card.",
+        subText: "Manage your card on our Internet Banking: card issuing, pin reset, blocking and activating card.",
     },
     {
         text: "Instant Transfers.",

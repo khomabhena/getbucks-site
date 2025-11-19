@@ -40,21 +40,21 @@ export const getLandingPageContent = {
             description: "Get real time alerts every time money moves in or out of your account. From deposits to purchases, our smart notifications keep you informed, in control, and protected",
             
         },
+        // {
+        //     index: 7,
+        //     image: "./landing-page/insurance.png",
+        //     title: "Insurance",
+        //     description: "From health to travel to assets, our insurance solutions are built into your banking experience.",
+            
+        // },
         {
             index: 7,
-            image: "./landing-page/insurance.png",
-            title: "Insurance",
-            description: "From health to travel to assets, our insurance solutions are built into your banking experience.",
-            
-        },
-        {
-            index: 8,
             image: "./landing-page/cash-back.png",
             title: "Cash Back",
             description: "Get value in every transaction, with purchases that pays you back.",
         },
         {
-            index: 9,
+            index: 8,
             image: "./landing-page/security.png",
             title: "Security",
             description: "From biometric logins to fraud detection, your money is always protected. We use next-gen encryption and real-time monitoring to keep your banking safe, so you can focus on what matters.",

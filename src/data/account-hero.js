@@ -42,7 +42,7 @@ export const getAccountHeroData = {
     business: {
         title: "Manage your finances with",
         title2: "confidence, anytime, anywhere!",
-        subtitle: "Enjoy fast, efficeient transactions, advanced security to protect your funds, and innovative banking tools that keep you ahead in today's competitive market.",
+        subtitle: "Enjoy fast, efficient transactions, advanced security to protect your funds, and innovative banking tools that keep you ahead in today's competitive market.",
         image: "./accounts/business.png",
         mainButton: {
             text: "Open a Business Account",

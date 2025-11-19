@@ -37,7 +37,16 @@ export const getPrivacyPolicy = [
         titleNumber: '',
         paragraphs: [
             {
-                paragraph: "Collection on use. Once a Visitor visits this web site, a Visitor is not anonymous to GetBucks. When visiting, each Visitor provides Data, which may include an ID number, a contact number, a street address, and an email address. GetBucks may also record the IP address of a Visitor when adding Data. Children. GetBucks does not intentionally gather Personal Information about visitors who are under the age of 13. Collection from browser. GetBucks automatically receives and records information on GetBucks’s server logs from the browser of a Visitor, including an IP address, GetBucks cookie information, and the page requested. Each Visitor should be aware that other web sites visited before entering the web site might place Personal Information within a URL of a Visitor during a visit to it, and GetBucks has no control over such web sites. Accordingly, a subsequent web site that collects URL information may log some Personal Information."
+                paragraph: "Once a Visitor visits this web site, a Visitor is not anonymous to GetBucks. When visiting, each Visitor provides Data, which may include an ID number, a contact number, a street address, and an email address. GetBucks may also record the IP address of a Visitor when adding Data."
+            },
+            {
+                paragraph: "GetBucks does not intentionally gather Personal Information about visitors who are under the age of 13."
+            },
+            {
+                paragraph: "GetBucks automatically receives and records information on GetBucks's server logs from the browser of a Visitor, including an IP address, GetBucks cookie information, and the page requested."
+            },
+            {
+                paragraph: "Each Visitor should be aware that other web sites visited before entering the web site might place Personal Information within a URL of a Visitor during a visit to it, and GetBucks has no control over such web sites. Accordingly, a subsequent web site that collects URL information may log some Personal Information."
             },
         ]
     },
@@ -236,7 +245,7 @@ export const getTermsAndConditionsData = [
         titleNumber: '',
         paragraphs: [
             {
-                paragraph: 'For purposes of the Terms: “Terms” means these terms, consisting of: 1. these terms of use; and 2. any other relevant specific terms, policies, disclaimers, rules and notices agreed between the parties, (including any that may be applicable to a specific section or module of this web site); “GetBucks” means GetBucks (Pty) Ltd with Reg No. 2010/015748/07; “Visitor” or “you” means any person who visits this web site. Interpretation. A word defined or assigned a meaning in the Terms will start with a capital letter. All headings are inserted for reference purposes only and must not affect the interpretation of the Terms. Whenever “including” or “include”, or “excluding” or “exclude”, together with specific examples or items follow a term, they will not limit its ambit. Terms other than those defined within the Terms will be given their plain English meaning. References to any enactment will be deemed to include references to the enactment as re-enacted, amended, or extended from time to time. A reference to a person includes a natural and juristic person and a reference to either party includes the party’s successors or permitted assigns. Unless otherwise stated in the Terms, when any number of days is prescribed in the Terms the first day will be excluded and the last day included. The rule of construction that an agreement must be interpreted against the party responsible for its drafting or preparation does not apply. Central African Time or GMT +2 will be used to calculate any times. Conflict. If there is a conflict of meaning between these terms of use and any other relevant specific terms, policies, disclaimers, rules and notices agreed between the parties, the specific terms will prevail in respect of your use of the relevant section or module of the web site.'
+                paragraph: 'For purposes of the Terms: “Terms” means these terms, consisting of: 1. these terms of use; and 2. any other relevant specific terms, policies, disclaimers, rules and notices agreed between the parties, (including any that may be applicable to a specific section or module of this web site); “GetBucks” means GetBucks Microfinance Bank Limited (322/2012); “Visitor” or “you” means any person who visits this web site. Interpretation. A word defined or assigned a meaning in the Terms will start with a capital letter. All headings are inserted for reference purposes only and must not affect the interpretation of the Terms. Whenever “including” or “include”, or “excluding” or “exclude”, together with specific examples or items follow a term, they will not limit its ambit. Terms other than those defined within the Terms will be given their plain English meaning. References to any enactment will be deemed to include references to the enactment as re-enacted, amended, or extended from time to time. A reference to a person includes a natural and juristic person and a reference to either party includes the party’s successors or permitted assigns. Unless otherwise stated in the Terms, when any number of days is prescribed in the Terms the first day will be excluded and the last day included. The rule of construction that an agreement must be interpreted against the party responsible for its drafting or preparation does not apply. Central African Time or GMT +2 will be used to calculate any times. Conflict. If there is a conflict of meaning between these terms of use and any other relevant specific terms, policies, disclaimers, rules and notices agreed between the parties, the specific terms will prevail in respect of your use of the relevant section or module of the web site.'
             }
         ]
     },
@@ -245,7 +254,7 @@ export const getTermsAndConditionsData = [
         titleNumber: '',
         paragraphs: [
             {
-                paragraph: 'This web site is owned, managed, and administered by GetBucks Zimbabwe. GetBucks is situated at MIPF House, Central Av. Harare, Zimbabwe, and is a business that specialises in extending credit through virtual means such as the Internet. GetBucks is fully compliant with the credit legislative requirements of Zimbabwe and promotes responsible lending. GetBucks also strives to provide superior administration and management of client accounts.',
+                paragraph: 'This web site is owned, managed, and administered by GetBucks Zimbabwe. GetBucks is situated at 1st Floor Unity Court, No. 64 Kwame Nkrumah Ave, Harare, Zimbabwe, and is a business that specialises in extending credit through virtual means such as the Internet. GetBucks is fully compliant with the credit legislative requirements of Zimbabwe and promotes responsible lending. GetBucks also strives to provide superior administration and management of client accounts.',
             }
         ]
     },
