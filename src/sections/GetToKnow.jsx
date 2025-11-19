@@ -10,7 +10,7 @@ const GetToKnow = () => {
         <img className=' h-[350px] md:h-[700px] -mt-[100px]' src="/about/phone.png" alt="" />
       </div>
       <div className=' basis-3/5 mt-8 md:pr-8 pb-12'>
-        <h3 className=' text-xl md:text-2xl font-semibold'>Get to know about US</h3>
+        <h3 className=' text-xl md:text-2xl font-semibold'>Get to know about us</h3>
         <p className=' text-xs xl:text-sm 2xl:text-sm mt-8'>{data.text}</p><br />
         <p className=' text-xs xl:text-sm 2xl:text-sm pb-4'>{data.text2}</p>
         <p className=' text-xs xl:text-sm 2xl:text-sm pb-4'>{data.text3}</p>
