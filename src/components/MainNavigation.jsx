@@ -40,7 +40,7 @@ const MainNavigation = ({ scrollPosition, data, prefix = '' }) => {
             </>
           ))
         }
-        <li style={{ borderColor: primaryColor }} className=' border-3 -mt-1  px-4 py-1 rounded-4xl text-sm hover:scale-105 hover:shadow-gray-300 hover:border-green-900 hover:bg-[#faa819] hover:text-gray-50 hover:shadow-xl ease-in-out transition-all'><a target='_blank' href={`https://internetbanking.getbucks.co.zw/signin`}>Internet Banking</a></li>
+        <li style={{ borderColor: primaryColor }} className=' border-3 -mt-1  px-4 py-1 rounded-4xl text-sm hover:scale-105 hover:shadow-gray-300 hover:border-green-900 hover:bg-[#faa819] hover:text-gray-50 hover:shadow-xl ease-in-out transition-all'><a target='_blank' href={`https://getbucksonline.com/login`}>Internet Banking</a></li>
       </ul>
 
       {!mobileNavigation && <img onClick={() => {setMobileNavigation(!mobileNavigation)}} className=' xl:hidden cursor-pointer h-8 w-8 md:h-10 md:w-10' src='/menu.svg' width={'auto'} height={'24px'} alt='menu close icon'  />}

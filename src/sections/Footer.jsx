@@ -17,7 +17,7 @@ const Footer = ({ white }) => {
 
             <FooterLinks white={white} data={data?.footerLinks?.policies} heading={"Policies"} />
 
-            <div className=' mt-8 xl:mt-0 basis-1/4 flex flex-col items-centerp'>
+            <div className=' mt-8 xl:mt-0 basis-1/4 flex flex-col items-start'>
                 {/* <div className=''> */}
                 <p className={` text-base xl:text-lg font-semibold ${ white ? ' text-gray-100' : 'text-gray-800'} mb-4`}>Get Our Apps</p>
                 <a className=' hover:scale-105 ease-in-out transition-all' href="https://apps.apple.com/zw/app/getbucks-mobile-banking/id1437807974" target='_blank'>

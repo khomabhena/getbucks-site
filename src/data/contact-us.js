@@ -73,11 +73,15 @@ export const getContactData = {
             //     text: 'Diaspora Banking',
             // },
             {
-                link: '#',
+                link: 'https://getbucksonline.com/login',
                 text: 'Internet Banking',
             },
         ],
         company: [
+            {
+                link: '/about-us',
+                text: 'About Us',
+            },
             {
                 link: '/investor-relations',
                 text: 'Investor Relations',
@@ -97,10 +101,6 @@ export const getContactData = {
         ],
         policies: [
             {
-                link: '/about-us',
-                text: 'About Us',
-            },
-            {
                 link: '/privacy-policy',
                 text: 'Privacy Policy',
             },
@@ -110,7 +110,7 @@ export const getContactData = {
             },
             {
                 link: '/info',
-                text: 'Additional Infomation',
+                text: 'Cookies Policy',
             },
         ],
     }

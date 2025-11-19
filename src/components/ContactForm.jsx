@@ -25,7 +25,7 @@ const ContactForm = ({ formSubmit, data }) => {
       <p className=' mt-2 text-2xl xl:text-4xl font-semibold text-gray-800'>{data.title2}</p>
       <p className=' mt-12 text-xs xl:text-sm font-semibold text-gray-500'>{data.subtitle}</p>
       
-      <form onSubmit={handleSubmit} className=' w-full max-w-[800px] px-4 xl:px-24 pt-12 shadow-xl rounded-3xl mt-12 md:mt-2 flex flex-col items-center justify-center min-h-56' style={{ backgroundColor: colors.primaryColor }}>
+      <form onSubmit={handleSubmit} className=' w-full max-w-[800px] px-4 xl:px-24 pt-12 pb-12 shadow-xl rounded-3xl mt-12 md:mt-2 flex flex-col items-center justify-center min-h-56' style={{ backgroundColor: colors.primaryColor }}>
         {
           data.inputs.map((input, index) => (
             input.type == 'textarea' 
@@ -62,7 +62,7 @@ const ContactForm = ({ formSubmit, data }) => {
           }
           <button 
             type='submit'
-            className=' hover:scale-95 hover:shadow-lg w-full max-w-[500px] lg:max-w-[300px] shadow-xl ease-in-out transition-all min-w-56 text-sm text-center xl:text-base font-semibold border-gray-50 border-3 bg-white text-black px-8 py-4 rounded-2xl cursor-pointer'
+            className=' hover:scale-95 hover:shadow-lg w-full max-w-[500px] lg:max-w-[300px] shadow-xl ease-in-out transition-all min-w-56 text-sm text-center xl:text-base font-semibold border-gray-50 border-3 bg-white text-black px-8 py-6 rounded-2xl cursor-pointer'
           >
             {data.buttons[0].text}
           </button>

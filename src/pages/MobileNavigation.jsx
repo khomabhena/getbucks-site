@@ -39,7 +39,7 @@ const MobileNavigation = () => {
         {/* <li className=' px-4 py-1 rounded-xl text-lg hover:scale-105'><a onClick={() => closeNavigation()} href="#personal">Personal</a></li>
         <li className=' px-4 py-1 rounded-xl text-lg hover:scale-105'><a onClick={() => closeNavigation()} href="#personal">Business</a></li>
         <li className=' px-4 py-1 rounded-xl text-lg hover:scale-105'><a onClick={() => closeNavigation()} href="#personal">About Us</a></li> */}
-        <li style={{ borderColor: colors.primaryColor }} className=' border-3  px-4 rounded-lg text-lg hover:scale-105'><a onClick={() => closeNavigation()} href="#internet">Internet Banking</a></li>
+        <li style={{ borderColor: colors.primaryColor }} className=' border-3  px-4 rounded-lg text-lg hover:scale-105'><a onClick={() => closeNavigation()} target='_blank' href="https://getbucksonline.com/login">Internet Banking</a></li>
       </ul>
 
     </nav>

@@ -5,8 +5,8 @@ export const getPersonalExtraData = [
         subText: "A GetBucks swipe card(Debit card) with access to Zimswitch",
     },
     {
-        text: "Free internet & mobile banking.",
-        subText: "Bank almost anywhere, anytime with our mobile banking app, internet banking and USSD code *256#.",
+        text: "Internet & Mobile banking.",
+        subText: "Bank almost anywhere, anytime with our mobile banking app, internet banking.",
     },
     {
         text: "Access to Zimswitch.",
@@ -31,7 +31,7 @@ export const getBusinessExtraData = [
         subText: "A GetBucks swipe card(Debit card) with access to Zimswitch",
     },
     {
-        text: "Free internet & mobile banking.",
+        text: "Internet & Mobile banking.",
         subText: "Bank almost anywhere, anytime with our mobile banking app.",
     },
     {
