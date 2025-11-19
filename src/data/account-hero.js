@@ -6,7 +6,8 @@ export const getAccountHeroData = {
         image: "./accounts/personal.png",
         mainButton: {
             text: "Open a Personal Account",
-            link: "https://getbucksonline.com/login",
+            // link: "https://getbucksonline.com/login",
+            link: "",
         },
         // mainButton2: {
         //     text: "Open a Diaspora Account",
@@ -46,7 +47,7 @@ export const getAccountHeroData = {
         image: "./accounts/business.png",
         mainButton: {
             text: "Open a Business Account",
-            link: "https://getbucksonline.com/login",
+            link: "",
         },
         buttons: [
             { text: "Enhanced Credibility", link: "#" },

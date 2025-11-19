@@ -15,7 +15,7 @@ const Footer = ({ white }) => {
 
             <FooterLinks white={white} data={data?.footerLinks?.company} heading={"Company"} />
 
-            <FooterLinks white={white} data={data?.footerLinks?.policies} heading={"Policies"} />
+            <FooterLinks white={white} data={data?.footerLinks?.policies} heading={"Useful Links"} />
 
             <div className=' mt-8 xl:mt-0 basis-1/4 flex flex-col items-start'>
                 {/* <div className=''> */}
