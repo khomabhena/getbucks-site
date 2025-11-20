@@ -1,0 +1,22 @@
+# Protect API folder
+# Allow only POST requests to send-email.php
+<Files "send-email.php">
+    <RequireAll>
+        Require all granted
+    </RequireAll>
+</Files>
+
+<Files "send-email-simple.php">
+    <RequireAll>
+        Require all granted
+    </RequireAll>
+</Files>
+
+# Deny access to other files
+<FilesMatch "^(?!send-email\.php|send-email-simple\.php)">
+    Require all denied
+</FilesMatch>
+
+# Prevent directory listing
+Options -Indexes
+

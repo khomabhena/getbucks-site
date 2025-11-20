@@ -11,7 +11,7 @@ const Hero = () => {
           <span className=' text-2xl md:text-5xl lg:text-7xl xl:text-8xl 2xl:text-7xl font-bold' 
           >Smart with <span style={{ color: primaryColor }}>Money</span></span><br /><br />
           <span className=' text-sm md:text-lg hidden'>Next-Gen Banking - Little bank, Innovative to the Core</span>
-          <span className=' text-sm md:text-lg'>Game-Changing Banking - Little bank - Tech-Savvy</span>
+          <span className=' text-sm md:text-lg'>Game-Changing Banking - Tech-Savy - Digital Bank</span>
         </h1>
 
         <a className=' self-center' href="/open-account">

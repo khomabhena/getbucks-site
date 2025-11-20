@@ -20,7 +20,33 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+  
+  # Prevent directory listing
+  Options -Indexes
+  
+  # Allow access to favicon and other common static files
+  RewriteRule ^favicon\.(ico|png|svg)$ - [L]
+  RewriteRule ^robots\.txt$ - [L]
+  RewriteRule ^sitemap\.xml$ - [L]
+  RewriteRule ^logo\.png$ - [L]
+  
+  # Allow access to actual files (including files in subdirectories like events/file.pdf)
+  RewriteCond %{REQUEST_FILENAME} -f
+  RewriteRule ^ - [L]
+  
+  # Allow access to index.html directly
   RewriteRule ^index\.html$ - [L]
+  
+  # Handle trailing slashes - remove them for React Router
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_URI} (.+)/$
+  RewriteRule ^ %1 [R=301,L]
+  
+  # For React Router - if it's a directory request (without trailing slash), serve index.html
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^(.*)$ /index.html [L]
+  
+  # For all other non-existent files/directories, serve index.html
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule . /index.html [L]
@@ -50,6 +76,7 @@
   ExpiresByType image/gif "access plus 1 year"
   ExpiresByType image/png "access plus 1 year"
   ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
   ExpiresByType text/css "access plus 1 month"
   ExpiresByType application/javascript "access plus 1 month"
   ExpiresByType application/pdf "access plus 1 month"

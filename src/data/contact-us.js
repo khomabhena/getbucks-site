@@ -112,6 +112,10 @@ export const getContactData = {
                 link: '/info',
                 text: 'Cookies Policy',
             },
+            {
+                link: '/contact-us',
+                text: 'Contact Us',
+            },
         ],
     }
 }
