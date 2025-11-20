@@ -186,13 +186,6 @@ export const getRegistrationData = {
                 required: true,
             },
             {
-                id: 'business-password',
-                type: 'password',
-                name: 'password',
-                placeholder: 'Password',
-                required: true,
-            },
-            {
                 id: 'business-confirm-password',
                 type: 'password',
                 name: 'confirmPassword',

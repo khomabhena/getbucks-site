@@ -9,7 +9,7 @@ export const getContactData = {
     },
     addressGweru: {
         line1: 'Gweru Branch',
-        line2: 'M FLoor New Post Office (CAIPF) Building',
+        line2: 'M Floor New Post Office (CAIPF) Building',
         line3: 'Corner 7th / Robert Mugabe St',
         line4: 'Gweru, Zimbabwe',
     },

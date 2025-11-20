@@ -22,13 +22,9 @@ export const getNavigationData = {
         },
         {
             active: false,
-            link: '#',
+            link: '/about-us',
             name: 'About Us',
             subMenu: [
-                {
-                    name: "About Us",
-                    link: "/about-us",
-                },
                 {
                     name: "Contact Us",
                     link: "/contact-us",
@@ -57,13 +53,9 @@ export const getNavigationData = {
         },
         {
             active: false,
-            link: '#',
+            link: '/about-us',
             name: 'About Us',
             subMenu: [
-                {
-                    name: "About Us",
-                    link: "/about-us",
-                },
                 {
                     name: "Contact Us",
                     link: "/contact-us",
@@ -92,13 +84,9 @@ export const getNavigationData = {
         },
         {
             active: false,
-            link: '#',
+            link: '/about-us',
             name: 'About Us',
             subMenu: [
-                {
-                    name: "About Us",
-                    link: "/about-us",
-                },
                 {
                     name: "Contact Us",
                     link: "/contact-us",
@@ -127,13 +115,9 @@ export const getNavigationData = {
         },
         {
             active: true,
-            link: '#',
+            link: '/about-us',
             name: 'About Us',
             subMenu: [
-                {
-                    name: "About Us",
-                    link: "/about-us",
-                },
                 {
                     name: "Contact Us",
                     link: "/contact-us",
@@ -162,13 +146,9 @@ export const getNavigationData = {
         },
         {
             active: false,
-            link: '#',
+            link: '/about-us',
             name: 'About Us',
             subMenu: [
-                {
-                    name: "About Us",
-                    link: "/about-us",
-                },
                 {
                     name: "Contact Us",
                     link: "/contact-us",

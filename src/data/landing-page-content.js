@@ -13,7 +13,7 @@ export const getLandingPageContent = {
             index: 2,
             image: "./landing-page/credit-cards.jpg",
             title: "Debit Cards",
-            description: "Get more from every swipe. With built in security and rewards designed around your lifestyle, our credit cards give you fexibility and fnancial power.",
+            description: "Get more from every swipe. With built in security and rewards designed around your lifestyle, our credit cards give you flexibility and financial power.",
         },
         {
             index: 3,
@@ -51,7 +51,7 @@ export const getLandingPageContent = {
             index: 7,
             image: "./landing-page/cash-back.png",
             title: "Cash Back",
-            description: "Get value in every transaction, with purchases that pays you back.",
+            description: "Get value in every transaction, with purchases that pay you back.",
         },
         {
             index: 8,

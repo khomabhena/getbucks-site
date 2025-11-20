@@ -56,7 +56,7 @@ define('SMTP_PORT', 465);
 define('SMTP_USERNAME', 'enquiries@getbucksbank.com');
 define('SMTP_PASSWORD', 'YOUR_EMAIL_PASSWORD_HERE'); // Update this with actual password
 define('SMTP_FROM_EMAIL', 'enquiries@getbucksbank.com');
-define('SMTP_FROM_NAME', 'GetBucks Bank Website Contact Form');
+define('SMTP_FROM_NAME', 'GetBucks Bank Website');
 define('SMTP_TO_EMAIL', 'enquiries@getbucksbank.com');
 define('SMTP_TO_NAME', 'GetBucks Bank');
 

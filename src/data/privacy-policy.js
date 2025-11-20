@@ -187,7 +187,7 @@ export const getPrivacyPolicy = [
         titleNumber: '',
         paragraphs: [
             {
-                paragraph: 'GetBucks is not responsible for, gives no warranties, nor makes any representations in respect of the privacy policies or practices of linked or any third party web sites. GetBucks information systems is provided to users and used by GetBucks “as is” without warranty of any kind, either expresses or implied, including but not limited to the implied warranties of merchantability and/or fitness for a particular purpose. GetBucks cannot be held liable for any mistakes that arise from use of the information systems that govern the administration of products including but not limited to the unintentional disclosure of personal information.'
+                paragraph: 'GetBucks is not responsible for, gives no warranties, nor makes any representations in respect of the privacy policies or practices of linked or any third party web sites. GetBucks information systems is provided to users and used by GetBucks "as is" without warranty of any kind, either express or implied, including but not limited to the implied warranties of merchantability and/or fitness for a particular purpose. GetBucks cannot be held liable for any mistakes that arise from use of the information systems that govern the administration of products including but not limited to the unintentional disclosure of personal information.'
             },
             {
                 paragraph: ''
