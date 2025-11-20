@@ -20,6 +20,12 @@ export const getOurBoardData = {
             text: 'Ms. Mahabeer, an adept leader, excels in international trade, logistics, automotive, and finance. As MD of Gift Investments, she spearheads bus and truck imports, sales strategies, and supplier negotiations. Also a Director at Al Shams Global LTD and she manages African operations.'
         },
         {
+            image: '/board-members/dipesh.png',
+            name: 'DIPESH SHAH',
+            position: 'Non-Executive Director',
+            text: 'Mr. Shah has an accounting background and is currently pursuing the CGMA Advanced Diploma in Management Accounting. He has experience in cross-border trade, advisory services, and mining. As Founder of DiGrand Group, he has overseen high-growth investments in finance, agriculture, logistics, and gold trade in Zimbabwe. Mr. Shah brings strong strategic insight, governance awareness, and a disciplined approach to value creation, contributing effectively to the Board\'s oversight and long-term strategic direction.'
+        },
+        {
             image: '/board-members/edwin.png',
             name: 'EDWIN CHAVORA',
             position: 'Managing Director',
