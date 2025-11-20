@@ -60,11 +60,46 @@ define('SMTP_FROM_NAME', 'GetBucks Bank Website Contact Form');
 define('SMTP_TO_EMAIL', 'enquiries@getbucksbank.com');
 define('SMTP_TO_NAME', 'GetBucks Bank');
 
+// reCAPTCHA configuration - UPDATE WITH YOUR SECRET KEY
+define('RECAPTCHA_SECRET_KEY', 'YOUR_RECAPTCHA_SECRET_KEY_HERE'); // Get from https://www.google.com/recaptcha/admin
+
+// Function to verify reCAPTCHA token
+function verifyRecaptcha($token, $secretKey) {
+    if (empty($token)) {
+        return ['success' => false, 'error-codes' => ['missing-input-response']];
+    }
+    
+    $url = 'https://www.google.com/recaptcha/api/siteverify';
+    $data = [
+        'secret' => $secretKey,
+        'response' => $token,
+        'remoteip' => $_SERVER['REMOTE_ADDR'] ?? ''
+    ];
+    
+    $options = [
+        'http' => [
+            'header' => "Content-type: application/x-www-form-urlencoded\r\n",
+            'method' => 'POST',
+            'content' => http_build_query($data)
+        ]
+    ];
+    
+    $context = stream_context_create($options);
+    $result = file_get_contents($url, false, $context);
+    
+    if ($result === FALSE) {
+        return ['success' => false, 'error-codes' => ['network-error']];
+    }
+    
+    return json_decode($result, true);
+}
+
 // Get and sanitize form data
 $fullname = isset($_POST['fullname']) ? trim($_POST['fullname']) : '';
 $email = isset($_POST['email']) ? trim($_POST['email']) : '';
 $number = isset($_POST['number']) ? trim($_POST['number']) : '';
 $message = isset($_POST['message']) ? trim($_POST['message']) : '';
+$recaptchaToken = isset($_POST['recaptcha_token']) ? trim($_POST['recaptcha_token']) : '';
 
 // Validation
 $errors = [];
@@ -85,6 +120,21 @@ if (empty($number)) {
 
 if (empty($message)) {
     $errors[] = 'Message is required';
+}
+
+// Verify reCAPTCHA
+if (!empty(RECAPTCHA_SECRET_KEY) && RECAPTCHA_SECRET_KEY !== 'YOUR_RECAPTCHA_SECRET_KEY_HERE') {
+    $recaptchaResult = verifyRecaptcha($recaptchaToken, RECAPTCHA_SECRET_KEY);
+    
+    if (!$recaptchaResult['success']) {
+        http_response_code(400);
+        echo json_encode([
+            'success' => false,
+            'message' => 'reCAPTCHA verification failed. Please try again.',
+            'errors' => $recaptchaResult['error-codes'] ?? []
+        ]);
+        exit;
+    }
 }
 
 // Basic spam protection - honeypot field (if you add one)

@@ -21,6 +21,9 @@
   RewriteEngine On
   RewriteBase /
   
+  # Disable automatic trailing slash for directories (prevents redirect loops with React Router)
+  DirectorySlash Off
+  
   # Prevent directory listing
   Options -Indexes
   
@@ -37,14 +40,17 @@
   # Allow access to index.html directly
   RewriteRule ^index\.html$ - [L]
   
-  # Handle trailing slashes - remove them for React Router
+  # For React Router routes that are directories - serve index.html directly (prevent redirect loop)
+  # Check for common React Router paths that might conflict with static directories
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteCond %{REQUEST_URI} ^/(board-members|management|financial-reports|events|investor-relations|about-us|contact-us|personal|business|diaspora|open-account|privacy-policy|terms|info)/?$
+  RewriteRule ^(.*)$ /index.html [L]
+  
+  # Handle trailing slashes - remove them for React Router (but not for directories that are React routes)
   RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_URI} (.+)/$
   RewriteRule ^ %1 [R=301,L]
-  
-  # For React Router - if it's a directory request (without trailing slash), serve index.html
-  RewriteCond %{REQUEST_FILENAME} -d
-  RewriteRule ^(.*)$ /index.html [L]
   
   # For all other non-existent files/directories, serve index.html
   RewriteCond %{REQUEST_FILENAME} !-f

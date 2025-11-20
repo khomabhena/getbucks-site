@@ -24,7 +24,17 @@
   RewriteEngine On
   RewriteBase /
   
-  # Remove trailing slashes (except for root)
+  # Disable automatic trailing slash for directories (prevents redirect loops with React Router)
+  DirectorySlash Off
+  
+  # Check if this is a React Router route that conflicts with a static directory
+  # If so, serve index.html directly to prevent redirect loops
+  RewriteCond %{DOCUMENT_ROOT}/../dist%{REQUEST_URI} -d
+  RewriteCond %{REQUEST_URI} ^/(board-members|management|financial-reports|events|investor-relations|about-us|contact-us|personal|business|diaspora|open-account|privacy-policy|terms|info)/?$
+  RewriteCond %{DOCUMENT_ROOT}/../dist/index.html -f
+  RewriteRule ^(.*)$ ../dist/index.html [L]
+  
+  # Remove trailing slashes (except for root and React Router routes handled above)
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_URI} (.+)/$
   RewriteRule ^ %1 [R=301,L]
@@ -34,7 +44,7 @@
   # Example: If repo is at /home/username/repo-name, and dist is at /home/username/repo-name/dist
   # You might need: RewriteBase /repo-name/dist/
   
-  # Serve files from dist folder if they exist
+  # Serve files from dist folder if they exist (but not directories that are React Router routes)
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{DOCUMENT_ROOT}/../dist%{REQUEST_URI} -f

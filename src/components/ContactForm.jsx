@@ -1,10 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
+import ReCAPTCHA from 'react-google-recaptcha'
 import { colors } from '../data/colors'
+import { RECAPTCHA_SITE_KEY } from '../config/recaptcha'
 
 const ContactForm = ({ formSubmit, data }) => {
   const [inputs, setInputs] = useState({})
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState({ type: null, message: '' })
+  const [recaptchaToken, setRecaptchaToken] = useState(null)
+  const recaptchaRef = useRef(null)
 
   const handleChange = (e) => {
     const name = e.target.name
@@ -16,8 +20,23 @@ const ContactForm = ({ formSubmit, data }) => {
     }
   }
 
+  const handleCaptchaChange = (token) => {
+    setRecaptchaToken(token)
+  }
+
+  const handleCaptchaExpired = () => {
+    setRecaptchaToken(null)
+  }
+
   const handleSubmit = async (e) => {
     e.preventDefault()
+    
+    // Check if reCAPTCHA is completed
+    if (!recaptchaToken) {
+      setSubmitStatus({ type: 'error', message: 'Please complete the reCAPTCHA verification.' })
+      return
+    }
+
     setIsSubmitting(true)
     setSubmitStatus({ type: null, message: '' })
 
@@ -28,6 +47,7 @@ const ContactForm = ({ formSubmit, data }) => {
       formData.append('email', inputs.email || '')
       formData.append('number', inputs.number || '')
       formData.append('message', inputs.message || '')
+      formData.append('recaptcha_token', recaptchaToken)
 
       // Send to PHP endpoint
       const response = await fetch('/api/send-email.php', {
@@ -50,13 +70,23 @@ const ContactForm = ({ formSubmit, data }) => {
         setSubmitStatus({ type: 'success', message: result.message })
         // Reset form after successful submission
         setInputs({})
+        setRecaptchaToken(null)
         e.target.reset()
+        // Reset reCAPTCHA
+        if (recaptchaRef.current) {
+          recaptchaRef.current.reset()
+        }
         // Call the parent formSubmit handler if provided
         if (formSubmit) {
           formSubmit(e, inputs)
         }
       } else {
         setSubmitStatus({ type: 'error', message: result.message || 'Failed to send message. Please try again.' })
+        // Reset reCAPTCHA on error so user can try again
+        if (recaptchaRef.current) {
+          recaptchaRef.current.reset()
+        }
+        setRecaptchaToken(null)
       }
     } catch (error) {
       console.error('Error submitting form:', error)
@@ -104,6 +134,18 @@ const ContactForm = ({ formSubmit, data }) => {
           ))
         }
         
+        {/* reCAPTCHA */}
+        <div className='mt-6 flex justify-center'>
+          <ReCAPTCHA
+            ref={recaptchaRef}
+            sitekey={RECAPTCHA_SITE_KEY}
+            onChange={handleCaptchaChange}
+            onExpired={handleCaptchaExpired}
+            theme="light"
+            size="normal"
+          />
+        </div>
+        
         <div className=' mt-12 flex w-full flex-col-reverse xl:flex-row justify-center items-center gap-4'>
           {
             data.buttons[1].text && 
@@ -111,8 +153,8 @@ const ContactForm = ({ formSubmit, data }) => {
           }
           <button 
             type='submit'
-            disabled={isSubmitting}
-            className={` hover:scale-95 hover:shadow-lg w-full max-w-[500px] lg:max-w-[300px] shadow-xl ease-in-out transition-all min-w-56 text-sm text-center xl:text-base font-semibold border-gray-50 border-3 bg-white text-black px-8 py-6 rounded-2xl cursor-pointer ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}`}
+            disabled={isSubmitting || !recaptchaToken}
+            className={` hover:scale-95 hover:shadow-lg w-full max-w-[500px] lg:max-w-[300px] shadow-xl ease-in-out transition-all min-w-56 text-sm text-center xl:text-base font-semibold border-gray-50 border-3 bg-white text-black px-8 py-6 rounded-2xl cursor-pointer ${(isSubmitting || !recaptchaToken) ? 'opacity-50 cursor-not-allowed' : ''}`}
           >
             {isSubmitting ? 'Sending...' : data.buttons[0].text}
           </button>
