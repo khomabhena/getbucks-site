@@ -7,7 +7,13 @@ const ServicesCard = ({ image, title, text }) => {
       <div style={{ backgroundColor: colors.backgroundColor }} className=' w-full h-full flex rounded-xl shadow-lg 
       hover:scale-105 hover:shadow-[#faa819] hover:shadow-lg ease-in-out transition-all'>
 
-        <img className=' mx-4 w-10 md:w-14 lg:w-18 self-center' src={image} alt={title} />
+        <img 
+          className=' mx-4 w-10 md:w-14 lg:w-18 self-center' 
+          src={image} 
+          alt={title}
+          loading="lazy"
+          decoding="async"
+        />
         <div className=' flex flex-col pb-8 justify-center pr-2'>
           <h3 className=' text-sm md:text-base font-bold'>{title}</h3>
           <p className=' text-xs md:text-sm text-gray-700'>{text}</p>

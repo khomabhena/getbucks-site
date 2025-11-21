@@ -23,18 +23,18 @@ const MobileNavigation = () => {
       <ul className={` flex flex-col h-full mt-12 md:mt-24 md:pl-8 items-center md:items-start gap-y-8 text-base md:text-xl lg:text-2xl`} style={{color: textColor}}>
         {
           data?.map(({ active, link, name }) => (
-            <a href={`${link}`}>
-              <li key={name} className={` px-8 py-2 rounded-4xl text-base hover:scale-105 hover:shadow-gray-300 ${active ? 'bg-[#faa819] text-gray-50 hover:shadow-xl' : 'hover:bg-[#faa819] hover:text-gray-50 hover:shadow-xl'} ease-in-out transition-all`}>
+            <li key={name} className={` px-8 py-2 rounded-4xl text-base hover:scale-105 hover:shadow-gray-300 ${active ? 'bg-[#faa819] text-gray-50 hover:shadow-xl' : 'hover:bg-[#faa819] hover:text-gray-50 hover:shadow-xl'} ease-in-out transition-all`}>
+              <a href={`${link}`}>
                 {name}
-              </li>
-            </a>
+              </a>
+            </li>
           ))
         }
-        <a href={`/contact-us`}>
-          <li key={'contact-us'} className={` px-8 py-2 rounded-4xl text-base hover:scale-105 hover:shadow-gray-300 ${ 'hover:bg-[#faa819] hover:text-gray-50 hover:shadow-xl'} ease-in-out transition-all`}>
+        <li key={'contact-us'} className={` px-8 py-2 rounded-4xl text-base hover:scale-105 hover:shadow-gray-300 ${ 'hover:bg-[#faa819] hover:text-gray-50 hover:shadow-xl'} ease-in-out transition-all`}>
+          <a href={`/contact-us`}>
             {'Contact Us'}
-          </li>
-        </a>
+          </a>
+        </li>
 
         {/* <li className=' px-4 py-1 rounded-xl text-lg hover:scale-105'><a onClick={() => closeNavigation()} href="#personal">Personal</a></li>
         <li className=' px-4 py-1 rounded-xl text-lg hover:scale-105'><a onClick={() => closeNavigation()} href="#personal">Business</a></li>

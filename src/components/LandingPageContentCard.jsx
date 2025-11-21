@@ -5,7 +5,13 @@ const LandingPageContentCard = ({ index, image }) => {
 
   return (
     <div className=''>
-      <img className=' mt-8 md:mt-0 rounded-4xl shadow-lg hover:shadow-2xl shadow-[#faa819] hover:scale-105 ease-in-out transition-all' src={image} alt="" />
+      <img 
+        className=' mt-8 md:mt-0 rounded-4xl shadow-lg hover:shadow-2xl shadow-[#faa819] hover:scale-105 ease-in-out transition-all' 
+        src={image} 
+        alt={`Service feature ${index + 1}`}
+        loading="lazy"
+        decoding="async"
+      />
     </div>
   )
 }

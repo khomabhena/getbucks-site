@@ -22,7 +22,13 @@ const BoardMembersCard = ({title = 'Board Members', data}) => {
               data?.map(({name, position, image, text }) => (
                   <div key={name} className=' -mt-24 mb-24 lg:px-4 basis-1 xl:basis-1/3 flex items-stretch flex-col'>
                     <div style={{ backgroundColor: colors.primaryColor}} className=' hover:scale-105 hover:shadow-2xl ease-in-out transition-all mt-48 w-full shadow-xl flex flex-col items-center py-12 lg:px-4 rounded-2xl text-gray-800 h-full'>
-                      <img className=' -mt-24 lg:-mt-36 w-24 h-24 lg:w-48  lg:h-48 rounded-xl bg-cover object-cover shadow-xl' src={image} alt={name} />
+                      <img 
+                        className=' -mt-24 lg:-mt-36 w-24 h-24 lg:w-48  lg:h-48 rounded-xl bg-cover object-cover shadow-xl' 
+                        src={image} 
+                        alt={`${name} - ${position}`}
+                        loading="lazy"
+                        decoding="async"
+                      />
                       <h3 className=' text-sm lg:text-xl mt-8 font-semibold'>{name}</h3>
                       <h4 className=' text-xs lg:text-base text-center font-semibold mt-4 px-8'>{position}</h4>
                       <p className=' text-justify text-xs lg:text-base px-8 mt-12 flex-grow'>{text}</p>
