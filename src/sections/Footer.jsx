@@ -53,11 +53,11 @@ const Footer = ({ white }) => {
         </div>
 
         {/* Reserve Bank Required Text */}
-        <div className=' bg-gray-900 text-gray-100 py-6 px-6 md:px-8 mt-16 rounded-lg'>
-            <div className=' flex flex-col md:flex-row gap-4 md:gap-6 items-center justify-center text-center md:text-left'>
-                <p className=' text-sm md:text-base font-medium'>A Registered Deposit taking Microfinance Institution</p>
+        <div className=' bg-gray-900 text-gray-100 py-4 md:py-6 px-4 md:px-8 mt-8 md:mt-16 rounded-lg'>
+            <div className=' flex flex-col md:flex-row gap-3 md:gap-6 items-center justify-center text-center md:text-left'>
+                <p className=' text-xs sm:text-sm md:text-base font-medium leading-relaxed'>A Registered Deposit taking Microfinance Institution</p>
                 <span className=' hidden md:inline text-gray-600'>|</span>
-                <p className=' text-sm md:text-base font-medium'>A Member of the Deposit Protection Scheme</p>
+                <p className=' text-xs sm:text-sm md:text-base font-medium leading-relaxed'>A Member of the Deposit Protection Scheme</p>
             </div>
         </div>
     </footer>
