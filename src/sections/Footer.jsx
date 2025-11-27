@@ -42,11 +42,23 @@ const Footer = ({ white }) => {
             }
         </div>
         <p className=' hidden'>+263 861257 0000</p>
-        <div className={` bg-red-600l ${ white ? ' text-gray-200' : ' text-gray-500'} flex flex-col md:flex-row text-center md:text-start gap-4 items-center mt-16 text-xs md:text-sm`}>
+        
+        
+
+        <div className={` bg-red-600l ${ white ? ' text-gray-200' : ' text-gray-500'} flex flex-col md:flex-row text-center md:text-start gap-4 items-center mt-8 text-xs md:text-sm`}>
 
             <img className=' w-10 h-10 md:w-14 md:h-14 rounded-full' src="/social-icons/dpc-logo.jpg" alt="" />
             <p className=' hidden'>GetBucks is registered in Zimbabwe as GetBucks Bank (No. 322/2012). We are a member of the Deposit Protection Scheme administered by the Deposit Protection Corporation (DPC) in terms of the DPC Act [Chapter] 24:29.<br />1st Floor Unity Court, No. 64 Kwame Nkrumah Ave, Harare, Zimbabwe<br />&copy; GetBucks Bank {new Date().getFullYear()}. All rights reserved.</p>
             <p className=' text-xs'>GetBucks Bank is registered in Zimbabwe as GetBucks Microfinance Bank Limited (322/2012), 1st Floor Unity Court, No. 64 Kwame Nkrumah Ave, Harare. We are authorised by and regulated by the Reserve Bank of Zimbabwe under Licence No. 000002. We are a member of the Deposit Protection Scheme administered by the Deposit Protection Corporation (DPC) in terms of the DPC Act [Chapter] 24:29.<br />&copy; GetBucks Bank {new Date().getFullYear()}. All rights reserved.</p>
+        </div>
+
+        {/* Reserve Bank Required Text */}
+        <div className=' bg-gray-900 text-gray-100 py-6 px-6 md:px-8 mt-16 rounded-lg'>
+            <div className=' flex flex-col md:flex-row gap-4 md:gap-6 items-center justify-center text-center md:text-left'>
+                <p className=' text-sm md:text-base font-medium'>A Registered Deposit taking Microfinance Institution</p>
+                <span className=' hidden md:inline text-gray-600'>|</span>
+                <p className=' text-sm md:text-base font-medium'>A Member of the Deposit Protection Scheme</p>
+            </div>
         </div>
     </footer>
   )
