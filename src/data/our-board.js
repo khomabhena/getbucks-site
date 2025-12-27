@@ -20,13 +20,13 @@ export const getOurBoardData = {
             text: 'Ms. Mahabeer, an adept leader, excels in international trade, logistics, automotive, and finance. As MD of Gift Investments, she spearheads bus and truck imports, sales strategies, and supplier negotiations. Also a Director at Al Shams Global LTD and she manages African operations.'
         },
         {
-            image: '/board-members/dipesh.png',
+            image: '/board-members/dipesh1.png',
             name: 'DIPESH SHAH',
             position: 'Non-Executive Director',
             text: 'Mr. Shah has an accounting background and is currently pursuing the CGMA Advanced Diploma in Management Accounting. He has experience in cross-border trade, advisory services, and mining. As Founder of DiGrand Group, he has overseen high-growth investments in finance, agriculture, logistics, and gold trade in Zimbabwe. Mr. Shah brings strong strategic insight, governance awareness, and a disciplined approach to value creation, contributing effectively to the Board\'s oversight and long-term strategic direction.'
         },
         {
-            image: '/board-members/edwin.png',
+            image: '/board-members/edwin1.png',
             name: 'EDWIN CHAVORA',
             position: 'Managing Director',
             text: "Mr. Chavora, a seasoned banker with over 20 years in the industry, transitioned from junior dealer to Head of Treasury at Getbucks. Specializing in Treasury Management and Structured Finance, he excels in providing dynamic financial solutions. His qualifications include a Bachelor's in Commerce, a Master's in Financial Management, ACL Dealing Certificate, and Certified Microfinance Expert."
@@ -40,7 +40,7 @@ export const getOurBoardData = {
     ],
     managementTeam: [
         {
-            image: '/board-members/edwin.png',
+            image: '/board-members/edwin1.png',
             name: 'EDWIN CHAVORA',
             position: 'Managing Director',
             text: "Mr. Chavora, a seasoned banker with over 20 years in the industry, transitioned from junior dealer to Head of Treasury at Getbucks. Specializing in Treasury Management and Structured Finance, he excels in providing dynamic financial solutions. His qualifications include a Bachelor's in Commerce, a Master's in Financial Management, ACL Dealing Certificate, and Certified Microfinance Expert."
