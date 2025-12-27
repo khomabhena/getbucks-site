@@ -8,13 +8,13 @@ export const getOurBoardData = {
             text: "Mr. Chagonda, a seasoned Legal Practitioner with 30+ years' experience, ascended from Professional Assistant to Managing Partner. A University of Zimbabwe law graduate, he specializes in Corporate Law and governance, leading Zimnat Lion Insurance. His board roles include NSSA and First Mutual Holdings Ltd."
         },
         {
-            image: '/board-members/gamuchirai.jpg',
+            image: '/board-members/gamuchirai.png',
             name: 'Gamuchirai Nyamuzinga',
             position: 'Non Executive Director',
             text: 'Mr. Nyamuzinga, a Chartered Accountant and Registered Public Auditor, with over a decade of experience in accounting and auditing, notably in the FMCG sector. Currently the Chief Finance Officer at TM Pick n Pay Supermarkets, Zimbabwe, he brings strategic budgeting, financial reporting, and risk management skills honed at Deloitte & Touché.'
         },
         {
-            image: '/board-members/shaleetha.jpg',
+            image: '/board-members/shaleetha.png',
             name: 'SHALEETHA MAHABEER',
             position: 'Non Executive Director',
             text: 'Ms. Mahabeer, an adept leader, excels in international trade, logistics, automotive, and finance. As MD of Gift Investments, she spearheads bus and truck imports, sales strategies, and supplier negotiations. Also a Director at Al Shams Global LTD and she manages African operations.'
@@ -32,7 +32,7 @@ export const getOurBoardData = {
             text: "Mr. Chavora, a seasoned banker with over 20 years in the industry, transitioned from junior dealer to Head of Treasury at Getbucks. Specializing in Treasury Management and Structured Finance, he excels in providing dynamic financial solutions. His qualifications include a Bachelor's in Commerce, a Master's in Financial Management, ACL Dealing Certificate, and Certified Microfinance Expert."
         },
         {
-            image: '/board-members/batsirai.jpg',
+            image: '/board-members/batsirai.png',
             name: 'BATSIRAI DEMBETEMBE',
             position: 'Finance Director',
             text: "Batsirai is an accountant by profession with over 15 years of experience, a Chartered Accountant (Zimbabwe & South Africa), and trained at PwC, Harare. He has extensive experience in financial and operational management, with a focus on control and compliance, reporting, investment management, as well as investor relations.He has previously held various senior leadership and management roles in agricultural businesses in Africa, as well as agro-processing, manufacturing and FMCG sectors."
@@ -46,19 +46,19 @@ export const getOurBoardData = {
             text: "Mr. Chavora, a seasoned banker with over 20 years in the industry, transitioned from junior dealer to Head of Treasury at Getbucks. Specializing in Treasury Management and Structured Finance, he excels in providing dynamic financial solutions. His qualifications include a Bachelor's in Commerce, a Master's in Financial Management, ACL Dealing Certificate, and Certified Microfinance Expert."
         },
         {
-            image: '/board-members/batsirai.jpg',
+            image: '/board-members/batsirai.png',
             name: 'BATSIRAI DEMBETEMBE',
             position: 'Finance Director',
             text: "Batsirai is an accountant by profession with over 15 years of experience, a Chartered Accountant (Zimbabwe & South Africa), and trained at PwC, Harare. He has extensive experience in financial and operational management, with a focus on control and compliance, reporting, investment management, as well as investor relations.He has previously held various senior leadership and management roles in agricultural businesses in Africa, as well as agro-processing, manufacturing and FMCG sectors."
         },
         {
-            image: '/board-members/muchineripi.jpg',
+            image: '/board-members/muchineripi.png',
             name: 'MUCHINERIPI CHIGWENDERE',
             position: 'Head of Legal & Company Secretary',
             text: "Mr. Chigwendere is a seasoned professional in the fields of law and banking, boasting extensive expertise in Investments, Corporate Banking, Risk Management, Legal matters, and Secretariat duties. He earned a BCom Finance degree and an LLB Degree from the University of Zimbabwe. Additionally, he is a registered Legal Practitioner and an active member of the Law Society of Zimbabwe."
         },
         {
-            image: '/board-members/richard.jpg',
+            image: '/board-members/richard.png',
             name: 'RICHARD WUSHE',
             position: 'Head of Treasury',
             text: 'Mr. Wushe is a seasoned banker with more than three decades of expertise in Retail, Corporate, Treasury, and Investment Banking. With a substantial 25-year tenure in the Treasury Division, he ascended from Junior Dealer to the esteemed position of Head of Treasury at leading Zimbabwean banks. He holds a BComm. in Economics from the University of Pretoria, South Africa, and is a certified Associate member of the Institute of Bankers in South Africa, along with multiple International Treasury Qualifications.'
