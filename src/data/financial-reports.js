@@ -1,6 +1,11 @@
 export const getFinancialReports = [
     {
         type: 'pdf',
+        name: 'Abridged Financial Statements 31-Dec-25',
+        link: '/financial-reports/GETBUCKS Abridged Financial Stats 31-Dec-25.pdf'
+    },
+    {
+        type: 'pdf',
         name: 'Abridged Financial Statements 30-Jun-25',
         link: '/financial-reports/GETBUCKS Abridged financial statements 30-Jun-25.pdf'
     },
