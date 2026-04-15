@@ -109,6 +109,11 @@ export const getContactData = {
                 text: 'Terms of Use',
             },
             {
+                link: '/documents/Business-Conditions.pdf',
+                text: 'Business conditions & tariffs',
+                openInNewTab: true,
+            },
+            {
                 link: '/info',
                 text: 'Cookies Policy',
             },
