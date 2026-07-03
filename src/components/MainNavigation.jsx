@@ -24,7 +24,7 @@ const MainNavigation = ({ scrollPosition, data, prefix = '' }) => {
         />
       </a>
 
-      <ul className=' hidden z-30 xl:flex gap-2 text-base pr-4' style={{ color: primaryColor }}>
+      <ul className=' hidden z-30 xl:flex xl:items-center gap-2 text-base pr-4' style={{ color: primaryColor }}>
         {
           data.map(({ active, link, name, subMenu }) => (
             <li key={name} className={`group relative hover:scale-105 hover:shadow-gray-300  ease-in-out transition-all`}>
@@ -50,7 +50,17 @@ const MainNavigation = ({ scrollPosition, data, prefix = '' }) => {
             </li>
           ))
         }
-        <li style={{ borderColor: primaryColor }} className=' border-3 -mt-1  px-4 py-1 rounded-4xl text-sm hover:scale-105 hover:shadow-gray-300 hover:border-green-900 hover:bg-[#faa819] hover:text-gray-50 hover:shadow-xl ease-in-out transition-all'><a target='_blank' href={`https://getbucksonline.com/login`}>Internet Banking</a></li>
+        <li className='hover:scale-105 hover:shadow-gray-300 ease-in-out transition-all'>
+          <a
+            target='_blank'
+            rel='noopener noreferrer'
+            href='https://getbucksonline.com/login'
+            style={{ borderColor: primaryColor }}
+            className='block border-3 px-8 py-2 rounded-4xl text-sm hover:border-green-900 hover:bg-[#faa819] hover:text-gray-50 hover:shadow-xl'
+          >
+            Internet Banking
+          </a>
+        </li>
       </ul>
 
       {!mobileNavigation && <img onClick={() => {setMobileNavigation(!mobileNavigation)}} className=' xl:hidden cursor-pointer h-8 w-8 md:h-10 md:w-10' src='/menu.svg' width={'auto'} height={'24px'} alt='menu close icon'  />}
