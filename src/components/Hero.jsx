@@ -16,7 +16,7 @@ const Hero = () => {
 
         <a className=' self-center' href="/open-account">
           <button style={{ color: primaryColor }} 
-            className=' lg:mt-24 2xl:mt-24 md:pb-3 cursor-pointer rounded-2xl border-1 md:border-2 border-gray-200 shadow-lg shadow-[#faa819]l w-fit self-center px-8 py-2 lg:py-4 text-sm md:text-xl lg:text-xl font-medium bg-gradient-to-r from-gray-100 to-gray-200 hover:scale-95 shadow-[#faa819] hover:shadow-gray-400 hover:shadow-sm ease-in-out transition-all'>Open a bank account</button>
+            className=' lg:mt-24 2xl:mt-24 md:pb-3 cursor-pointer rounded-2xl border-1 md:border-2 border-gray-200 shadow-lg shadow-[#faa819]l w-fit self-center px-8 py-2 lg:py-4 text-sm md:text-xl lg:text-xl font-medium bg-gradient-to-r from-gray-100 to-gray-200 hover:scale-95 shadow-[#faa819] hover:shadow-gray-400 hover:shadow-sm ease-in-out transition-all'>Open a Bank Account</button>
         </a>
 
     </section>
